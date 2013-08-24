@@ -1,0 +1,62 @@
+<!-- INCLUDE overall_header.html -->
+<div class="inner">
+	<p class="{S_CONTENT_FLOW_END}<!-- IF S_USER_LOGGED_IN --> rightside<!-- ENDIF -->"><!-- IF S_USER_LOGGED_IN -->{LAST_VISIT_DATE}<!-- ELSE -->{CURRENT_TIME}<!-- ENDIF --></p>
+	<!-- IF U_MCP --><p>{CURRENT_TIME} <br />[&nbsp;<a href="{U_MCP}">{L_MCP}</a>&nbsp;]</p><!-- ELSEIF S_USER_LOGGED_IN --><p>{CURRENT_TIME}</p><!-- ENDIF -->
+
+	<!-- IF S_DISPLAY_SEARCH or (S_USER_LOGGED_IN and not S_IS_BOT) -->
+	<ul class="linklist">
+		<!-- IF S_DISPLAY_SEARCH -->
+			<li><a href="{U_SEARCH_UNANSWERED}">{L_SEARCH_UNANSWERED}</a><!-- IF S_LOAD_UNREADS --> &raquo; <a href="{U_SEARCH_UNREAD}">{L_SEARCH_UNREAD}</a><!-- ENDIF --><!-- IF S_USER_LOGGED_IN --> &bull; <a href="{U_SEARCH_NEW}">{L_SEARCH_NEW}</a><!-- ENDIF --> &raquo; <a href="{U_SEARCH_ACTIVE_TOPICS}">{L_SEARCH_ACTIVE_TOPICS}</a></li>
+		<!-- ENDIF -->
+		<!-- IF not S_IS_BOT and U_MARK_FORUMS --><li class="rightside"><a href="{U_MARK_FORUMS}" accesskey="m">{L_MARK_FORUMS_READ}</a></li><!-- ENDIF -->
+	</ul>
+	<!-- ENDIF -->
+</div>
+
+<!-- INCLUDE forumlist_body.html -->
+
+<!-- IF not S_USER_LOGGED_IN and not S_IS_BOT -->
+	<div class="bgstats"><span class="corners-top"><span></span></span>
+		<form method="post" action="{S_LOGIN_ACTION}" >
+		<h5><a href="{U_LOGIN_LOGOUT}">{L_LOGIN_LOGOUT}</a><!-- IF S_REGISTER_ENABLED -->&nbsp; &raquo; &nbsp;<a href="{U_REGISTER}">{L_REGISTER}</a><!-- ENDIF --></h5>
+		<fieldset class="quick-login">
+			<input type="text" name="username" id="username" size="10" class="inputbox" title="{L_USERNAME}" value="{L_USERNAME}" onclick="if(this.value=='{L_USERNAME}')this.value='';" onblur="if(this.value=='')this.value='{L_USERNAME}';" />  
+			<input type="password" name="password" id="password" size="10" class="inputbox" title="{L_PASSWORD}" value="{L_PASSWORD}" onclick="if(this.value=='{L_PASSWORD}')this.value='';" onblur="if(this.value=='')this.value='{L_PASSWORD}';" />
+			<input type="submit" name="login" value="{L_LOGIN}" class="button2" />
+			<!-- IF S_AUTOLOGIN_ENABLED -->
+				<br /><input type="checkbox" name="autologin" id="autologin" /> <label for="autologin">{L_LOG_ME_IN}</label>
+				<br /><input type="checkbox" name="viewonline" id="viewonline" tabindex="5" /> <label>{L_HIDE_ME}</label>
+			<!-- ENDIF -->
+			{S_LOGIN_REDIRECT}
+		</fieldset>
+		</form>
+	<span class="corners-bottom"><span></span></span></div>
+<!-- ENDIF -->
+
+<!-- IF S_DISPLAY_ONLINE_LIST -->
+<div class="bgstats"><span class="corners-top"><span></span></span>
+	<div id="bgscontain">
+	<!-- IF U_VIEWONLINE -->
+		<h5><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a></h5><!-- ELSE --><h5>{L_WHO_IS_ONLINE}</h5><!-- ENDIF -->
+		<p>{TOTAL_USERS_ONLINE} <br /> ({L_ONLINE_EXPLAIN})<br />{RECORD_USERS}
+		<!-- IF LEGEND --><br /><em>{L_LEGEND}: {LEGEND}</em><!-- ENDIF -->
+		<br />{LOGGED_IN_USER_LIST}</p>
+	</div>
+
+<!-- IF NEWEST_USER -->
+	<div id="bgscontain1">
+		<h5>{L_STATISTICS}</h5>
+		<p>&raquo; {TOTAL_POSTS}<br /> &raquo; {TOTAL_TOPICS} <br /> &raquo; {TOTAL_USERS} <br /> &raquo; {NEWEST_USER}</p>
+	</div>
+<!-- ENDIF -->
+
+<!-- IF S_DISPLAY_BIRTHDAY_LIST and BIRTHDAY_LIST -->
+	<div id="bgscontain1">
+		<h5>{L_BIRTHDAYS}</h5>
+		<p><!-- IF BIRTHDAY_LIST -->{L_CONGRATULATIONS}: <strong>{BIRTHDAY_LIST}</strong><!-- ELSE -->{L_NO_BIRTHDAYS}<!-- ENDIF --></p>
+	</div>
+<!-- ENDIF -->
+<span class="corners-bottom"><span></span></span></div>
+<!-- ENDIF -->
+
+<!-- INCLUDE overall_footer.html -->

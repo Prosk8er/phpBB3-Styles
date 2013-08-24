@@ -1,0 +1,470 @@
+/* Custom/non-phpBB3 attributes */
+
+/* Heading / Font */
+h1, h2 {
+	font-family: "Droid Sans", Trebuchet MS, Helvetica, Arial, sans-serif;
+}
+
+/* Heading / Specific */
+.h1-post { font-weight: bold; margin: 0; padding: 0; }
+.h2-post { font-weight: bold; margin: 0; padding: 0; }
+.h3-post { font-weight: bold; margin: 0; padding: 0; }
+
+/* Padding for logo/ad/top-login */
+#topinner {
+	padding-top: 10px;
+}
+
+#page-header {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#logodesc {
+	border-bottom: 1px solid #4B4A48;
+	float: left;
+	margin: 0;
+	min-height: 85px;
+	padding: 0;
+	width: 100%;
+}
+
+#topmod {
+	background: #2a2a2a;
+	border: 1px solid #4B4A48;
+	float: right;
+	margin-bottom: 5px;
+	padding: 5px 10px;
+	width: auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.55);
+	-moz-box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.55);
+	-webkit-box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.55);
+}
+
+#dvg-loginform {
+	text-align: right; /* IE fix */
+	width: auto;
+}
+
+#dvg-loginlinks {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+#dvg-loginlinks a, #dvg-loginlinks a:active, #dvg-loginlinks a:focus, #dvg-loginlinks a:link, #dvg-loginlinks a:visited {
+	color: #FFF;
+	line-height: 2em;
+	outline: none;
+	text-shadow: -1px 1px 1px rgba(0,0,0,0.5);
+	text-transform: capitalize;
+}
+
+#dvg-loginlinks a:hover {
+	text-decoration: none;
+}
+
+.top-home		{ background: url("{T_THEME_PATH}/images/top/home.gif"); }
+.top-faq			{ background: url("{T_THEME_PATH}/images/top/faq.gif"); }
+.top-search		{ background: url("{T_THEME_PATH}/images/top/search.gif"); }
+.top-login			{ background: url("{T_THEME_PATH}/images/top/login.gif"); }
+.top-logout		{ background: url("{T_THEME_PATH}/images/top/logout.gif"); }
+.top-register	{ background: url("{T_THEME_PATH}/images/top/register.gif"); }
+.top-profile		{ background: url("{T_THEME_PATH}/images/top/profile.gif"); }
+.top-pm			{ background: url("{T_THEME_PATH}/images/top/pm.gif"); }
+
+.top-home, .top-faq, .top-search, .top-login, .top-logout, .top-register, .top-profile, .top-pm {
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	height: 16px;
+	margin-left: 3px;
+	padding: 1px 0 1px 17px;
+}
+
+#form-quicklogin {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+fieldset.quick-login label {
+	font-size: 0.75em;
+}
+
+span.cat_toptitles {
+	display: block;
+	font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+	text-shadow: -1px 0 1px rgba(0,0,0,0.7);
+	text-transform: capitalize;
+}
+
+.cat_category {
+	padding-left: 10px;
+}
+
+.content-innerpadding {
+	padding: 10px;
+}
+
+.innerpadding {
+	padding: 0 5px;
+}
+
+.content-spacing {
+	margin-bottom: 5px;
+}
+
+/* Top Menu */
+#menubar {
+	background: transparent url("{T_THEME_PATH}/images/background-topmenu.png") repeat-x;
+	float: left;
+	height: 40px;
+	margin-bottom: 5px;
+	padding: 0;
+	width: 100%;
+}
+
+#menubar-bottom {
+	background: transparent url("{T_THEME_PATH}/images/background-topmenu-bottom.png") repeat-x bottom;
+	padding-bottom: 13px;
+	width: 100%;
+}
+
+ul#navmenu {
+	background: transparent;
+	height: 40px;
+	line-height: 100%;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+ul#navmenu li {
+	background: transparent url("{T_THEME_PATH}/images/menuborder.png") repeat-y right;
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+ul#navmenu li.first {
+	background-color: transparent;
+}
+
+ul#navmenu li.last {
+	background-color: transparent;
+}
+
+ul#navmenu li a, ul#navmenu li a:active, ul#navmenu li a:focus, ul#navmenu li a:link, ul#navmenu li a:visited {
+	display: block;
+	float: left;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.55em;
+	font-weight: bold;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 15px 12px;
+	text-shadow: -1px 1px 0 rgba(0,0,0,0.5);
+}
+
+ul#navmenu li a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* Main Container */
+#top-maincol {
+	background: transparent url("{T_THEME_PATH}/images/background-top.png") no-repeat scroll center top;
+	float: left;
+	margin: 5px 0 0;
+	padding: 15px 0 0;
+}
+
+#maincol {
+	background: transparent url("{T_THEME_PATH}/images/background-center.png") repeat-y center;
+	float: left;
+	margin-bottom: 5px;
+}
+
+#bot-maincol {
+	background: transparent url("{T_THEME_PATH}/images/background-bottom.png") no-repeat scroll center bottom;
+	float: left;
+	margin: 0;
+	padding: 0 0 10px;
+}
+
+#wrapinner {
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+#side-right {
+	float: left;
+	margin-bottom: 4px;
+	margin-top: 0;
+}
+
+#dvg-bot-content {
+	float: left;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+#dvg-bot-content h1 {
+	background: transparent url("{T_THEME_PATH}/images/dot.gif") bottom repeat-x;
+	margin-bottom: 5px;
+	padding-bottom: 2px;
+}
+
+#dvg-bot-menu {
+	color: #f4f4f4;
+	margin: 0;
+	padding: 2px 0;
+}
+
+#bottom-modules {
+	clear: both;
+	float: left;
+	margin-top: 10px;
+}
+
+/* Side Menus */
+ul.sidemenu {
+	margin: 5px 0;
+	padding: 0;
+}
+
+ul.sidemenu li {
+	background: transparent;
+	height: 100%;
+	list-style: none;
+	margin-bottom: 5px;
+	padding: 2px 0;
+}
+
+ul.sidemenu a {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: block;
+	font-size: 1.3em;
+	font-weight: normal;
+	height: 18px;
+	outline: none;
+	padding-left: 22px;
+	text-indent: 0;
+}
+
+ul.sidemenu a, ul.sidemenu a:active, ul.sidemenu a:focus, ul.sidemenu a:link, ul.sidemenu a:visited {
+	color: #FFF;
+}
+
+ul.sidemenu a:hover {
+	background-position: 0 -18px;
+}
+
+h1.sidemenu {
+	background: transparent no-repeat left;
+	font-size: 1.5em;
+	height: 28px;
+	line-height: 28px;
+	margin: 2px 0 5px 0;
+	padding: 2px 0 0 5px;
+	text-shadow: -1px 0 1px rgba(0,0,0,0.70);
+}
+
+/* Breadcrumbs */
+a.dvg-bc, a.dvg-bc:active, a.dvg-bc:focus, a.dvg-bc:link, a.dvg-bc:visited {
+	color: #FFF;
+	font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	outline: none;
+	text-shadow: 1px 0 1px rgba(0,0,0,0.7);
+	text-transform: uppercase;
+}
+
+a.dvg-bc:hover {
+	color: #CCC;
+	text-shadow: 1px 0 1px rgba(112,112,112,0.7);
+}
+
+.dvg-bc span {
+	background:url("{T_THEME_PATH}/images/bc.png") no-repeat scroll right bottom transparent;
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	padding-right: 7px;
+}
+
+.dvg-bc span span {
+	background-position: top left;
+	padding-left: 7px;
+	padding-right: 0;
+}
+
+/* Buttons */
+a.button1, a.button2, a.button3, input.button1, input.button2, input.button3 {
+	background: 0 top repeat-x;
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.55);
+	-moz-box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.55);
+	-webkit-box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.55);
+}
+
+a.button1:hover, a.button2:hover, a.button3:hover, input.button1:hover, input.button2:hover, input.button3:hover {
+	background-position: 0 -25px;
+}
+
+/* Header for Forum/Topic List */
+li.header {
+	background: transparent url("{T_THEME_PATH}/images/ft-r.png") no-repeat scroll 100% 0;
+	min-height: 27px;
+	vertical-align: baseline;
+}
+
+li.header dl {
+	background: transparent url("{T_THEME_PATH}/images/ft-l.png") no-repeat scroll 0 0;
+	margin-left: 0;
+	min-height: 27px;
+	padding: 0;
+}
+
+li.header dl.icon {
+	min-height: 27px;
+}
+
+#cp-main li.header, #cp-main li.header dl {
+	background-image: none !important; /* Removes forum/topic background */
+}
+
+/* MCP / UCP */
+.mcp-background {
+	background: #212121;
+}
+
+.ucp_background {
+	background: #212121;
+}
+
+.ucp-header {
+	font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+	font-size: 0.95em;
+}
+
+/* Panels */
+.info-panel {
+	background-color: #212121;
+}
+
+/* Post / PM */ 
+.bg-pm, .bg-post {
+	background-color: #191919;
+}
+
+.bg-alt {
+	background-color: #212121;
+}
+
+/* Stat HR */
+.stat-hr {
+	background: transparent url("{T_THEME_PATH}/images/divider.gif") scroll repeat-x bottom;
+	border: 0;
+	margin: 5px 0;
+	padding: 0;
+}
+
+/* --- Modules --- */
+/* For 700px w/ sidebar */
+#main-content {
+	background: url("{T_THEME_PATH}/images/content-center1.png") repeat-y center;
+	display: block;
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+
+#main-content-top {
+	background: url("{T_THEME_PATH}/images/content-top1.png") no-repeat center top;
+}
+
+#main-content-bot {
+	background: url("{T_THEME_PATH}/images/content-bot1.png") no-repeat center bottom;
+}
+
+/* Full 940px */
+#main-content2 {
+	background: url("{T_THEME_PATH}/images/content-center2.png") repeat-y center;
+	display: block;
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+
+#main-content-top2 {
+	background: url("{T_THEME_PATH}/images/content-top2.png") no-repeat center top;
+}
+
+#main-content-bot2 {
+	background: url("{T_THEME_PATH}/images/content-bot2.png") no-repeat center bottom;
+}
+
+/* Side Module */
+div.module {
+	background: url("{T_THEME_PATH}/images/mod2-br.png") no-repeat bottom right;
+	clear: both;
+	float: left;
+	margin-bottom: 5px;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+
+div.module div { background: url("{T_THEME_PATH}/images/mod2-bl.png") no-repeat bottom left; padding: 0; }
+div.module div div { background: url("{T_THEME_PATH}/images/mod2-tr.png") no-repeat top right; padding: 0; }
+div.module div div div { background: url("{T_THEME_PATH}/images/mod2-tl.png") no-repeat top left; padding: 10px; }
+div.module div div div div { background: none; margin: 0; padding: 0; }
+
+/* Post Round Corners */
+span.corners-top-post { background-image: url("{T_THEME_PATH}/images/corners_left.gif"); }
+span.corners-top-post span { background-image: url("{T_THEME_PATH}/images/corners_right.gif"); }
+span.corners-bottom-post { background-image: url("{T_THEME_PATH}/images/corners_left.gif"); }
+span.corners-bottom-post span { background-image: url("{T_THEME_PATH}/images/corners_right.gif"); }
+
+/* PM Round Corners */
+span.corners-top-pm { background-image: url("{T_THEME_PATH}/images/corners_left_pm.gif"); }
+span.corners-top-pm span { background-image: url("{T_THEME_PATH}/images/corners_right_pm.gif"); }
+span.corners-bottom-pm { background-image: url("{T_THEME_PATH}/images/corners_left_pm.gif"); }
+span.corners-bottom-pm span { background-image: url("{T_THEME_PATH}/images/corners_right_pm.gif"); }
+
+/* Misc */
+#acp {
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+#mcp-spacing {
+	padding: 5px 0;
+}
+
+#tiny {
+	display: none;
+}
+
+#nowrap {
+	white-space: nowrap;
+}
+
+#wrap {
+	white-space: normal;
+}
+
+#tz {
+	width:100% !important;
+}

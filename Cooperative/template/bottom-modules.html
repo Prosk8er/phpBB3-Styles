@@ -1,0 +1,48 @@
+<div id="dvg-bot-content">
+	<!-- IF S_DISPLAY_ONLINE_LIST -->
+		<div class="grid_6">
+			<div class="module">
+				<div><div>
+					<div class="innerpadding">
+						<!-- IF U_VIEWONLINE --><h1><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a></h1><!-- ELSE --><h1>{L_WHO_IS_ONLINE}</h1><!-- ENDIF -->
+						<p>{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})<br />{RECORD_USERS}<br />
+						<!-- IF S_USER_LOGGED_IN -->{CURRENT_TIME}<br />{LAST_VISIT_DATE}<br /><!-- ENDIF -->
+						<br />{LOGGED_IN_USER_LIST}
+						<!-- IF LEGEND --><br /><em>{L_LEGEND}: {LEGEND}</em><!-- ENDIF --></p>
+					</div>
+				</div></div>
+			</div>
+		</div>
+	<!-- ENDIF -->
+
+	<!-- IF S_DISPLAY_BIRTHDAY_LIST -->
+		<div class="grid_3">
+			<div class="module">
+				<div><div>
+					<div class="innerpadding">
+						<h1>{L_BIRTHDAYS}</h1>
+						<p><!-- IF BIRTHDAY_LIST -->{L_CONGRATULATIONS}: <strong>{BIRTHDAY_LIST}</strong><!-- ELSE -->{L_NO_BIRTHDAYS}<!-- ENDIF --></p>
+					</div>
+				</div></div>
+			</div>
+		</div>
+	<!-- ENDIF -->
+
+	<!-- IF NEWEST_USER -->
+		<div class="grid_3">
+			<div class="module">
+				<div><div>
+					<div class="innerpadding">
+						<h1>{L_STATISTICS}</h1>
+						<p>
+							{TOTAL_POSTS}<br />
+							{TOTAL_TOPICS}<br />
+							{TOTAL_USERS}<br />
+							{NEWEST_USER}
+						</p>
+					</div>
+				</div></div>
+			</div>
+		</div>
+	<!-- ENDIF -->
+</div>

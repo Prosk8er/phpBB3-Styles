@@ -1,0 +1,378 @@
+/* Form Styles
+---------------------------------------- */
+
+/* General form styles
+----------------------------------------*/
+fieldset {
+	border-width: 0;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+}
+
+input {
+	font-weight: normal;
+	cursor: pointer;
+	vertical-align: middle;
+	padding: 0 3px;
+	font-size: 1em;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+select {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	cursor: pointer;
+	vertical-align: middle;
+	border: 1px solid #666666;
+	padding: 1px;
+	background-color: #FAFAFA;
+	font-size: 1em;
+}
+
+option {
+	padding-right: 1em;
+}
+
+option.disabled-option {
+	color: graytext;
+}
+
+textarea {
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	width: 60%;
+	padding: 2px;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+label {
+	cursor: default;
+	padding-right: 5px;
+	color: #676767;
+}
+
+label input {
+	vertical-align: middle;
+}
+
+label img {
+	vertical-align: middle;
+}
+
+/* Definition list layout for forms
+---------------------------------------- */
+fieldset dl {
+	padding: 4px 0;
+}
+
+fieldset dt {
+	float: left;	
+	width: 40%;
+	text-align: left;
+	display: block;
+}
+
+fieldset dd {
+	margin-left: 41%;
+	vertical-align: top;
+	margin-bottom: 3px;
+}
+
+/* Specific layout 1 */
+fieldset.fields1 dt {
+	width: 15em;
+	border-right-width: 0;
+}
+
+fieldset.fields1 dd {
+	margin-left: 15em;
+	border-left-width: 0;
+}
+
+fieldset.fields1 {
+	background-color: transparent;
+}
+
+fieldset.fields1 div {
+	margin-bottom: 3px;
+}
+
+/* Set it back to 0px for the reCaptcha divs: PHPBB3-9587 */
+fieldset.fields1 #recaptcha_widget_div div {
+	margin-bottom: 0;
+}
+
+/* Specific layout 2 */
+fieldset.fields2 dt {
+	width: 15em;
+	border-right-width: 0;
+}
+
+fieldset.fields2 dd {
+	margin-left: 16em;
+	border-left-width: 0;
+}
+
+/* Form elements */
+dt label {
+	font-weight: bold;
+	text-align: left;
+}
+
+dd label {
+	white-space: nowrap;
+	color: #333;
+}
+
+dd input, dd textarea {
+	margin-right: 3px;
+}
+
+dd select {
+	width: auto;
+}
+
+dd textarea {
+	width: 85%;
+}
+
+/* Hover effects */
+fieldset dl:hover dt label {
+	color: #000000;
+}
+
+fieldset.fields2 dl:hover dt label {
+	color: inherit;
+}
+
+#timezone {
+	width: 95%;
+}
+
+* html #timezone {
+	width: 50%;
+}
+
+/* Quick-login on index page */
+fieldset.quick-login {
+	margin: 5px 0;
+}
+
+fieldset.quick-login input {
+	width: auto;
+}
+
+fieldset.quick-login input.inputbox {
+	margin-right: 5px;
+	vertical-align: middle;
+	width: 145px;
+}
+
+fieldset.quick-login label {
+	white-space: nowrap;
+	padding-right: 2px;
+}
+
+#autologin, #viewonline {
+	margin: 0 2px;
+}
+
+/* Display options on viewtopic/viewforum pages  */
+fieldset.display-options {
+	text-align: center;
+	margin: 3px 0 5px 0;
+}
+
+fieldset.display-options label {
+	white-space: nowrap;
+	padding-right: 2px;
+}
+
+fieldset.display-options a {
+	margin-top: 3px;
+}
+
+/* Display actions for ucp and mcp pages */
+fieldset.display-actions {
+	line-height: 2em;
+	padding-right: 1em;
+	text-align: right;
+	white-space: nowrap;
+}
+
+fieldset.display-actions label {
+	padding-right: 2px;
+	white-space: nowrap;
+}
+
+fieldset.sort-options {
+	line-height: 2em;
+}
+
+/* MCP forum selection*/
+fieldset.forum-selection {
+	float: right;
+	margin: 5px 0 3px 0;
+}
+
+fieldset.forum-selection2 {
+	float: right;
+	margin: 13px 0 3px 0;
+}
+
+/* Jumpbox */
+fieldset.jumpbox {
+	height: 2.5em;
+	margin-top: 15px;
+	text-align: right;
+}
+
+fieldset.quickmod {
+	float: right;
+	height: 2.5em;
+	text-align: right;
+	width: 50%;
+}
+
+/* Submit button fieldset */
+fieldset.submit-buttons {
+	margin: 5px 0;
+	text-align: center;
+	vertical-align: middle;
+}
+
+fieldset.submit-buttons input {
+	padding: 3px 0;
+	vertical-align: middle;
+}
+
+/* Posting page styles */
+
+/* Buttons used in the editor */
+#format-buttons {
+	margin: 15px 0 2px 0;
+}
+
+#format-buttons input, #format-buttons select {
+	vertical-align: middle;
+}
+
+/* Main message box */
+#message-box {
+	width: 80%;
+}
+
+#message-box textarea {
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	width: 450px;
+	height: 270px;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+/* Emoticons panel */
+#smiley-box {
+	float: right;
+	width: 18%;
+}
+
+#smiley-box img {
+	margin: 3px;
+}
+
+/* Input field styles */
+.inputbox {
+	border: 1px solid;
+	cursor: text;
+	padding: 2px;
+}
+
+.inputbox:hover {
+	border: 1px solid;
+}
+
+.inputbox:focus {
+	border: 1px solid;
+}
+
+input.inputbox	{ width: 85%; }
+input.medium	{ width: 50%; }
+input.narrow	{ width: 25%; }
+input.tiny		{ width: 125px; }
+textarea.inputbox	{ width: 85%; }
+
+.autowidth {
+	width: auto !important;
+}
+
+/* Form button styles */
+input.button1, input.button2 {
+	font-size: 1em;
+}
+
+a.button1, input.button1, input.button3, a.button2, input.button2 {
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	padding: 1px 0;
+	width: auto !important;
+}
+
+a.button1, input.button1 {
+	border: 1px solid;
+	font-weight: bold;
+}
+
+input.button3 {
+	background-image: none;
+	font-variant: small-caps;
+	height: 12px;
+	line-height: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+/* Alternative button */
+a.button2, input.button2, input.button3 {
+	border: 1px solid;
+}
+
+/* <a> button in the style of the form buttons */
+a.button1, a.button1:link, a.button1:visited, a.button1:active, a.button2, a.button2:link, a.button2:visited, a.button2:active {
+	background-position: 0 1px;
+	line-height: 250%;
+	padding: 2px 8px;
+	text-decoration: none;
+	vertical-align: text-bottom;
+}
+
+/* Hover states */
+a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
+	background-position: 0 100%;
+	border: 1px solid;
+}
+
+input.disabled {
+	font-weight: normal;
+}
+
+/* Topic and forum Search */
+.search-box {
+	float: left;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+
+.search-box input {}
+
+input.search {
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: left 1px;
+	padding-left: 17px;
+}
+
+.full { width: 95%; }
+.medium { width: 50%; }
+.narrow { width: 25%; }
+.tiny { width: 10%; }
+

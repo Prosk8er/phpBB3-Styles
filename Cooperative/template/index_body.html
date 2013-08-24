@@ -1,0 +1,14 @@
+<!-- INCLUDE overall_header.html -->
+
+<!-- IF S_DISPLAY_SEARCH or (S_USER_LOGGED_IN and not S_IS_BOT) -->
+<ul class="linklist">
+	<!-- IF S_DISPLAY_SEARCH -->
+		<li><a href="{U_SEARCH_UNANSWERED}">{L_SEARCH_UNANSWERED}</a><!-- IF S_LOAD_UNREADS --> &#8249; <a href="{U_SEARCH_UNREAD}">{L_SEARCH_UNREAD}</a><!-- ENDIF --><!-- IF S_USER_LOGGED_IN --> &#8249; <a href="{U_SEARCH_NEW}">{L_SEARCH_NEW}</a><!-- ENDIF --> &#8249; <a href="{U_SEARCH_ACTIVE_TOPICS}">{L_SEARCH_ACTIVE_TOPICS}</a> &#8249; <a href="{U_SEARCH_SELF}">{L_SEARCH_SELF}</a></li>
+	<!-- ENDIF -->
+	<!-- IF not S_IS_BOT and U_MARK_FORUMS --><!-- <li>&#8249; <a href="{U_MARK_FORUMS}" accesskey="m">{L_MARK_FORUMS_READ}</a></li> --><!-- ENDIF -->
+</ul>
+<!-- ENDIF -->
+
+<!-- INCLUDE forumlist_body.html -->
+
+<!-- INCLUDE overall_footer.html -->

@@ -1,0 +1,67 @@
+/* Lime Stylesheet
+	afdd23
+*/
+
+/* ----- Images ----- */
+/* Top Gradient */
+#logodesc { background: #560f0f url("{T_THEME_PATH}/images/lime/top-loginlogo.png") scroll repeat-x; }
+.top-title-background {}
+/* Header for Forum/Topic List */
+li.header { background-image: url("{T_THEME_PATH}/images/lime/ft-r.png"); }
+li.header dl { background-image: url("{T_THEME_PATH}/images/lime/ft-l.png"); }
+/* Breadcrumbs */
+.dvg-bc span { background-image: url("{T_THEME_PATH}/images/lime/bc.gif"); }
+
+/* ----- Main ----- */
+/* Headers */
+h1.sidemenu { background-image: url("{T_THEME_PATH}/images/lime/h1-bg.gif"); }
+h2, .content h2, .panel h2{ color: #afdd23; }
+h3 { border-bottom-color: #CCC; color: #afdd23; }
+li.header a:link { color: #FFF; }
+li.header a:hover { text-decoration: underline; }
+/* Default Links */
+a:active, a:focus, a:link, a:visited, a.forumlink, a.topictitle, .quotetitle, .attachtitle, .codetitle, p.moderators { color: #afdd23; }
+a:hover, a.left:hover, a.right:hover { color: #FFF; text-decoration: none; }
+#dvg-bot-menu a:hover { color: #afdd23; text-decoration: underline; }
+#dvg-loginlinks a:hover { color: #afdd23; }
+
+/* ----- Main Menu ----- */
+ul#navmenu li a:active, ul#navmenu li a:focus, ul#navmenu li a:link, ul#navmenu li a:visited { color: #afdd23; }
+ul#navmenu li a:hover { color: #FFF; }
+
+/* ----- Links on gradient backgrounds ----- */
+#search-box a:link, .navbg a:link, .forumbg .header a:link, .forabg .header a:link, th a:link,
+#search-box a:active, .navbg a:active, .forumbg .header a:active, .forabg .header a:active, th a:active,
+#search-box a:visited, .navbg a:visited, .forumbg .header a:visited, .forabg .header a:visited, th a:visited { color: #FFF; }
+#search-box a:hover, .navbg a:hover, .forumbg .header a:hover, .forabg .header a:hover, th a:hover { text-decoration: underline; }
+
+/* ----- Buttons ----- */
+a.button1, input.button1, input.button3, a.button2, input.button2 { background-image: url("{T_THEME_PATH}/images/lime/bg-button2.png"); }
+a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover { background-position: 0 -25px; }
+
+/* ----- Forum, Topic titles ----- */
+a.forumtitle, a.forumtitle:active, a.forumtitle:link, a.topictitle, a.topictitle:active, a.topictitle:link { color: #afdd23; }
+a.forumtitle:hover, a.topictitle:hover { color: #FFF; }
+
+/* ----- Post links ----- */
+.postlink, .postlink:active, .postlink:visited .postlink:link { color:#afdd23; }
+.postlink:hover { background-color: transparent; color: #FFF; }
+.postprofile a:link, .postprofile a:active, .postprofile a:visited, .postprofile dt.author a, .post:target h3 a { color:#afdd23; }
+
+/* ----- UCP Top Menu ----- */
+#tabs .activetab a span, #tabs a span { color: #afdd23; }
+#navigation a, #navigation #active-subsection a { color: #afdd23; }
+
+/* ----- Pagination ----- */
+.pagination span a, .pagination span a:link, .pagination span a:visited, .pagination span a:active { color:#afdd23; }
+.pagination span a:hover { color: #FFF; }
+
+/* ----- Side Menu ----- */
+ul.sidemenu a { background: url("{T_THEME_PATH}/images/lime/sidelist.gif") no-repeat; }
+ul.sidemenu a:link, ul.sidemenu a:active, ul.sidemenu a:focus, ul.sidemenu a:visited { color: #FFF; }
+ul.sidemenu a:hover { color: #afdd23; }
+
+/* ----- Polls ----- */
+.pollbar1, .pollbar2, .pollbar3, .pollbar4, .pollbar5 {
+	background: url("{T_THEME_PATH}/images/lime/pollbar.png") repeat-x; border-bottom: 1px solid #222; border-right: 1px solid #222; }
+fieldset.polls dl.voted { color: #afdd23; }
