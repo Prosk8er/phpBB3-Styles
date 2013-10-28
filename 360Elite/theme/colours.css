@@ -176,7 +176,7 @@ dl.details dd {
 
 .pagination span a:active {
 	color: #9D9FA2;
-	background-colr: #161817;
+	background-color: #161817;
 	border-color: #000;
 }
 
@@ -742,7 +742,7 @@ ul.cplist {
 }
 
 .rtl #navigation a {
-	background-image: url("{T_THEME_PATH}/images/bg_menu_rtl.png") repeat-y left;
+	background: url("{T_THEME_PATH}/images/bg_menu_rtl.png") repeat-y left;
 	background-position: 0 100%;
 }
 

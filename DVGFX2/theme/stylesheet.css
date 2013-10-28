@@ -1,7 +1,7 @@
 /*  phpBB3 Style Sheet
     --------------------------------------------------------------
 	Style name:			DVGFX2
-	Based on style:		subSilver (the default phpBB 2.0.x style)
+	Based on style:		subsilver2
 	Original author:	Tom Beddard ( http://www.subblue.com/ )
 	Modified by:     	Prosk8er ( http://gotskillslounge.com/ )
     --------------------------------------------------------------
@@ -13,6 +13,7 @@
 html {
 	font-size: 100%;
 	height: 101%;
+	min-width: 700px;
 }
 
 body {

@@ -147,15 +147,15 @@ function marklist(id, name, state)
 	<ul id="navmenu">
 		<li class="first"><a href="{U_INDEX}">{L_INDEX}</a></li>
 		<li><a href="{U_FAQ}">{L_FAQ}</a></li>
-		<li><a href="{U_SEARCH}">{L_SEARCH}</a></li>
-		<li><a href="{U_MEMBERLIST}">{L_MEMBERLIST}</a></li>
+		<!-- IF S_DISPLAY_SEARCH --><li><a href="{U_SEARCH}">{L_SEARCH}</a></li><!-- ENDIF -->
+		<!-- IF S_DISPLAY_MEMBERLIST --><li><a href="{U_MEMBERLIST}">{L_MEMBERLIST}</a></li><!-- ENDIF -->
 		<!-- IF S_USER_LOGGED_IN -->
-			<li><a href="{U_PRIVATEMSGS}">{PRIVATE_MESSAGE_INFO}</a></li>
+			<!-- IF S_DISPLAY_PM --><li><a href="{U_PRIVATEMSGS}">{PRIVATE_MESSAGE_INFO}</a></li><!-- ENDIF -->
 			<li><a href="{U_PROFILE}">{L_PROFILE}</a></li>
 		<!-- ENDIF -->
 		<!-- IF not S_USER_LOGGED_IN and not S_IS_BOT --><li><a href="{U_LOGIN_LOGOUT}">{L_LOGIN}</a></li><!-- ENDIF -->
 		<!-- IF S_USER_LOGGED_IN and not S_IS_BOT --><li><a href="{U_LOGIN_LOGOUT}">{L_LOGOUT}</a></li><!-- ENDIF -->
-		<!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED and not S_IS_BOT -->
+		<!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) -->
 			<li><a href="{U_REGISTER}">{L_REGISTER}</a></li>
 		<!-- ENDIF -->
 	</ul>
