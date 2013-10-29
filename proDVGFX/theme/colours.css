@@ -5,6 +5,10 @@ html, body {
 	color: #D3D3D3;
 }
 
+#simple-wrap {
+	background-color: #191919;
+}
+
 h1 {
 	color: #FFFFFF;
 }
