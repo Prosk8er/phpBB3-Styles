@@ -27,6 +27,11 @@
 <!-- ENDIF -->
 
 <!-- IF S_HAS_SUBFORUM -->
+<!-- IF not S_IS_BOT and U_MARK_FORUMS -->
+<ul class="linklist">
+	<li class="rightside"><a href="{U_MARK_FORUMS}">{L_MARK_SUBFORUMS_READ}</a></li>
+</ul>
+<!-- ENDIF -->
 	<!-- INCLUDE forumlist_body.html -->
 <!-- ENDIF -->
 
@@ -189,7 +194,6 @@
 
 		<!-- IF PAGINATION or TOTAL_POSTS or TOTAL_TOPICS -->
 		<div class="pagination">
-			<!-- IF TOTAL_TOPICS and not S_IS_BOT and U_MARK_TOPICS --><a href="{U_MARK_FORUMS}">{L_MARK_SUBFORUMS_READ}</a> &#8249;  <!-- ENDIF -->
 			<!-- IF TOTAL_POSTS and not NEWEST_USER --> {TOTAL_POSTS}<!-- ELSEIF TOTAL_TOPICS and not NEWEST_USER --> {TOTAL_TOPICS}<!-- ENDIF -->
 			<!-- IF TOTAL_USERS -->{TOTAL_USERS}<!-- ENDIF -->
 			<!-- IF PAGINATION --> &#8249;  <a href="#" onclick="jumpto(); return false;" title="{L_JUMP_TO_PAGE}">{PAGE_NUMBER}</a>
