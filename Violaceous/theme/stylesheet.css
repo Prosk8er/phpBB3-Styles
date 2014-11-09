@@ -1,0 +1,861 @@
+/*  phpBB3 Style Sheet
+    --------------------------------------------------------------
+	Style name:			Violaceous
+	Based on style:		subsilver2
+	Original author:	Tom Beddard ( http://www.subblue.com/ )
+	Modified by:     	Prosk8er ( http://gotskillslounge.com/ )
+    --------------------------------------------------------------
+*/
+
+/* Layout
+ ------------ */
+* {
+	/* Reset browsers default margin, padding and font sizes */
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: #39353D url('./images/bg01.gif');
+	height: 101%;
+	font-size: 100%;
+}
+
+body {
+	color: #55515D;
+	background-color: #AFB0BD;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 62.5%; /* This sets the default font size to be equivalent to 10px */
+	margin: 0px auto;
+	min-width: 960px;
+	max-width: 1000px;
+	padding-bottom: 15px;
+}
+
+#wrapheader {
+	height: auto !important;
+	padding: 0;
+}
+
+#wrapcentre {
+	background: transparent;
+	margin: 5px 5px 0 5px;
+}
+
+#wrapfooter {
+	clear: both;
+	text-align: center;
+}
+
+#wrapnav {
+	background-color: #AFB0BD;
+	border: 1px solid #49434d;
+	margin: 0;
+	width: 100%;
+}
+
+#logodesc {
+	background: #AFB0BD url('./images/header.png') top repeat-x;
+	height: 100px;
+	padding: 5px 2px;
+}
+
+#datebar {
+	margin: 5px 5px 0 5px;
+}
+
+#findbar {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.forumrules {
+	background-color: #AFB0BD;
+	border: 1px solid #49434d;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	padding: 4px;
+}
+
+.forumrules h3 {
+	color: #2E233D;
+}
+
+#pageheader { }
+#pagecontent { }
+#pagefooter { }
+#poll { }
+#postrow { }
+#postdata { }
+
+
+/*  Text
+ --------------------- */
+h1 {
+	color: #2E233D;
+	font-family: "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 1.8em;
+	text-decoration: none;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	line-height: 120%;
+	text-decoration: none;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 120%;
+}
+
+h4 {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+h5,
+h5 a:active,
+h5 a:focus,
+h5 a:link,
+h5 a:visited {
+	color: #FFF;
+	margin: 0;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+h6,
+h6 a:active,
+h6 a:focus,
+h6 a:link,
+h6 a:visited {
+	color: #2E233D;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	font-variant: small-caps
+}
+
+p {font-size: 1.1em;}
+
+p.moderators {
+	margin: 0;
+	float: left;
+	color: black;
+	font-weight: bold;
+}
+
+.rtl p.moderators {
+	float: right;
+}
+
+p.linkmcp {
+	margin: 0;
+	float: right;
+	white-space: nowrap;
+}
+
+.rtl p.linkmcp {
+	float: left;
+}
+
+p.breadcrumbs {
+	color: #2E233D;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	float: left;
+	margin: 0;
+	white-space: normal;
+}
+
+.rtl p.breadcrumbs {
+	float: right;
+}
+
+p.datetime {
+	margin: 0;
+	float: right;
+	white-space: nowrap;
+	font-size: 1em;
+}
+
+.rtl p.datetime {
+	float: left;
+}
+
+p.searchbar {
+	padding: 2px 5px 0 5px;
+	white-space: nowrap;
+} 
+p.searchbarreg {
+	margin: 0;
+	float: right;
+	white-space: nowrap;
+}
+
+.rtl p.searchbarreg {
+	float: left;
+}
+
+p.forumdesc {
+	padding-bottom: 4px;
+}
+
+p.topicauthor {
+	margin: 1px 0;
+}
+
+p.topicdetails {
+	margin: 1px 0;
+}
+
+.postapprove img, .postreported img {
+	padding-top: 5px;
+	vertical-align: bottom;
+}
+
+.postauthor { color: #000000; }
+.postdetails { color: #000000; }
+
+.postbody {
+	font-family: "Lucida Grande", "Trebuchet MS", Helvetica, Arial, sans-serif;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+.postbody li, ol, ul {
+	margin: 0 0 0 1.5em;
+}
+
+.rtl .postbody li, .rtl ol, .rtl ul {
+	margin: 0 1.5em 0 0;
+}
+
+.posthilit {
+	background-color: yellow;
+}
+
+.nav {
+	margin: 0;
+	color: black;
+	font-weight: bold;
+}
+
+.pagination {
+	padding: 4px;
+	color: black;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.cattitle {
+
+}
+
+.gen {
+	margin: 1px 1px;
+	font-size: 1.2em;
+}
+
+.genmed {
+	margin: 1px 1px;
+	font-size: 1.1em;
+}
+
+.gensmall {
+	margin: 1px 1px;
+	font-size: 1em;
+}
+
+.copyright {
+	color: #55515D;
+	font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+.titles {
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.3em;
+	text-decoration: none;
+}
+
+.error {
+	color: red;
+}
+
+
+/* Tables
+ ------------ */
+th {
+	background: url('./images/cellpic3.png') repeat-x;
+	border: 1px solid #49434D;
+	color: #FFF;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 7px 5px;
+	white-space: nowrap;
+}
+
+td {
+	padding: 2px;
+}
+td.profile {
+	padding: 4px;
+}
+
+.tablebg {
+	background-color: transparent;
+}
+
+.catdiv {
+	height: 28px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: white url('./images/cellpic2.png') repeat-x;
+	border: 1px solid #49434D;
+}
+.rtl .catdiv {
+	background: white url('./images/cellpic2.png') repeat-x;
+	border: 1px solid #49434D;
+}
+
+.cat {
+	background: #F6E2FA url('./images/cellpic2.png') repeat-x;
+	border: 1px solid #49434D;
+	color: #000;
+	height: 28px;
+	margin: 10px;
+	padding: 0;
+	text-indent: 4px;
+}
+
+.cattopic {
+	height: 28px;
+	margin: 10px;
+	padding: 0;
+	border: 0;
+	color: #000;
+	background: #F6E2FA url('./images/cellpic2.png');
+	border: 1px solid #49434D;
+	text-indent: 4px;
+}
+
+.row1 {
+	background: #AFB0BD;
+	padding: 5px;
+	border: 1px solid #49434d;
+}
+
+.row2 {
+	background: #AFB0BD;
+	padding: 5px;
+	border: 1px solid #49434d;
+}
+
+.row3 {
+	background: #F6E2FA url('./images/cellpic2.png');
+	border: 1px solid #49434d;
+	padding: 5px;
+}
+
+.spacer {
+	background-color: #D7D7D7;
+}
+
+hr {
+	background-color: #D7D7D7;
+	border-width: 0;
+	color: #D7D7D7;
+	height: 1px;
+}
+
+.legend {
+	color: #FFF;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+.topic_legend {
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+/* --- Links --- */
+a:focus,
+a:link,
+a:visited {
+	color: #2E233D;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #322B3C;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #2E233D;
+	text-decoration: none;
+}
+
+a.forumlink,
+a.forumlink:active,
+a.forumlink:focus,
+a.forumlink:link,
+a.forumlink:visited {
+	color: #2E233D;
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a.forumlink:hover {
+	color: #2E233D;
+}
+
+a.topictitle,
+a.topictitle:active,
+a.topictitle:focus,
+a.topictitle:link,
+a.topictitle:visited {
+	margin: 1px 0;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+a.topictitle:hover {
+	color: #2E233D;
+}
+
+.postreported,
+.postreported a:focus,
+.postreported a:link,
+.postreported a:visited,
+.postreported a:hover,
+.postreported a:active {
+	color: red;
+	font-size: 1.1em;
+	font-weight: normal;
+	margin: 1px 0;
+	/* text-shadow: -1px 0 1px rgba(0,0,0,0.85); */
+}
+
+.postapprove,
+.postapprove a:focus,
+.postapprove a:link,
+.postapprove a:visited,
+.postapprove a:hover,
+.postapprove a:active {
+	color: green;
+	font-size: 1.1em;
+	font-weight:  normal;
+	margin: 1px 0;
+	/* text-shadow: -1px 1px 1px rgba(0,0,0,0.85); */
+}
+
+/* Links adjustment to correctly display an order of rtl/ltr mixed content */
+.rtl a {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+/* CSS spec requires a:link, a:visited, a:hover and a:active rules to be specified in this order. */
+/* See http://www.phpbb.com/bugs/phpbb3/59685 */
+
+th a,
+th a:focus,
+th a:link,
+th a:visited,
+th a:active {
+	color: #2E233D !important;
+	text-decoration: none;
+}
+
+th a:hover {
+	text-decoration: underline;
+}
+
+
+/* Form Elements
+ ------------ */
+form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+input {
+	background-color: #FAFAFA;
+	border: 1px solid #000;
+	color: #333;
+	font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	padding: 1px;
+}
+
+textarea {
+	background-color: #FAFAFA;
+	border: 1px solid #000;
+	color: #333;
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.3em; 
+	font-weight: normal;
+	line-height: 1.4em;
+	padding: 2px;
+}
+
+select {
+	color: #333333;
+	background-color: #FAFAFA;
+	font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	border: 1px solid #333;
+	padding: 1px;
+}
+
+option {
+	padding: 0 1em 0 0;
+}
+
+option.disabled-option {
+	color: graytext;
+}
+
+.rtl option {
+	padding: 0 0 0 1em;
+}
+
+input.radio {
+	border: none;
+	background-color: transparent;
+}
+
+.post {
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.btnbbcode {
+	background: url("./images/cellpic3.png") repeat-x;
+	border: 1px solid #7F808A;
+	color: #FFF;
+	font-family: "Lucida Grande", Verdana, Helvetica, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.btnbbcode:hover {
+	border: 1px solid #333;
+}
+
+.btnmain {
+	background: url("./images/cellpic3.png") repeat-x;
+	border: 1px solid #7F808A;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 1px 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.btnmain:hover {
+	border: 1px solid #333;
+}
+
+.btnlite {
+	background: url("./images/cellpic3.png") repeat-x;
+	border: 1px solid #7F808A;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 1.1em;
+	font-weight: normal;
+	padding: 1px 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.btnlite:hover {
+	border: 1px solid #333;
+}
+
+.btnfile {
+	background: #FFF;
+	border: 1px solid #7F808A;
+	font-size: 1.1em;
+	padding: 1px 5px;
+}
+
+.btnfile:hover {
+	border: 1px solid #000;
+}
+
+.helpline {
+	background: #FFF url("./images/cellpic2.png") repeat-x;
+	border: 1px solid #7F808A;
+}
+
+
+/* --- BBCode --- */
+.attachtitle,
+.codetitle,
+.quotetitle {
+	background: white url("./images/cellpic2.png") repeat-x;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
+	border-color: #7F808A;
+	color: #333333;
+	font-size: 0.85em;
+	font-weight: bold;
+	margin: 10px 5px 0 5px;
+	padding: 4px;
+}
+
+.quotetitle .quotetitle {
+	font-size: 1em;
+}
+
+.attachcontent,
+.quotecontent {
+	background-color: #FAFAFA;
+	border-color: #7F808A;
+	border-style: solid;
+	border-width: 1px;
+	color: #333;
+	font-family: "Lucida Grande", "Trebuchet MS", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.4em;
+	margin: 0 5px 10px 5px;
+	padding: 5px;
+}
+
+.attachcontent {
+	font-size: 0.85em;
+}
+
+.codecontent {
+	background-color: #FAFAFA;
+	border-color: #7F808A;
+	border-style: solid;
+	border-width: 1px;
+	color: #333333;
+	direction: ltr;
+	font-family: Monaco, 'Courier New', monospace;
+	font-size: 0.85em;
+	font-weight: normal;
+	margin: 0 5px 10px 5px;
+	padding: 5px;
+}
+
+.syntaxbg { color: #FFFFFF; }
+.syntaxcomment { color: #808080; }
+.syntaxdefault { color: #5E5E5E; }
+.syntaxhtml { color: #000000; }
+.syntaxkeyword { color: #3C3C3C; }
+.syntaxstring { color: #6F6F6F; }
+
+/* --- Private messages --- */
+.pm_marked_colour {}
+.pm_replied_colour {}
+.pm_friend_colour {}
+.pm_foe_colour {}
+
+/* --- Misc --- */
+img {
+	border: none;
+}
+
+.sep {
+	background-color: #A7A7A7;
+	color: black;
+}
+
+table.colortable td {
+	padding: 0;
+}
+
+pre {
+	font-family: Monaco, 'Courier New', monospace;
+	font-size: 1.1em;
+}
+.nowrap {
+	white-space: nowrap;
+}
+
+.username-coloured {
+	font-weight: bold;
+}
+
+/* --- Main Round Corners --- */
+#wrapbg {
+	background: #918599 url('./images/ct.png') top repeat-x;
+	margin: 10px 8px 0 8px;
+}
+
+#wrapleft {
+	background: transparent url('./images/ctl.png') top left no-repeat;
+}
+
+#wrapright {
+	background: transparent url('./images/ctr.png') top right no-repeat;
+}
+
+#cb {
+	background: transparent url('./images/cb.png') bottom repeat-x;
+}
+
+#wrapbotleft {
+	background: transparent url('./images/cbl.png') bottom left no-repeat;
+}
+
+#wrapbotright {
+	background: transparent url('./images/cbr.png') bottom right no-repeat;
+	padding: 2px 5px 5px 5px;
+}
+
+/* --- Top Menu --- */
+.topmenu {
+	background: transparent;
+	float: right;
+}
+
+ul.topmenu {
+	display: block;
+	float: left;
+}
+
+ul.topmenu li {
+	float: left;
+	list-style: none outside none;
+	margin-right: 5px;
+	min-width: 60px;
+	padding-top: 5px;
+	position: relative;
+	text-align: center;
+}
+
+ul.topmenu li a,
+ul.topmenu li a:active,
+ul.topmenu li a:focus,
+ul.topmenu li a:link,
+ul.topmenu li a:visited {
+	display: block;
+	font-size: 1em;
+	height: 18px;
+	outline: none;
+	padding-top: 60px;
+	text-shadow: 1px 0px 1px rgba(0,0,0,0.5);
+}
+
+.topmenu li a:hover  {
+	color: #322B3C;
+	text-decoration: underline;
+}
+
+.topmenu li.topmenu-home a {
+	background: transparent url("./images/topmenu-home.png") top no-repeat;
+}
+
+.topmenu li.topmenu-faq a {
+	background: transparent url("./images/topmenu-faq.png") top no-repeat;
+}
+
+.topmenu li.topmenu-ucp a {
+	background: transparent url("./images/topmenu-ucp.png") top no-repeat;
+}
+
+.topmenu li.topmenu-pm a {
+	background: transparent url("./images/topmenu-pm.png") top no-repeat;
+}
+
+.topmenu li.topmenu-search a {
+	background: transparent url("./images/topmenu-search.png") top no-repeat;
+}
+
+.topmenu li.topmenu-members a {
+	background: transparent url("./images/topmenu-members.png") top no-repeat;
+}
+
+.topmenu li.topmenu-register a {
+	background: transparent url("./images/topmenu-register.png") top no-repeat;
+}
+
+.topmenu li.topmenu-login a {
+	background: transparent url("./images/topmenu-login.png") top no-repeat;
+}
+
+/* --- Breadcrumb --- */
+.bc_menu_bg{
+	background: url('./images/bc_menu_bg.png') bottom left repeat-x;
+	height: 22px;
+	margin: 5px 0;
+}
+
+.bc_menu_left {
+	background: url('./images/bc_menu_left.png') bottom left no-repeat;
+	padding-left: 5px;
+}
+
+.bc_menu_right {
+	background: url('./images/bc_menu_right.png') bottom right no-repeat;
+	padding-right: 5px;
+}
+
+.bc_menu_title {
+	color: #000000;
+	font-size: 1.1em;
+	font-weight: normal;
+	padding-top: 5px;
+}
+
+/* --- Whois / Stats --- */
+#birthday-img {
+	background: transparent url("./images/icon_birthday.gif") left no-repeat;
+	border: 0;
+	padding-left: 18px;
+}
+
+#stats-img {
+	background: transparent url("./images/icon_stats.gif") left no-repeat;
+	border: 0;
+	padding-left: 18px;
+}
+
+#whois-img {
+	background: transparent url("./images/icon_whois.gif") left no-repeat;
+	border: 0;
+	padding-left: 18px;
+}

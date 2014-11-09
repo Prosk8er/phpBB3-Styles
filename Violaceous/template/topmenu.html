@@ -1,0 +1,14 @@
+<div class="topmenu">
+	<ul class="topmenu">
+		<li class="topmenu-home"><a href="{U_INDEX}"><!-- {SITENAME} -->Home</a></li>
+		<li class="topmenu-faq"><a href="{U_FAQ}">{L_FAQ}</a></li>
+		<li class="topmenu-search"><a href="{U_SEARCH}">{L_SEARCH}</a></li>
+		<!-- IF not S_IS_BOT -->
+		<!-- IF S_DISPLAY_MEMBERLIST --><li class="topmenu-members"><a href="{U_MEMBERLIST}">{L_MEMBERLIST}</a></li><!-- ENDIF -->
+		<!-- IF not S_IS_BOT and S_USER_LOGGED_IN --><!-- IF S_DISPLAY_PM --><li class="topmenu-pm"><a href="{U_PRIVATEMSGS}">{PRIVATE_MESSAGE_INFO}</a></li><!-- ENDIF --><!-- ENDIF -->
+		<!-- IF S_USER_LOGGED_IN --><li class="topmenu-ucp"><a href="{U_PROFILE}">{L_PROFILE}</a></li><!-- ENDIF -->
+		<!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED --><li class="topmenu-register"><a href="{U_REGISTER}">{L_REGISTER}</a></li><!-- ENDIF -->
+		<li class="topmenu-login"><a href="{U_LOGIN_LOGOUT}">{L_LOGIN_LOGOUT}</a></li>
+		<!-- ENDIF -->
+	</ul>
+</div>
