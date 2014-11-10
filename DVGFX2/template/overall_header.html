@@ -1,17 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" dir="{S_CONTENT_DIRECTION}" lang="{S_USER_LANG}" xml:lang="{S_USER_LANG}">
+<!DOCTYPE html>
+<html dir="{S_CONTENT_DIRECTION}" lang="{S_USER_LANG}">
 <head>
-
-<meta http-equiv="content-type" content="text/html; charset={S_CONTENT_ENCODING}" />
-<meta http-equiv="content-language" content="{S_USER_LANG}" />
-<meta http-equiv="content-style-type" content="text/css" />
-<meta http-equiv="imagetoolbar" content="no" />
-<meta name="resource-type" content="document" />
-<meta name="distribution" content="global" />
-<meta name="keywords" content="" />
-<meta name="description" content="" />
+<meta charset="utf-8">
 {META}
-<title>{SITENAME} &rsaquo; <!-- IF S_IN_MCP -->{L_MCP} &rsaquo; <!-- ELSEIF S_IN_UCP -->{L_UCP} &rsaquo; <!-- ENDIF -->{PAGE_TITLE}</title>
+<title><!-- IF UNREAD_NOTIFICATIONS_COUNT -->({UNREAD_NOTIFICATIONS_COUNT}) <!-- ENDIF --><!-- IF not S_VIEWTOPIC and not S_VIEWFORUM -->{SITENAME} &rsaquo; <!-- ENDIF --><!-- IF S_IN_MCP -->{L_MCP} &rsaquo; <!-- ELSEIF S_IN_UCP -->{L_UCP} &rsaquo; <!-- ENDIF -->{PAGE_TITLE}<!-- IF S_VIEWTOPIC or S_VIEWFORUM --> &rsaquo; {SITENAME}<!-- ENDIF --></title>
 
 <!-- IF S_ENABLE_FEEDS -->
 	<!-- IF S_ENABLE_FEEDS_OVERALL --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {SITENAME}" href="{U_FEED}" /><!-- ENDIF -->
@@ -23,13 +15,15 @@
 	<!-- IF S_ENABLE_FEEDS_TOPIC and S_TOPIC_ID --><link rel="alternate" type="application/atom+xml" title="{L_FEED} - {L_TOPIC} - {TOPIC_TITLE}" href="{U_FEED}?f={S_FORUM_ID}&amp;t={S_TOPIC_ID}" /><!-- ENDIF -->
 <!-- ENDIF -->
 
+<!-- IF U_CANONICAL -->
+	<link rel="canonical" href="{U_CANONICAL}" />
+<!-- ENDIF -->
+
 <link rel="stylesheet" href="{T_STYLESHEET_LINK}" type="text/css" />
+<link rel="stylesheet" href="{T_STYLESHEET_LANG_LINK}" type="text/css" />
 
 <script type="text/javascript">
 // <![CDATA[
-<!-- IF S_USER_PM_POPUP and S_NEW_PM -->
-	popup('{UA_POPUP_PM}', 400, 225, '_phpbbprivmsg');
-<!-- ENDIF -->
 
 function popup(url, width, height, name)
 {
@@ -44,9 +38,9 @@ function popup(url, width, height, name)
 
 function jumpto()
 {
-	var page = prompt('{LA_JUMP_PAGE}:', '{ON_PAGE}');
+	var page = prompt('{LA_JUMP_PAGE}{L_COLON}', '{CURRENT_PAGE}');
 	var per_page = '{PER_PAGE}';
-	var base_url = '{A_BASE_URL}';
+	var base_url = '{BASE_URL|e('js')}';
 
 	if (page !== null && !isNaN(page) && page == Math.floor(page) && page > 0)
 	{
@@ -76,11 +70,7 @@ function find_username(url)
 */
 function marklist(id, name, state)
 {
-	var parent = document.getElementById(id);
-	if (!parent)
-	{
-		eval('parent = document.' + id);
-	}
+	var parent = document.getElementById(id) || document[id];
 
 	if (!parent)
 	{
@@ -88,7 +78,7 @@ function marklist(id, name, state)
 	}
 
 	var rb = parent.getElementsByTagName('input');
-	
+
 	for (var r = 0; r < rb.length; r++)
 	{
 		if (rb[r].name.substr(0, name.length) == name)
@@ -138,19 +128,30 @@ function marklist(id, name, state)
 
 // ]]>
 </script>
-</head>
-<body class="{S_CONTENT_DIRECTION}">
 
-<a name="top"></a>
+<!-- EVENT overall_header_head_append -->
+
+{$STYLESHEETS}
+
+<!-- EVENT overall_header_stylesheets_after -->
+
+</head>
+<body class="{S_CONTENT_DIRECTION} {BODY_CLASS}">
+
+<!-- EVENT overall_header_body_before -->
+
+<a name="top" class="anchor"></a>
 
 <div id="wrapheader">
 	<ul id="navmenu">
 		<li class="first"><a href="{U_INDEX}">{L_INDEX}</a></li>
+		<!-- EVENT overall_header_navigation_prepend -->
 		<li><a href="{U_FAQ}">{L_FAQ}</a></li>
 		<!-- IF S_DISPLAY_SEARCH --><li><a href="{U_SEARCH}">{L_SEARCH}</a></li><!-- ENDIF -->
 		<!-- IF S_DISPLAY_MEMBERLIST --><li><a href="{U_MEMBERLIST}">{L_MEMBERLIST}</a></li><!-- ENDIF -->
+		<!-- IF S_NOTIFICATIONS_DISPLAY and not S_IS_BOT and S_USER_LOGGED_IN --><li><a href="{U_VIEW_ALL_NOTIFICATIONS}">{L_NOTIFICATIONS}</a></li><!-- ENDIF -->
 		<!-- IF S_USER_LOGGED_IN -->
-			<!-- IF S_DISPLAY_PM --><li><a href="{U_PRIVATEMSGS}">{PRIVATE_MESSAGE_INFO}</a></li><!-- ENDIF -->
+			<!-- IF S_DISPLAY_PM --><li><a href="{U_PRIVATEMSGS}">{L_PRIVATE_MESSAGES}</a></li><!-- ENDIF -->
 			<li><a href="{U_PROFILE}">{L_PROFILE}</a></li>
 		<!-- ENDIF -->
 		<!-- IF not S_USER_LOGGED_IN and not S_IS_BOT --><li><a href="{U_LOGIN_LOGOUT}">{L_LOGIN}</a></li><!-- ENDIF -->
@@ -158,12 +159,13 @@ function marklist(id, name, state)
 		<!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) -->
 			<li><a href="{U_REGISTER}">{L_REGISTER}</a></li>
 		<!-- ENDIF -->
+		<!-- EVENT overall_header_navigation_append -->
 	</ul>
 
 	<div id="logodesc">
 		<table width="100%" cellspacing="0">
 		<tr>
-			<td><a href="{U_INDEX}">{SITE_LOGO_IMG}</a></td>
+			<td><a href="<!-- IF U_SITE_HOME -->{U_SITE_HOME}<!-- ELSE -->{U_INDEX}<!-- ENDIF -->" class="imageset">{SITE_LOGO_IMG}</a></td>
 			<td width="100%" align="center">
 				<h1>{SITENAME}</h1>
 				<span class="gen">{SITE_DESCRIPTION}</span>
@@ -173,6 +175,8 @@ function marklist(id, name, state)
 	</div>
 
 </div>
+
+<!-- EVENT overall_header_page_body_before -->
 
 <div id="wrapcentre">
 
@@ -187,6 +191,11 @@ function marklist(id, name, state)
 
 	<br style="clear: both;" />
 
+	<!-- DEFINE $S_MICRODATA = 1 -->
+	<!-- DEFINE $OVERALL_HEADER_BREADCRUMBS = 1 -->
 	<!-- INCLUDE breadcrumbs.html -->
+	<!-- UNDEFINE $OVERALL_HEADER_BREADCRUMBS -->
+	<!-- DEFINE $S_MICRODATA = 0 -->
 
 	<br />
+	<!-- EVENT overall_header_content_before -->

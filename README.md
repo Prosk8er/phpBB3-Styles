@@ -1,1 +1,1 @@
-My styles for phpBB3
+My styles for phpBB 3.1.x
