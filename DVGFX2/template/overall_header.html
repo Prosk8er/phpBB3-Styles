@@ -156,6 +156,7 @@ function marklist(id, name, state)
 		<!-- ENDIF -->
 		<!-- IF not S_USER_LOGGED_IN and not S_IS_BOT --><li><a href="{U_LOGIN_LOGOUT}">{L_LOGIN}</a></li><!-- ENDIF -->
 		<!-- IF S_USER_LOGGED_IN and not S_IS_BOT --><li><a href="{U_LOGIN_LOGOUT}">{L_LOGOUT}</a></li><!-- ENDIF -->
+		<!-- IF U_RESTORE_PERMISSIONS --><li><a href="{U_RESTORE_PERMISSIONS}">{L_RESTORE_PERMISSIONS}</a></li><!-- ENDIF -->
 		<!-- IF not S_USER_LOGGED_IN and S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) -->
 			<li><a href="{U_REGISTER}">{L_REGISTER}</a></li>
 		<!-- ENDIF -->
