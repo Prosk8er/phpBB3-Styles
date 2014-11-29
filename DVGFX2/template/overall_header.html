@@ -144,7 +144,7 @@ function marklist(id, name, state)
 
 <div id="wrapheader">
 	<ul id="navmenu">
-		<li class="first"><a href="{U_INDEX}">{L_INDEX}</a></li>
+		<li class="first"><a href="<!-- IF U_SITE_HOME -->{U_SITE_HOME}<!-- ELSE -->{U_INDEX}<!-- ENDIF -->">{L_SITE_HOME}</a></li>
 		<!-- EVENT overall_header_navigation_prepend -->
 		<li><a href="{U_FAQ}">{L_FAQ}</a></li>
 		<!-- IF S_DISPLAY_SEARCH --><li><a href="{U_SEARCH}">{L_SEARCH}</a></li><!-- ENDIF -->
