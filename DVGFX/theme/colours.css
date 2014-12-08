@@ -40,6 +40,14 @@ hr {
 	box-shadow: 0 0 10px #d2d2d2;
 }
 
+.search-box button.search-icon {
+	border: 1px solid #000;
+}
+
+.search-box a.button {
+	border: 1px solid #000;
+}
+
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 #wrap {
