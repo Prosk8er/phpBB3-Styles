@@ -871,7 +871,7 @@ ul.cplist {
 @media only screen and (max-width: 900px), only screen and (max-device-width: 900px)
 {
 	#navigation a, .rtl #navigation a {
-		background: #B2C2CF;
+		background: #070707;
 	}
 }
 
