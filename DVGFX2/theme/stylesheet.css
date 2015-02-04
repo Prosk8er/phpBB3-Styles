@@ -1,7 +1,7 @@
 /*  phpBB3 Style Sheet
     --------------------------------------------------------------
 	Style name:			DVGFX2
-	Based on style:		subsilver2
+	Based on style:		subSilver (the default phpBB 2.0.x style)
 	Original author:	Tom Beddard ( http://www.subblue.com/ )
 	Modified by:     	Prosk8er ( http://gotskillslounge.com/ )
     --------------------------------------------------------------
@@ -190,7 +190,7 @@ p.searchbar {
 	margin-bottom: 3px;
 	white-space: nowrap;
 	width: 100%;
-} 
+}
 
 p.searchbarreg {
 	float: right;
@@ -306,7 +306,11 @@ p.topicdetails {
 	text-decoration: none;
 }
 
-.error {
+.online {
+	color: green;
+}
+
+.offline, .error, .inactive {
 	color: #990000;
 }
 
@@ -383,6 +387,10 @@ td.profile {
 
 .spacer {
 	background-color: #2E2E31;
+}
+
+.current {
+	background-color: lightblue;
 }
 
 hr {
@@ -496,7 +504,7 @@ textarea {
 	background-color: #2E2E31;
 	color: #EAE5E5;
 	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
-	font-size: 1.3em; 
+	font-size: 1.3em;
 	line-height: 1.4em;
 	font-weight: normal;
 	border: 1px solid #000;
@@ -577,6 +585,10 @@ input.radio {
 .helpline {
 	background-color: #2E2E31;
 	border-style: none;
+}
+
+input:focus, select:focus, textarea:focus {
+	outline-style: none;
 }
 
 /* --- BBCode --- */

@@ -1,7 +1,7 @@
 /*  phpBB3 Style Sheet
     --------------------------------------------------------------
 	Style name:			Violaceous
-	Based on style:		subsilver2
+	Based on style:		subSilver (the default phpBB 2.0.x style)
 	Original author:	Tom Beddard ( http://www.subblue.com/ )
 	Modified by:     	Prosk8er ( http://gotskillslounge.com/ )
     --------------------------------------------------------------
@@ -90,6 +90,7 @@ body {
 #pageheader { }
 #pagecontent { }
 #pagefooter { }
+
 #poll { }
 #postrow { }
 #postdata { }
@@ -202,7 +203,8 @@ p.datetime {
 p.searchbar {
 	padding: 2px 5px 0 5px;
 	white-space: nowrap;
-} 
+}
+
 p.searchbarreg {
 	margin: 0;
 	float: right;
@@ -297,7 +299,11 @@ p.topicdetails {
 	text-decoration: none;
 }
 
-.error {
+.online {
+	color: green;
+}
+
+.offline, .error, .inactive {
 	color: red;
 }
 
@@ -379,6 +385,10 @@ td.profile {
 
 .spacer {
 	background-color: #D7D7D7;
+}
+
+.current {
+	background-color: lightblue;
 }
 
 hr {
@@ -522,7 +532,7 @@ textarea {
 	border: 1px solid #000;
 	color: #333;
 	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
-	font-size: 1.3em; 
+	font-size: 1.3em;
 	font-weight: normal;
 	line-height: 1.4em;
 	padding: 2px;
@@ -627,6 +637,9 @@ input.radio {
 	border: 1px solid #7F808A;
 }
 
+input:focus, select:focus, textarea:focus {
+	outline-style: none;
+}
 
 /* --- BBCode --- */
 .attachtitle,

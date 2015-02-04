@@ -120,7 +120,7 @@
 					<!-- IF postrow.U_POST_AUTHOR --><a href="{postrow.U_POST_AUTHOR}">{postrow.POSTER_AVATAR}</a><!-- ELSE -->{postrow.POSTER_AVATAR}<!-- ENDIF -->
 				<!-- ENDIF -->
 				<!-- IF not postrow.U_POST_AUTHOR --><strong>{postrow.POST_AUTHOR_FULL}</strong><!-- ELSE -->{postrow.POST_AUTHOR_FULL}<br /><!-- ENDIF -->
-				<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG -->{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><!-- ENDIF -->{postrow.RANK_IMG}<!-- ENDIF -->
+				<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG -->{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><br /><!-- ENDIF -->{postrow.RANK_IMG}<!-- ENDIF -->
 			</div>
 			<div class="mainpostprofile-right">
 				<!-- IF postrow.POSTER_POSTS != '' --><strong>{L_POSTS}:</strong> {postrow.POSTER_POSTS}<br /><!-- ENDIF -->
