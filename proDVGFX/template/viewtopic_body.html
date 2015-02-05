@@ -141,9 +141,11 @@
 						<!-- ENDIF -->
 						<!-- EVENT viewtopic_body_avatar_after -->
 					</div>
+					<!-- EVENT viewtopic_body_post_author_before -->
 					<!-- IF not postrow.U_POST_AUTHOR --><strong>{postrow.POST_AUTHOR_FULL}</strong><!-- ELSE -->{postrow.POST_AUTHOR_FULL}<br /><!-- ENDIF -->
+					<!-- EVENT viewtopic_body_post_author_after -->
 				</div>
-				<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG -->{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><!-- ENDIF -->{postrow.RANK_IMG}<!-- ENDIF -->
+				<!-- IF postrow.RANK_TITLE or postrow.RANK_IMG -->{postrow.RANK_TITLE}<!-- IF postrow.RANK_TITLE and postrow.RANK_IMG --><br /><!-- ENDIF -->{postrow.RANK_IMG}<!-- ENDIF -->
 			</div>
 			<div class="mainpostprofile-right">
 				<!-- IF postrow.POSTER_POSTS != '' --><strong>{L_POSTS}{L_COLON}</strong> <!-- IF postrow.U_SEARCH !== '' --><a href="{postrow.U_SEARCH}"><!-- ENDIF -->{postrow.POSTER_POSTS}<!-- IF postrow.U_SEARCH !== '' --></a><!-- ENDIF --><br /><!-- ENDIF -->
@@ -318,7 +320,7 @@
 
 		</div>
 
-		<div class="back2top"><a href="#wrap" class="top" title="{L_BACK_TO_TOP}">{L_BACK_TO_TOP}</a></div>
+		<div class="back2top"><a href="#top" class="top" title="{L_BACK_TO_TOP}">{L_BACK_TO_TOP}</a></div>
 
 		</div>
 	</div>
