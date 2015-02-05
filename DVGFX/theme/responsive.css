@@ -488,7 +488,7 @@ fieldset.polls dd.resultbar, fieldset.polls dd.poll_option_percent {
 	top: 15px;
 }
 
-.online {
+.online, .offline {
 	background-size: 40px;
 }
 

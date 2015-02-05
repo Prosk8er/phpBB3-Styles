@@ -765,7 +765,7 @@ dd.profile-contact {
 	margin-right: -14px;
 }
 
-.online {
+.online, .offline {
 	background-image: none;
 	background-position: 100% 0;
 	background-repeat: no-repeat;

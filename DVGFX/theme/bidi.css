@@ -584,7 +584,7 @@ li.breadcrumbs span:first-child > a {
 	float: right;
 }
 
-.rtl .online {
+.rtl .online, .rtl .offline {
 	background-position: 0 0;
 }
 
