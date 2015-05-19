@@ -167,9 +167,9 @@ dl.details dd {
 ---------------------------------------- */
 
 .pagination li a {
-	color: #b20304;
 	background: #000;
 	border-color: #000;
+	color: #b20304;
 }
 
 .pagination li.ellipsis span {
@@ -182,8 +182,8 @@ dl.details dd {
 }
 
 .pagination li a:hover, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
-	border-color: #000;
 	background: #1F1F1F;
+	border-color: #000;
 	color: #FFFFFF;
 }
 
@@ -269,13 +269,13 @@ a:hover {
 
 /* Post body links */
 .postlink {
-	color: #368AD2;
 	border-bottom-color: #368AD2;
+	color: #368AD2;
 }
 
 .postlink:visited {
-	color: #5D8FBD;
 	border-bottom-color: #5D8FBD;
+	color: #5D8FBD;
 }
 
 .postlink:hover {
@@ -660,7 +660,6 @@ Colours and backgrounds for buttons.css
 .icon-register				{ background-image: url("./images/icon_register.png"); }
 .icon-search, .responsive-search a	{ background-image: url("./images/icon_search.png"); }
 .icon-search-active			{ background-image: url("./images/subforum_read.gif"); }
-.icon-search-advanced		{ background-image: url("./images/icon_search_adv.gif"); }
 .icon-search-new			{ background-image: url("./images/subforum_unread.gif"); }
 .icon-search-self			{ background-image: url("./images/icon_topic_latest.gif"); }
 .icon-search-unanswered		{ background-image: url("./images/icon_post_target.gif"); }
