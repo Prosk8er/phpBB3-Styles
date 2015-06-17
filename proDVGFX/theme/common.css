@@ -58,6 +58,7 @@ body {
 	margin: 0;
 	padding: 27px 0;
 	word-wrap: break-word;
+	-webkit-print-color-adjust: exact;
 }
 
 h1 {
