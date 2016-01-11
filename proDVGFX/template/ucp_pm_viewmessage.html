@@ -27,8 +27,10 @@
 			</div>
 			{MESSAGE_AUTHOR_FULL}
 		</div>
+		<!-- EVENT ucp_pm_viewmessage_rank_before -->
 		<!-- IF RANK_TITLE -->{RANK_TITLE}<br /><!-- ENDIF -->
 		<!-- IF RANK_IMG -->{RANK_IMG}<br /><!-- ENDIF -->
+		<!-- EVENT ucp_pm_viewmessage_rank_after -->
 	</div>
 	<div class="mainpostprofile-right">
 		<strong>{L_POSTS}{L_COLON}</strong> <!-- IF U_AUTHOR_POSTS != '' --><a href="{U_AUTHOR_POSTS}">{AUTHOR_POSTS}</a><!-- ELSE -->{AUTHOR_POSTS}<!-- ENDIF --><br />
@@ -74,7 +76,9 @@
 
 	<div class="postbody">
 
-		<!-- IF U_DELETE or U_EDIT or U_QUOTE or U_REPORT -->
+		<!-- DEFINE $SHOW_PM_POST_BUTTONS = (U_EDIT or U_DELETE or U_REPORT or U_QUOTE) -->
+		<!-- EVENT ucp_pm_viewmessage_post_buttons_list_before -->
+		<!-- IF $SHOW_PM_POST_BUTTONS -->
 		<ul class="post-buttons">
 			<!-- EVENT ucp_pm_viewmessage_post_buttons_before -->
 			<!-- IF U_EDIT -->
@@ -100,6 +104,7 @@
 			<!-- EVENT ucp_pm_viewmessage_post_buttons_after -->
 		</ul>
 		<!-- ENDIF -->
+		<!-- EVENT ucp_pm_viewmessage_post_buttons_list_after -->
 
 		<h3 class="first">{SUBJECT}</h3>
 
