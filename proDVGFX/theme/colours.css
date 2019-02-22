@@ -237,18 +237,18 @@ dl.details dd {
 
 /* Jumpbox */
 .jumpbox .dropdown li {
-	border-top-color: #CCCCCC;
+	border-top-color: #000000;
 }
 
 .jumpbox-cat-link {
-	background-color: #0076b1;
-	border-top-color: #0076B1;
+	background-color: #2A2A2A;
+	border-top-color: #2A2A2A;
 	color: #FFFFFF;
 }
 
 .jumpbox-cat-link:hover {
-	background-color: #12A3EB;
-	border-top-color: #12A3EB;
+	background-color: #2A2A2A;
+	border-top-color: #2A2A2A;
 	color: #FFFFFF;
 }
 
@@ -261,15 +261,15 @@ dl.details dd {
 }
 
 .jumpbox .dropdown .pointer-inner {
-	border-color: #E1EBF2 transparent;
+	border-color: #2A2A2A transparent;
 }
 
 .jumpbox-sub-link {
-	background-color: #E1EBF2;
+	background-color: #2A2A2A;
 }
 
 .jumpbox-sub-link:hover {
-	background-color: #F1F8FF;
+	background-color: #2A2A2A;
 }
 
 /* Miscellaneous styles
@@ -722,12 +722,14 @@ Colours and backgrounds for buttons.css
 .sticky_unread_locked_mine										{ background-image: url("./images/sticky_unread_locked_mine.png"); }
 
 .topic_moved													{ background-image: url("./images/topic_moved.png"); }
+.pm_read,
 .topic_read														{ background-image: url("./images/topic_read.png"); }
 .topic_read_mine												{ background-image: url("./images/topic_read_mine.png"); }
 .topic_read_hot													{ background-image: url("./images/topic_read_hot.png"); }
 .topic_read_hot_mine											{ background-image: url("./images/topic_read_hot_mine.png"); }
 .topic_read_locked												{ background-image: url("./images/topic_read_locked.png"); }
 .topic_read_locked_mine											{ background-image: url("./images/topic_read_locked_mine.png"); }
+.pm_unread,
 .topic_unread													{ background-image: url("./images/topic_unread.png"); }
 .topic_unread_mine												{ background-image: url("./images/topic_unread_mine.png"); }
 .topic_unread_hot												{ background-image: url("./images/topic_unread_hot.png"); }
