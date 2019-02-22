@@ -1,5 +1,53 @@
 /* --- Custom CSS for or added to proDVGFX --- */
 /* --- Save a copy before changing --- */
+
+/* Border
+---------------------------------------- */
+.border-left {
+	background: url("./images/border_left.png") #191919 repeat-y 0 0;
+}
+
+.border-right {
+	background: url("./images/border_right.png") repeat-y 100% 0;
+}
+
+.border-top {
+	background: url("./images/border_top.png") repeat-x 0 0; 
+}
+
+.border-top-left {
+	background: url("./images/border_top_left.png") no-repeat 0 0;
+}
+
+.border-top-right {
+	background: url("./images/border_top_right.png") no-repeat 100% 0;
+	width: 100%;
+}
+
+.border-bottom {
+	background: url("./images/border_bottom2.png") repeat-x 0 100%;
+}
+
+.border-bottom span {
+	background: url("./images/border_bottom.png") no-repeat 0 0;
+	display: block;
+	height: 18px; 
+}
+
+.border-bottom span span {
+	background-position: 100% -18px;
+}
+
+.inside {
+	padding: 15px 15px 5px 15px;
+}
+
+.statbar {
+	background: #070707;
+}
+
+/* Poster Profile
+---------------------------------------- */
 .postprofile {
 	min-width: 20%;
 }
@@ -15,6 +63,8 @@
 	width: auto;
 }
 
+/* Tabs
+---------------------------------------- */
 .tabstats {
 	float: left;
 	margin: 5px 0;
