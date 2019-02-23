@@ -697,15 +697,6 @@ fieldset.polls dd div {
 
 /* Poster profile block
 ----------------------------------------*/
-.mainpostprofile {
-	border-bottom: 1px dotted;
-	float: left;
-	margin-bottom: 8px !important;
-	/*min-height: 80px;*/
-	padding-bottom: 5px;
-	width: 100%;
-}
-
 .postprofile {
 	float: left;
 }
@@ -719,14 +710,6 @@ fieldset.polls dd div {
 .postprofile dd {
 	overflow: hidden;
 	text-overflow: ellipsis;
-}
-
-/* Avatar position */
-.postprofile img {
-	background-position: top left !important;
-	float: left;
-	padding-right: 3px;
-	width: auto;
 }
 
 .postprofile strong {

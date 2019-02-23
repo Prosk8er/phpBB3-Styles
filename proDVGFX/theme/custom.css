@@ -52,8 +52,21 @@
 	min-width: 20%;
 }
 
+/* Avatar position */
+.postprofile img {
+	background-position: top left !important;
+	float: left;
+	padding-right: 3px;
+	width: auto;
+}
+
 .mainpostprofile {
+	border-bottom: 1px dotted;
+	float: left;
+	margin-bottom: 8px !important;
 	min-height: 58px;
+	padding-bottom: 5px;
+	width: 100%;
 }
 
 .mainpostprofile-right {
@@ -108,7 +121,7 @@ ul.tabNav li a:active, ul.tabNav li a:focus, ul.tabNav li a:link, ul.tabNav li a
 }
 
 ul.tabNav li a.selected, ul.tabNav li a:hover {
-	color: #b20304;
+	color: #B20304;
 	text-decoration: none;
 }
 
