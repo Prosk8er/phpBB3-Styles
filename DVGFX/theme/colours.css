@@ -414,7 +414,6 @@ dl.faq dt {
 /* Quote block */
 blockquote {
 	background-color: #282828;
-	background-image: url("./images/quote.png");
 	border-color: #000000;
 }
 
