@@ -141,9 +141,9 @@ a:hover	{ text-decoration: underline; }
 	border: 1px solid transparent;
 	border-radius: 20px;
 	margin: 0 auto;
-	min-width: 700px;
+	max-width: 900px;
+	min-width: 900px;
 	padding: 20px;
-	width: 900px;
 }
 
 @media only screen and (max-width: 1220px), only screen and (max-device-width: 1220px) {

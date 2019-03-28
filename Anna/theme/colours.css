@@ -92,17 +92,23 @@ a:hover	{ color: #A3C71B; }
 
 .forumbg {
 	background-color: #8197B3;
-	background-image: url("./images/bg_index.gif");
+	background-image: -webkit-linear-gradient(top, #6f8299 0%, #8096b2 2px, #8197b3 92px, #8197b3 100%);
+	background-image: linear-gradient(to bottom, #6f8299 0%,#8096b2 2px,#8197b3 92px,#8197b3 100%);
+	background-repeat: repeat-x;
 }
 
 .forabg {
 	background-color: #8197B3;
-	background-image: url("./images/bg_index.gif");
+	background-image: -webkit-linear-gradient(top, #6f8299 0%, #8096b2 2px, #8197b3 92px, #8197b3 100%);
+	background-image: linear-gradient(to bottom, #6f8299 0%,#8096b2 2px,#8197b3 92px,#8197b3 100%);
+	background-repeat: repeat-x;
 }
 
 .navbar {
 	background-color: #8197B3;
-	background-image: url("./images/bg_naver.gif");
+	background-image: -webkit-linear-gradient(top, #6f8299 0%, #8096b2 2px, #8197b3 92px, #8197b3 100%);
+	background-image: linear-gradient(to bottom, #6f8299 0%,#8096b2 2px,#8197b3 92px,#8197b3 100%);
+	background-repeat: repeat-x;
 }
 
 .panel {
