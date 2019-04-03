@@ -90,18 +90,9 @@ a:hover	{ color: #A3C71B; }
 	color: #FFFFFF;
 }
 
-.forumbg {
+.forumbg, .forabg {
 	background-color: #8197B3;
-	background-image: -webkit-linear-gradient(top, #6f8299 0%, #8096b2 2px, #8197b3 92px, #8197b3 100%);
-	background-image: linear-gradient(to bottom, #6f8299 0%,#8096b2 2px,#8197b3 92px,#8197b3 100%);
-	background-repeat: repeat-x;
-}
-
-.forabg {
-	background-color: #8197B3;
-	background-image: -webkit-linear-gradient(top, #6f8299 0%, #8096b2 2px, #8197b3 92px, #8197b3 100%);
-	background-image: linear-gradient(to bottom, #6f8299 0%,#8096b2 2px,#8197b3 92px,#8197b3 100%);
-	background-repeat: repeat-x;
+	background-image: url("./images/bg_index.gif");
 }
 
 .navbar {
