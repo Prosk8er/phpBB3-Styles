@@ -413,6 +413,7 @@ dl.faq dt {
 /* Quote block */
 blockquote {
 	background-color: #151816;
+	background-image: url("./images/quote.png");
 	border-color: #000;
 }
 
