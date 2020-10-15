@@ -298,6 +298,8 @@
 
 <!-- INCLUDE jumpbox.html -->
 
+{% EVENT viewforum_body_online_list_before %}
+
 <div class="tabstats">
 	<ul class="tabNav">
 		<li><a href="#first" class="first"><span>{L_WHO_IS_ONLINE}</span></a></li>
@@ -315,7 +317,7 @@
 
 	<div class="tabBG" id="second">
 		<div id="insidetabBG2">
-			<!-- IF S_DISPLAY_POST_INFO -->
+			<!-- IF S_IS_POSTABLE and rules|length -->
 				<h3>{L_FORUM_PERMISSIONS}</h3>
 				<p><!-- BEGIN rules -->{rules.RULE}<br /><!-- END rules --></p>
 			<!-- ENDIF -->

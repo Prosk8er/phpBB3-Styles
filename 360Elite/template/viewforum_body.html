@@ -298,6 +298,8 @@
 
 <!-- INCLUDE jumpbox.html -->
 
+{% EVENT viewforum_body_online_list_before %}
+
 <div class="bgstats">
 	<!-- IF S_DISPLAY_ONLINE_LIST -->
 		<div class="stat-block online-list">
@@ -306,7 +308,7 @@
 		</div>
 	<!-- ENDIF -->
 
-	<!-- IF S_DISPLAY_POST_INFO -->
+	<!-- IF S_IS_POSTABLE and rules|length -->
 		<div class="stat-block permissions">
 			<h5>{L_FORUM_PERMISSIONS}</h5>
 			<p><!-- BEGIN rules -->{rules.RULE}<br /><!-- END rules --></p>
