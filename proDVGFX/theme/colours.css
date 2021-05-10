@@ -85,7 +85,6 @@ a:hover {
 ---------------------------------------- */
 .wrap {
 	background-color: #1F1F1F;
-	/*border-color: #E6E9ED;*/
 }
 
 .headerbar {
@@ -96,10 +95,6 @@ a:hover {
 .forabg, .forumbg {
 	background: #101010 url("./images/bg_list.png") repeat-x;
 }
-
-/*.forumbg {
-	background: #090909 url("./images/f_bg.png") repeat-x;
-}*/
 
 .navbar {
 	background: #2A2A2A;
@@ -329,12 +324,7 @@ ul.topiclist dd {
 }
 
 li.row {
-	background: transparent /* #070707 url("./images/n_h.png") repeat-x*/;
-	border: 1px solid transparent;
-}
-
-li.row:hover {
-	background: transparent /* #303030 url("./images/n_h2.png") repeat-x*/;
+	background: transparent;
 	border: 1px solid transparent;
 }
 
@@ -344,6 +334,7 @@ li.row strong {
 
 li.row:hover {
 	background-color: transparent;
+	border: 1px solid transparent;
 }
 
 li.row:hover dd {
@@ -581,7 +572,6 @@ Colours and backgrounds for buttons.css
 	background-image: -webkit-linear-gradient(top, #303030 0%, #070707 100%);
 	background-image: linear-gradient(to bottom, #303030 0%, #070707 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#070707',GradientType=0 ); /* IE6-9 */
-	/*box-shadow: 0 0 0 1px #303030 inset;*/
 	-webkit-box-shadow: 0 0 0 1px #303030 inset;
 	color: #FFFFFF !important;
 }
@@ -791,7 +781,6 @@ ul.cplist {
 }
 
 .tabs .tab > a:hover {
-	/*background: #DDEDFB;*/
 	color: #CCCCCC;
 }
 
@@ -802,7 +791,6 @@ ul.cplist {
 	background-image: linear-gradient(to bottom, #070707 0%, #303030 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#070707', endColorstr='#303030', GradientType=0 ); /* IE6-9 */
 	border-color: #000000;
-	/*box-shadow: 0 1px 1px #F2F9FF inset;*/
 	color: #B20304;
 }
 
