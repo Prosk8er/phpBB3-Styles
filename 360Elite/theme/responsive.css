@@ -146,8 +146,6 @@
 	----------------------------------------*/
 	.headerbar, .navbar, .forabg, .forumbg, .post, .panel {
 		border-radius: 0;
-		margin-left: -5px;
-		margin-right: -5px;
 	}
 
 	.cp-main .forabg, .cp-main .forumbg, .cp-main .post, .cp-main .panel {
@@ -162,7 +160,7 @@
 		text-align: center;
 	}
 
-	.logo {
+	.logo, toplogo {
 		/* change display value to inline-block to show logo */
 		display: none;
 		float: none;
