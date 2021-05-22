@@ -48,7 +48,7 @@ a:hover {
 
 /* Notification mark read link */
 .dropdown-extended a.mark_read {
-	background-color: #FFFFFF;
+	background-color: #2A2A2A;
 }
 
 /* Post body links */
@@ -776,7 +776,6 @@ ul.cplist {
 	background-image: linear-gradient(to bottom, #303030 0%, #070707 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#070707', GradientType=0 ); /* IE6-9 */
 	border-color: #000000;
-	/*box-shadow: 0 1px 1px #F2F9FF inset;*/
 	color: #B20304;
 }
 

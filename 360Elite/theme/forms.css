@@ -412,8 +412,8 @@ input.button1:focus, input.button2:focus, input.button3:focus {
 	border-radius: 4px;
 	display: block;
 	float: right;
-	margin-right: 5px;
-	margin-top: 30px;
+	margin-right: 20px;
+	margin-top: 60px;
 }
 
 .search-header .inputbox { border: 0; }
@@ -431,4 +431,3 @@ input.search {
 .medium { width: 50%; }
 .narrow { width: 25%; }
 .tiny { width: 10%; }
-

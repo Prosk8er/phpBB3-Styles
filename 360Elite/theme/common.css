@@ -1170,7 +1170,7 @@ ul.linklist:after,
 	font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	text-align: left;
-	text-shadow: 1px 1px 1px white;
+	text-shadow: 1px 1px 1px black;
 	text-transform: uppercase;
 	line-height: 3em;
 	border-bottom: 1px solid;
