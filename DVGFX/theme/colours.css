@@ -45,7 +45,7 @@ a:hover	{ color: #CCCCCC; }
 
 /* Notification mark read link */
 .dropdown-extended a.mark_read {
-	background-color: #FFFFFF;
+	background-color: #282828;
 }
 
 /* Post body links */
@@ -792,12 +792,7 @@ ul.cplist {
 /* CP tabbed menu
 ----------------------------------------*/
 .tabs .tab > a {
-	background-color: #303030; /* Old browsers */ /* FF3.6+ */
-	background-image: -webkit-linear-gradient(top, #303030 0%, #070707 100%);
-	background-image: linear-gradient(to bottom, #303030 0%, #070707 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303030', endColorstr='#070707', GradientType=0 ); /* IE6-9 */
-	border-color: #000000;
-	/*box-shadow: 0 1px 1px #F2F9FF inset;*/
+	background: #303030;
 	color: #999999;
 }
 
@@ -879,7 +874,7 @@ ul.cplist {
 @media only screen and (max-width: 900px), only screen and (max-device-width: 900px)
 {
 	#navigation a, .rtl #navigation a {
-		background: #B2C2CF;
+		background: #303030;
 	}
 }
 
@@ -1109,7 +1104,7 @@ input.disabled {
 
 .dropdown-extended ul li:hover {
 	background-color: #282828;
-	color: #000000;
+	color: #FFFFFF;
 }
 
 .dropdown-extended .header, .dropdown-extended .footer {
@@ -1142,7 +1137,7 @@ input.disabled {
 }
 
 .dropdown .dropdown-contents {
-	background: #151515;
+	background: #191919;
 	border-color: #000000;
 	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
 }
