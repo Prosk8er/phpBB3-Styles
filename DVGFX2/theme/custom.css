@@ -1,3 +1,11 @@
+.border-bottom {
+	background: #2E2E31 url("./images/border_bottom.png") center repeat-x;
+	margin: 0 auto;
+	max-width: 980px;
+	min-width: 700px;
+	padding: 0px 20px 0px;
+}
+
 /* --- Menu --- */
 ul#navmenu {
 	background: transparent url("./images/navmenu.gif") repeat-x;
@@ -149,6 +157,10 @@ ul#navmenu li .row {
 }
 
 @media (max-width: 700px){
+	.border-bottom  {
+		display: none;
+	}
+
 	.dvg_legend {
 		display: inline-flex;
 		width: 100%;
