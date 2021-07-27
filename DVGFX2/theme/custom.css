@@ -1,0 +1,176 @@
+/* --- Menu --- */
+ul#navmenu {
+	background: transparent url("./images/navmenu.gif") repeat-x;
+	height: 46px;
+	line-height: 100%;
+	list-style: none;
+	margin-left: -10px;
+	padding: 0;
+	width: 1000px;
+}
+
+ul#navmenu li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+ul#navmenu li a, ul#navmenu li a:active, ul#navmenu li a:focus, ul#navmenu li a:link, ul#navmenu li a:visited {
+	border-right: 1px solid #252F3A;
+	color: #EAE5E5;
+	display: block;
+	font-family: "Helvetica", Arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0;
+	padding: 18px 10px;
+	text-decoration: none;
+	text-shadow: -1px 2px 1px rgba(46,46,49,1);
+	text-transform: capitalize;
+}
+
+ul#navmenu li a:hover {
+	background: transparent url("./images/navmenu_h.gif") repeat-x;
+	color: #EAE5E5;
+	text-decoration: none;
+}
+
+ul#navmenu li .row {
+	clear: both;
+	float: left;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+/* --- Whois / Stats --- */
+#whois-img {
+	background: transparent url("./images/icon_whois.gif") left no-repeat;
+	border: 0;
+	padding-left: 18px;
+}
+
+#stats-img {
+	background: transparent url("./images/icon_stats.gif") left no-repeat;
+	border: 0;
+	padding-left: 18px;
+}
+
+#birthday-img {
+	background: transparent url("./images/icon_birthday.gif") left no-repeat;
+	border: 0;
+	padding-left: 18px;
+}
+
+.faq-title {
+	background-color: #000000;
+	background-image: url("./images/cellpic1.png");
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	padding: 6px 0px;
+	text-align: center;
+}
+
+.phpbb_alert .alert_close {
+    color: #465968;
+}
+
+.dvg_stats {
+	display: table;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.dvg_left {
+	display: table-cell;
+	border: 1px solid #000000;
+	width: 50%;
+}
+
+.dvg_right {
+	display: table-cell;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	width: 50%;
+}
+
+.dvg_cat {
+	padding: 6px 0px;
+	background-color: #000000;
+	background-image: url("./images/cellpic1.png");
+	border-bottom: 1px solid #000000;
+	text-indent: 4px;
+}
+
+.dvg_cat2 {
+	padding: 6px 0px;
+	background-color: #000000;
+	background-image: url("./images/cellpic1.png");
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-top: 1px solid #000000;
+	text-indent: 4px;
+}
+
+.dvg_row {
+	background-image: url("./images/row.png");
+	background-repeat: repeat-x;
+	background-color: #2E2E31;
+	padding: 4px 0 0 4px;
+}
+
+.dvg_row2 {
+	background-image: url("./images/row.png");
+	background-repeat: repeat-x;
+	background-color: #2E2E31;
+	border: 1px solid #000000;
+	padding: 4px 0 4px 4px;
+}
+
+.dvg_legend {
+	text-align: center;
+	margin: 0 auto;
+	padding: 15px 0;	
+}
+
+.dvg_legend-icons li {
+	height: 32px;
+	background-repeat: no-repeat;
+	padding: 5px;
+	background-size: 32px;
+	display: inline-block;
+}
+
+.dvg_legend-icons li span.gensmall {
+	margin-left: 35px;
+}
+
+@media (max-width: 700px){
+	.dvg_legend {
+		display: inline-flex;
+		width: 100%;
+	}
+
+	.dvg_legend-icons span.gensmall {
+		margin-left: 15px;
+		margin-right: 0;
+		line-height: 0;
+	}
+
+	.dvg_legend-icons li {
+		margin-left:3px;
+	}
+
+	ul#navmenu {
+		display: none;
+	}
+
+	#whois-img, #stats-img, #birthday-img {
+		background: none;
+		border: 0;
+		padding-left: 0;
+	}
+}
