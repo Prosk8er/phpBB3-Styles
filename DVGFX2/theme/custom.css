@@ -12,9 +12,8 @@ ul#navmenu {
 	height: 46px;
 	line-height: 100%;
 	list-style: none;
-	margin-left: -10px;
+	margin: 0 -10px 0 -10px;
 	padding: 0;
-	width: 1000px;
 }
 
 ul#navmenu li {
@@ -29,7 +28,7 @@ ul#navmenu li a, ul#navmenu li a:active, ul#navmenu li a:focus, ul#navmenu li a:
 	color: #EAE5E5;
 	display: block;
 	font-family: "Helvetica", Arial, sans-serif;
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: bold;
 	margin: 0;
 	padding: 18px 10px;
