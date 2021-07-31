@@ -6,13 +6,13 @@
 		{% if not S_IS_BOT and S_DISPLAY_MEMBERLIST %}<li><a href="{{ U_MEMBERLIST }}" title="{{ lang('MEMBERLIST') }}">{{ lang('MEMBERLIST') }}</a></li>{% endif %}
 		{% if S_REGISTERED_USER %}
 			{% if S_DISPLAY_PM %}
-					<li>
-						{% if S_USER_UNREAD_PRIVMSG %}
-							<a href="{{ U_PRIVATEMSGS }}" title="{{ lang('UNREAD_MESSAGES') }}">{{ lang('UNREAD_MESSAGES') }}&nbsp;[{{ S_USER_UNREAD_PRIVMSG }}]</a>
-						{% else %}
-							<a href="{{ U_PRIVATEMSGS }}" title="{{ lang('PRIVATE_MESSAGES') }}">{{ lang('PRIVATE_MESSAGES') }}</a>
-						{% endif %}
-					</li>
+				<li>
+					{% if S_USER_UNREAD_PRIVMSG %}
+						<a href="{{ U_PRIVATEMSGS }}" title="{{ lang('UNREAD_MESSAGES') }}">{{ lang('UNREAD_MESSAGES') }}&nbsp;[{{ S_USER_UNREAD_PRIVMSG }}]</a>
+					{% else %}
+						<a href="{{ U_PRIVATEMSGS }}" title="{{ lang('PRIVATE_MESSAGES') }}">{{ lang('PRIVATE_MESSAGES') }}</a>
+					{% endif %}
+				</li>
 			{% endif %}
 			<li><a href="{{ U_PROFILE }}" title="{{ lang('PROFILE') }}">{{ lang('PROFILE') }}</a></li>
 		{% endif %}
