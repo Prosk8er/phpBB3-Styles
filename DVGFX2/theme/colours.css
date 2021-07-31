@@ -437,11 +437,11 @@ blockquote blockquote blockquote {
 }
 
 .attachbox p {
-	color: #666666;
+	color: #808080;
 }
 
 .attachbox p.stats {
-	color: #666666;
+	color: #808080;
 }
 
 .attach-image img {
@@ -451,16 +451,16 @@ blockquote blockquote blockquote {
 /* Inline image thumbnails */
 
 dl.file dd {
-	color: #666666;
+	color: #808080;
 }
 
 dl.thumbnail img {
-	border-color: #666666;
+	border-color: #111111;
 	background-color: #FFFFFF;
 }
 
 dl.thumbnail dd {
-	color: #666666;
+	color: #808080;
 }
 
 dl.thumbnail dt a:hover {
@@ -603,7 +603,7 @@ Colours and backgrounds for buttons.css
 .search-box .inputbox,
 .search-box .inputbox:hover,
 .search-box .inputbox:focus {
-	border-color: #C7C3BF;
+	border-color: #324250;
 }
 
 .search-header {
@@ -934,25 +934,25 @@ fieldset.quick-login input.inputbox {
 /* Input field styles
 ---------------------------------------- */
 .inputbox {
-	background-color: #F0F0F0;
-	border-color: #000000;
-	color: #333333;
+	background-color: #404040;
+	border-color: #020202;
+	color: #FAFAFA;
 }
 
 .inputbox:-moz-placeholder {
-	color: #333333;
+	color: #FAFAFA;
 }
 
 .inputbox::-webkit-input-placeholder {
-	color: #333333;
+	color: #FAFAFA;
 }
 
 .inputbox:hover {
-	border-color: #000000;
+	border-color: #020202;
 }
 
 .inputbox:focus {
-	border-color: #000000;
+	border-color: #020202;
 }
 
 .inputbox:focus:-moz-placeholder {
@@ -1093,10 +1093,10 @@ input.disabled {
 }
 
 li.notification-reported strong, li.notification-disapproved strong {
-	color: #D31141;
+	color: #5F85A8;
 }
 
 .badge {
-	background-color: #D31141;
+	background-color: #5F85A8;
 	color: #ffffff;
 }
