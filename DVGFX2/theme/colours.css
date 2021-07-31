@@ -48,7 +48,7 @@ a:hover {
 
 /* Notification mark read link */
 .dropdown-extended a.mark_read {
-	background-color: #EAE5E5;
+	background-color: #272727;
 }
 
 /* Post body links */
@@ -286,7 +286,7 @@ dl.details dd {
 }
 
 .reported {
-	background-color: #F7ECEF;
+	background-color: #465968;
 }
 
 li.reported:hover {
@@ -371,8 +371,8 @@ dl.faq dt {
 }
 
 .posthilit {
-	background-color: #F3BFCC;
-	color: #BC2A4D;
+	background-color: #344553;
+	color: #368AD2;
 }
 
 .announce, .unreadpost {
@@ -570,30 +570,30 @@ Colours and backgrounds for buttons.css
 ---------------------------------------- */
 
 .pagination li a {
-	background: #ECEDEE;
+	background: #324250;
 	filter: none;
 	border-color: #B4BAC0;
 	box-shadow: none;
 	-webkit-box-shadow: none;
-	color: #5C758C;
+	color: #EAE5E5;
 }
 
 .pagination li.ellipsis span {
 	background: transparent;
-	color: #000000;
+	color: #DADADA;
 }
 
 .pagination li.active span {
-	background: #4692BF;
-	border-color: #4692BF;
-	color: #FFFFFF;
+	background: #333333;
+	border-color: #406D83;
+	color: #FAFAFA;
 }
 
 .pagination li a:hover, .pagination li a:hover .icon, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
-	background: #368AD2;
+	background: #405260;
 	border-color: #368AD2;
 	filter: none;
-	color: #FFFFFF;
+	color: #CCCCCC;
 	text-shadow: none;
 }
 
@@ -708,7 +708,7 @@ ul.cplist {
 }
 
 .panel-container .panel li.header dd, .panel-container .panel li.header dt {
-	color: #000000;
+	color: #FFFFFF;
 }
 
 .panel-container table.table1 thead th {
@@ -751,7 +751,7 @@ ul.cplist {
 /* Mini tabbed menu used in MCP
 ----------------------------------------*/
 .minitabs .tab > a {
-	background-color: #EAE5E5;
+	background-color: #324250;
 }
 
 .minitabs .activetab > a,
@@ -835,17 +835,17 @@ dl.mini dt {
 ----------------------------------------*/
 /* PM Message history */
 .current {
-	color: #000000 !important;
+	color: #898989 !important;
 }
 
 /* PM marking colours */
 .pmlist li.pm_message_reported_colour, .pm_message_reported_colour {
-	border-left-color: #BC2A4D;
-	border-right-color: #BC2A4D;
+	border-left-color: #C60000;
+	border-right-color: #C60000;
 }
 
 .pmlist li.pm_marked_colour, .pm_marked_colour {
-	border-color: #FF6600;
+	border-color: #FEFDAD;
 }
 
 .pmlist li.pm_replied_colour, .pm_replied_colour {
@@ -857,17 +857,17 @@ dl.mini dt {
 }
 
 .pmlist li.pm_foe_colour, .pm_foe_colour {
-	border-color: #000000;
+	border-color: #FF6600;
 }
 
 /* Avatar gallery */
 .gallery label {
-	background: #FFFFFF;
+	background: #656565;
 	border-color: #CCC;
 }
 
 .gallery label:hover {
-	background-color: #EEE;
+	background-color: #2E2E31;
 }
 
 /*
@@ -1078,11 +1078,11 @@ input.disabled {
 }
 
 .dropdown li, .dropdown li li {
-	border-color: #DCDCDC;
+	border-color: #CCCCCC;
 }
 
 .dropdown li.separator {
-	border-color: #DCDCDC;
+	border-color: #CCCCCC;
 }
 
 /* Notifications
