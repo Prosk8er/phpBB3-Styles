@@ -146,7 +146,7 @@ dl.row-item dt {
 }
 
 dl.row-item dt .list-inner {
-	padding-left: 52px;					/* Space for folder icon */
+	padding-left: 52px;			/* Space for folder icon */
 }
 
 dl.row-item dt, dl.row-item dd {
@@ -157,7 +157,7 @@ dl.row-item dt a {
 	display: inline;
 }
 
-dl a.row-item-link {						/* topic row icon links */
+dl a.row-item-link {				/* topic row icon links */
 	display: block;
 	width: 30px;
 	height: 30px;
@@ -572,8 +572,7 @@ blockquote .codebox {
 	clear: left;
 }
 
-.attachbox p.stats
-{
+.attachbox p.stats {
 	line-height: 110%;
 	font-weight: normal;
 	clear: left;
@@ -586,7 +585,6 @@ blockquote .codebox {
 
 .attach-image img {
 	border: 1px solid transparent;
-/*	cursor: move; */
 	cursor: default;
 }
 
@@ -725,7 +723,7 @@ fieldset.polls dd div {
 }
 
 .postprofile strong {
-	font-weight: normal;
+	font-weight: bold;
 }
 
 .postprofile dt.no-profile-rank, .postprofile dd.profile-rank, .postprofile .search-result-date {
@@ -748,6 +746,15 @@ fieldset.polls dd div {
 	display: block;
 	height: auto !important;
 	max-width: 100%;
+	border-radius: 7px;
+	margin: 0;
+	opacity: 0.9;
+	padding: 0;
+}
+
+.avatar-container {
+	max-width: 130px;
+	padding: 7px;
 }
 
 .postprofile .profile-posts a {
