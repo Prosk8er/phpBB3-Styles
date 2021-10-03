@@ -503,7 +503,7 @@
 		top: 15px;
 	}
 
-	.online {
+	.online, .offline {
 		background-size: 40px;
 	}
 
@@ -564,14 +564,14 @@
 
 @media (min-width: 701px) and (max-width: 950px) {
 	ul.topiclist dt {
-    	margin-right: -410px;
+		margin-right: -410px;
 	}
 
 	ul.topiclist dt .list-inner {
-    	margin-right: 410px;
+		margin-right: 410px;
 	}
 
 	dd.posts, dd.topics, dd.views {
-    	width: 80px;
+		width: 80px;
 	}
 }
