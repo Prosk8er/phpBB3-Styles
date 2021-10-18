@@ -1,0 +1,16 @@
+<div class="topmenu">
+	<ul class="topmenu">
+		<li class="topmenu-home">{% if U_SITE_HOME %}<a href="{{ U_SITE_HOME }}" title="{{ L_SITE_HOME }}">{{ L_SITE_HOME }}</a>{% else %}<a href="{{ U_INDEX }}" title="{{ L_INDEX }}">{{ L_INDEX }}</a>{% endif %}</li>
+		<li class="topmenu-faq"><a href="{U_FAQ}" title="{L_FAQ_EXPLAIN}">{L_FAQ}</a></li>
+		<li class="topmenu-search"><a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}">{L_SEARCH}</a></li>
+		{% if not S_IS_BOT %}
+			{% if S_DISPLAY_MEMBERLIST %}<li class="topmenu-members"><a href="{U_MEMBERLIST}" title="{L_MEMBERLIST}">{L_MEMBERLIST}</a></li>{% endif %}
+			{% if S_REGISTERED_USER %}
+				{% if S_DISPLAY_PM %}<li class="topmenu-pm"><a href="{U_PRIVATEMSGS}" title="{L_PRIVATE_MESSAGES}">{L_PRIVATE_MESSAGES}</a></li>{% endif %}
+				<li class="topmenu-ucp"><a href="{U_PROFILE}" title="{L_PROFILE}">{L_PROFILE}</a></li>
+			{% endif %}
+			{% if not S_USER_LOGGED_IN and S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) %}<li class="topmenu-register"><a href="{U_REGISTER}" title="{L_REGISTER}">{L_REGISTER}</a></li>{% endif %}
+			<li class="topmenu-login"><a href="{U_LOGIN_LOGOUT}" title="{L_LOGIN_LOGOUT}">{L_LOGIN_LOGOUT}</a></li>
+		{% endif %}
+	</ul>
+</div>

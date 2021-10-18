@@ -1,0 +1,105 @@
+<!-- INCLUDE overall_header.html -->
+
+<!-- EVENT index_body_markforums_before -->
+<!-- IF U_MARK_FORUMS -->
+	<div class="action-bar compact">
+		<a href="{U_MARK_FORUMS}" class="mark-read rightside" accesskey="m" data-ajax="mark_forums_read">{L_MARK_FORUMS_READ}</a>
+	</div>
+<!-- ENDIF -->
+<!-- EVENT index_body_markforums_after -->
+
+<!-- INCLUDE forumlist_body.html -->
+
+<!-- EVENT index_body_forumlist_body_after -->
+
+<!-- IF S_INDEX -->
+	<!-- INCLUDE navbar_footer.html -->
+<!-- ENDIF -->
+
+<!-- EVENT index_body_stat_blocks_before -->
+
+<div class="stat-block dvg_stats">
+<!-- IF S_DISPLAY_ONLINE_LIST -->
+	<div class="dvg_left">
+		<div class="dvg_cat">
+			<!-- IF U_VIEWONLINE --><h4><span id="whois-img"><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a></span></h4><!-- ELSE --><h4><span id="whois-img">{L_WHO_IS_ONLINE}</span></h4><!-- ENDIF -->
+		</div>
+		<p class="dvg_row">
+			<!-- EVENT index_body_block_online_prepend -->
+			{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})<br />{RECORD_USERS}<br /> 
+			<!-- IF U_VIEWONLINE -->
+				<br />{LOGGED_IN_USER_LIST}
+				<!-- IF LEGEND --><br /><em>{L_LEGEND}{L_COLON} {LEGEND}</em><!-- ENDIF -->
+			<!-- ENDIF -->
+			<!-- EVENT index_body_block_online_append -->
+		</p>
+	</div>
+<!-- ENDIF -->
+
+<!-- IF NEWEST_USER -->
+	<div class="dvg_right">
+		<div class="dvg_cat">
+			<h4><span id="stats-img">{L_STATISTICS}</span></h4>
+		</div>
+		<p class="dvg_row">
+			<!-- EVENT index_body_block_stats_prepend -->
+			&rsaquo; {TOTAL_POSTS}<br />&rsaquo; {TOTAL_TOPICS}<br />&rsaquo; {TOTAL_USERS}<br />&rsaquo; {NEWEST_USER}
+			<!-- EVENT index_body_block_stats_append -->
+		</p>
+	</div>
+<!-- ENDIF -->
+</div>
+
+<!-- EVENT index_body_birthday_block_before -->
+
+<!-- IF S_DISPLAY_BIRTHDAY_LIST -->
+	<div class="stat-block birthday-list">
+		<div class="dvg_cat2">
+			<h4><span id="birthday-img">{L_BIRTHDAYS}</span></h4>
+		</div>
+		<p class="dvg_row2">
+			<!-- EVENT index_body_block_birthday_prepend -->
+			<!-- IF .birthdays -->{L_CONGRATULATIONS}{L_COLON} <strong><!-- BEGIN birthdays -->{birthdays.USERNAME}<!-- IF birthdays.AGE !== '' --> ({birthdays.AGE})<!-- ENDIF --><!-- IF not birthdays.S_LAST_ROW -->, <!-- ENDIF --><!-- END birthdays --></strong><!-- ELSE -->{L_NO_BIRTHDAYS}<!-- ENDIF -->
+			<!-- EVENT index_body_block_birthday_append -->
+		</p>
+	</div>
+<!-- ENDIF -->
+
+<!-- IF not S_USER_LOGGED_IN and not S_IS_BOT -->
+	<form method="post" action="{S_LOGIN_ACTION}" class="headerspace">
+		<div class="dvg_cat2">
+			<h4><a href="{U_LOGIN_LOGOUT}">{L_LOGIN_LOGOUT}</a><!-- IF S_REGISTER_ENABLED -->&nbsp; &bull; &nbsp;<a href="{U_REGISTER}">{L_REGISTER}</a><!-- ENDIF --></h4>
+		</div>
+		<fieldset class="quick-login dvg_row2">
+			<label for="username"><span>{L_USERNAME}{L_COLON}</span> <input type="text" tabindex="1" name="username" id="username" size="10" class="inputbox" title="{L_USERNAME}" /></label>
+			<label for="password"><span>{L_PASSWORD}{L_COLON}</span> <input type="password" tabindex="2" name="password" id="password" size="10" class="inputbox" title="{L_PASSWORD}" autocomplete="off" /></label>
+			<!-- IF U_SEND_PASSWORD -->
+				<a href="{U_SEND_PASSWORD}">{L_FORGOT_PASS}</a>
+			<!-- ENDIF -->
+			<!-- IF S_AUTOLOGIN_ENABLED -->
+				<span class="responsive-hide">|</span> <label for="autologin">{L_LOG_ME_IN} <input type="checkbox" tabindex="4" name="autologin" id="autologin" /></label>
+			<!-- ENDIF -->
+			<input type="submit" tabindex="5" name="login" value="{L_LOGIN}" class="button2" />
+			{S_LOGIN_REDIRECT}
+			{S_FORM_TOKEN_LOGIN}
+		</fieldset>
+	</form>
+<!-- ENDIF -->
+
+<!-- EVENT index_body_stat_blocks_after -->
+
+<div class="dvg_legend">
+	<ul class="dvg_legend-icons">
+		<li class="forum_unread" title="{L_UNREAD_POSTS}">
+			<span class="gensmall">{L_UNREAD_POSTS}</span>
+		</li>
+		<li class="forum_read" title="{L_NO_UNREAD_POSTS}">
+			<span class="gensmall">{L_NO_UNREAD_POSTS}</span>
+		</li>
+		<li class="forum_read_locked" title="{L_FORUM_LOCKED}">
+			<span class="gensmall">{L_FORUM_LOCKED}</span>
+		</li>
+	</ul>
+</div>
+
+<!-- INCLUDE overall_footer.html -->
