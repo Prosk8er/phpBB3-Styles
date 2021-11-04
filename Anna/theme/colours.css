@@ -32,7 +32,7 @@ Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
 a { color: #105289; }
-a:hover	{ color: #A3C71B; }
+a:hover { color: #A3C71B; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
