@@ -16,7 +16,7 @@
 			{% endif %}
 			<li><a href="{{ U_PROFILE }}" title="{{ lang('PROFILE') }}">{{ lang('PROFILE') }}</a></li>
 		{% endif %}
-		{% if not S_IS_BOT %}<li><a href="{{ U_LOGIN_LOGOUT }}" title="{{ lang('LOGIN') }}">{{ lang('LOGIN') }}</a></li>{% endif %}
+		{% if not S_IS_BOT and not S_USER_LOGGED_IN %}<li><a href="{{ U_LOGIN_LOGOUT }}" title="{{ lang('LOGIN') }}">{{ lang('LOGIN') }}</a></li>{% endif %}
 		{% if not S_USER_LOGGED_IN and S_REGISTER_ENABLED and not (S_SHOW_COPPA or S_REGISTRATION) %}
 			<li><a href="{{ U_REGISTER }}" title="{{ lang('REGISTER') }}">{{ lang('REGISTER') }}</a></li>
 		{% endif %}
