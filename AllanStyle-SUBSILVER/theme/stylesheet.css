@@ -3,7 +3,7 @@
 	Style name:			Allan Style - SUBSILVER
 	Based on style:		prosilver (the default phpBB 3.3.x style)
 	Original author:	Tom Beddard ( http://www.subblue.com/ )
-	Modified by:		Prosk8er ( http://gotskillslounge.com/ )
+	Modified by:		Prosk8er ( https://gotskillslounge.com/ )
     --------------------------------------------------------------
 */
 
@@ -12,7 +12,7 @@
 @import url("utilities.css?hash=d8f72c42");
 @import url("common.css?hash=c76df2dd");
 @import url("links.css?hash=18286e16");
-@import url("content.css?hash=d4285f74");
+@import url("content.css?hash=18e315ad");
 @import url("buttons.css?hash=88b7a76d");
 @import url("cp.css?hash=2bc2866e");
 @import url("forms.css?hash=c714d376");
