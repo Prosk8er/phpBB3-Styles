@@ -730,6 +730,10 @@ fieldset.polls dd div {
 	margin-bottom: 10px;
 }
 
+.profile-rank img {
+	max-width: 160px;
+}
+
 /* Post-profile avatars */
 .postprofile .has-avatar .avatar-container {
 	margin-bottom: 3px;
@@ -746,15 +750,6 @@ fieldset.polls dd div {
 	display: block;
 	height: auto !important;
 	max-width: 100%;
-	border-radius: 7px;
-	margin: 0;
-	opacity: 0.9;
-	padding: 0;
-}
-
-.avatar-container {
-	max-width: 130px;
-	padding: 7px;
 }
 
 .postprofile .profile-posts a {

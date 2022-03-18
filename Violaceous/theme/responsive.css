@@ -149,6 +149,10 @@
 		margin-left: -5px;
 		margin-right: -5px;
 	}
+	
+	.headerbar {
+		height: 0px;
+	}
 
 	.cp-main .forabg, .cp-main .forumbg, .cp-main .post, .cp-main .panel {
 		border-radius: 7px;

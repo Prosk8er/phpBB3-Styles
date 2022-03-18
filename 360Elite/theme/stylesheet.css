@@ -3,7 +3,7 @@
 	Style name:			360Elite
 	Based on style:		prosilver (the default phpBB 3.3.x style)
 	Original author:	Tom Beddard ( http://www.subblue.com/ )
-	Modified by:		Prosk8er ( http://gotskillslounge.com/ )
+	Modified by:		Prosk8er ( https://gotskillslounge.com/ )
     --------------------------------------------------------------
 */
 
@@ -12,7 +12,7 @@
 @import url("utilities.css?hash=d8f72c42");
 @import url("common.css?hash=b1e95b46");
 @import url("links.css?hash=18286e16");
-@import url("content.css?hash=2253efa1");
+@import url("content.css?hash=7152da3");
 @import url("buttons.css?hash=2dc40b52");
 @import url("cp.css?hash=4e884ad7");
 @import url("forms.css?hash=a73de248");
