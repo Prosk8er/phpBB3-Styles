@@ -118,7 +118,7 @@ a:hover	{ text-decoration: underline; color: #E2E2E2; }
 }
 
 .headerbar {
-	background-color: #0A1A27;
+	background: #0A1A27;
 	background-image: url("./images/bgheaderbarimageccblue.jpg");
 	filter: none;
 	background-repeat: repeat-x;
