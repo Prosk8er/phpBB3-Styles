@@ -1,0 +1,37 @@
+/* ADDs
+------------------------------------*/
+
+.submit-buttons input#agreed {
+	font-weight: normal;
+}
+
+.post {
+	border-bottom: 3px solid #4C618F;
+}
+
+.fa-external-link-square::before {
+	content: "\f14c";
+	color: #4C618F;
+}
+
+.fa-chevron-circle-up::before {
+	content: "\f139";
+	color: #4C618F;
+}
+
+@media screen and (min-width: 700px) and (min-device-width: 700px){
+	/* Row hover */
+	li.row:hover {
+	background-image: url("./images/lirow_hoverbear.png");
+	background-repeat: no-repeat;
+	background-position: 99% 66%;
+	}
+}
+
+@media screen and (min-width: 1200px) and (min-device-width: 1200px){
+	body {
+	background-image: url("./images/winniepooh.jpg");
+	background-repeat: repeat-x;
+	background-position: top left;
+	}
+}

@@ -1,0 +1,52 @@
+/* ADDs
+------------------------------------*/
+
+#headerbar_block_wrapperanna {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	width: 100%;
+	text-align: left;
+}
+
+#headerbar_block_wrapperanna img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.search-header {
+	margin-right: 7px;
+	margin-top: 20px;
+}
+
+.topicreview .postbody h3 {
+	float: left;
+}
+
+.copyright {
+	background-image: url("./images/annahearts.png");
+	background-repeat: no-repeat;
+	background-position: right 20px bottom 0.5em;
+	height: 20em;
+	padding: 2em;
+}
+
+.copyright a:hover {
+	color: #1E5A8E;
+}
+
+/* Responsive ADDs
+------------------------------------*/
+
+@media (max-width: 700px) {
+	.online {
+		background-size: 16px;
+	}
+	#headerbar_block_wrapperanna, .logo2 {
+		display: none;
+	}
+}

@@ -20,9 +20,9 @@ h1 {
 	/* Forum name */
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	margin-right: 200px;
-	margin-top: 15px;
+	margin-top: 12px;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 h2 {
@@ -140,15 +140,15 @@ a:hover	{ text-decoration: underline; }
 .wrap {
 	border: 1px solid transparent;
 	border-radius: 20px;
-	margin: 0 auto;
+	margin: 14px auto;
 	max-width: 900px;
-	min-width: 900px;
+	min-width: 625px;
 	padding: 20px;
 }
 
 @media only screen and (max-width: 1220px), only screen and (max-device-width: 1220px) {
 	.wrap {
-		margin: 0 12px;
+		margin: 13px auto;
 	}
 }
 
@@ -168,7 +168,7 @@ a:hover	{ text-decoration: underline; }
 .logo {
 	float: left;
 	width: auto;
-	padding: 0px 0px 0 0px;
+	padding: 1px 13px 1px 1px;
 }
 
 .logo:hover {
@@ -178,8 +178,8 @@ a:hover	{ text-decoration: underline; }
 .site_logo {
 	background-repeat: no-repeat;
 	display: inline-block;
-	width: 895px;
-	height: 148px;
+	width: 124px;
+	height: 90px;
 }
 
 /* Site description and logo */
@@ -983,6 +983,7 @@ fieldset.fields1 dl.pmlist dd.recipients {
 .copyright {
 	font-size: 10px;
 	text-align: center;
+	margin-top: 24px;
 	padding: 10px;
 }
 
