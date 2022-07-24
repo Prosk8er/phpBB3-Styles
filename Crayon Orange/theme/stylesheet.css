@@ -1414,6 +1414,18 @@ dl.thumbnail dt a img {
 	text-align: left;
 }
 
+.c-sitename {
+	font-size: 2.0em;
+	font-style: italic;
+	font-family: Candara, Arial, Helvetica, sans-serif;
+}
+
+.c-description {
+	font-size: 1.6em;
+	font-style: italic;
+	font-family: Candara, Arial, Helvetica, sans-serif;
+}
+
 .site-description img {
 	height: auto;
 	width: 80%;
