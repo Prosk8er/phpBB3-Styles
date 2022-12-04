@@ -9,6 +9,20 @@
 	border-bottom: 3px solid #4C618F;
 }
 
+dl.row-item dt, dl.row-item dd {
+	min-height: 45px;
+}
+
+dl.row-item dt .list-inner {
+	padding-left: 60px;
+}
+
+.message-box textarea {
+	background-image: url("./images/excpwsh.png");
+	background-repeat: no-repeat;
+	background-position: 96% 94%;
+}
+
 .fa-external-link-square::before {
 	content: "\f14c";
 	color: #4C618F;
@@ -17,6 +31,23 @@
 .fa-chevron-circle-up::before {
 	content: "\f139";
 	color: #4C618F;
+}
+
+#login_block_content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 24px;
+	margin-bottom: 28px;
+	padding: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+#login_block_content img {
+	width: 94%;
+	max-width: 455px;
+	height: auto;
+	box-shadow: 0 0 10px #6A02A9;
 }
 
 @media screen and (min-width: 700px) and (min-device-width: 700px){
@@ -28,9 +59,46 @@
 	}
 }
 
+@media screen and (min-width: 875px) and (min-device-width: 875px){
+	#footerpw_block_in_w {
+	border-bottom: 6px solid #5D6AA4;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 26px;
+	margin-bottom: 0px;
+	padding: 0px;
+	width: 99%;
+	}
+	.footerpw-l {
+	background-image: url("./images/pwi_l.png");
+	background-repeat: no-repeat;
+	height: 130px;
+	float: left;
+	width: 117px;
+	padding: 0px;
+	}
+	.footerpw-m {
+	background: url("./images/wi_mid.gif");
+	background-repeat: repeat;
+	height: 24px;
+	margin: 0px 24px 0px 24px;
+	width: auto;
+	padding: 0px;
+	}
+	.footerpw-r {
+	background-image: url("./images/pwi_r.png");
+	background-repeat: no-repeat;
+	height: 130px;
+	float: right;
+	margin-top: -24px;
+	width: 117px;
+	padding: 0px;
+	}
+}
+
 @media screen and (min-width: 1200px) and (min-device-width: 1200px){
 	body {
-	background-image: url("./images/winniepooh.jpg");
+	background-image: url("./images/w_pwhg.jpg");
 	background-repeat: repeat-x;
 	background-position: top left;
 	}

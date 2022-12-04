@@ -1,0 +1,85 @@
+Crayon Red
+#
+If you want to use the alternative lighter images, proceed as follows (images created by Talk19Zehn) from the contrib imgs_alternate directory:
+
+Load the two graphics into the theme / images directory of this style.
+#
+
+##
+stylesheet.css
+
+find:
+
+body {
+	background-image: url("./images/hgbodyred.jpg");
+	background-position: left top;
+	background-repeat: repeat-x;
+	padding: 40px 0;
+}
+
+change to:
+
+body {
+	background-image: url("./images/hgbodyredfirst.jpg");
+	background-position: left top;
+	background-repeat: repeat-x;
+	padding: 40px 0;
+}
+
+find:
+
+.headerbar {
+	background: #240401;
+	background-image: url("./images/bgheaderbarimagered.jpg");
+	filter: none;
+	background-repeat: repeat-x;
+	background-position: top center;
+	color: #FAFAFA;
+	border: 2px solid #7E797A;
+	margin-bottom: 11px;
+	min-height: 170px;
+}
+
+change to:
+
+.headerbar {
+	background: #240401;
+	background-image: url("./images/bgheaderbarimageredfirst.jpg");
+	filter: none;
+	background-repeat: repeat-x;
+	background-position: top center;
+	color: #FAFAFA;
+	border: 2px solid #7E797A;
+	margin-bottom: 11px;
+	min-height: 170px;
+}
+##
+
+###
+overall_footer.html
+
+find:
+
+<div>
+	<div class="inner">
+		<div id="footer_block_bodywrappercrayon">
+			<a href="#top"><img src="{T_THEME_PATH}/images/hgbodyred.jpg" width="886" height="180" title="{L_BACK_TO_TOP}" alt="go to top" /></a>
+		</div>
+	</div>
+</div>
+
+change to:
+
+<div>
+	<div class="inner">
+		<div id="footer_block_bodywrappercrayon">
+			<a href="#top"><img src="{T_THEME_PATH}/images/hgbodyredfirst.jpg" width="886" height="180" title="{L_BACK_TO_TOP}" alt="go to top" /></a>
+		</div>
+	</div>
+</div>
+
+###
+
+After the replacement, clean up all caches and browser caches when you return to the page.
+
+That's all, have fun.

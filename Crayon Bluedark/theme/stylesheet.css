@@ -1266,6 +1266,15 @@ li.notification-reported strong, li.notification-disapproved strong {
 	color: #0C53CC;
 }
 
+.fa-external-link::before {
+	content: "\f08e";
+	color: silver;
+}
+
+.fa-question::before {
+	color: #58A504;
+}
+
 .fa-angle-left::before {
 	color: silver;
 }
