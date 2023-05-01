@@ -12,7 +12,7 @@
 
 body {
 	font: 11pt Verdana, Arial, Helvetica, sans-serif;
-	color:#000000;
+	color: #000000;
 }
 
 a:link		{ color: #000000; text-decoration: none; }
@@ -32,7 +32,7 @@ img, .noprint, .navbar, .box1, .divider, .signature { display: none; }
 
 p { font-size: 85%; }
 .copyright { font-size: 75%; }
-.page-number { float:right; width: auto; text-align: right; font-size: 75%; }
+.page-number { float: right; width: auto; text-align: right; font-size: 75%; }
 
 h1, h2, h3, h1 a, h2 a, h3 a {
 	font-family: "Trebuchet MS", georgia, Verdana, Sans-serif;
@@ -90,7 +90,7 @@ hr {
 	font-size: 75%;
 }
 
-/* Dont want to print url for names or titles in content area */
+/* Don't want to print url for names or titles in content area */
 .postbody .author a:link, .postbody .author a:visited,
 html>body .postbody .author a:link:after,
 html>body .postbody .author a:visited:after,
@@ -104,7 +104,7 @@ html>body .postbody h1 a:link:after, html>body .postbody h2 a:link:after {
 
 /* Poster profile */
 .postprofile { display: none; }
-.grip-show { display:none; }
+.grip-show { display: none; }
 
 /* Quote */
 .postquote, blockquote {
