@@ -127,6 +127,7 @@
 ## phpBB 3.3.7 - 03/2022, style-version: 3.3.7, code-changes 3.3.5 to 3.3.7 for phpBB 3.3.7 "The Book of Bertie, Part Two"
 ## phpBB 3.3.8 - 06/2022, style-version: 3.3.8, code-changes 3.3.7 to 3.3.8 for phpBB 3.3.8 "Bertie: Beer and Summer" and minimal adjustments changed
 ## phpBB 3.3.9 - 11/2022, style-version: 3.3.9, code-changes 3.3.8 to 3.3.9 for phpBB 3.3.9 "Bertie's lunar flyby" and CSS, HTML much adjustments changed
+## phpBB 3.3.10 - 04/2023, style-version: 3.3.10, Style Updated by Prosk8er ( https://gotskillslounge.com )
 ## phpBB 3.3.10 - 04/2023, style-version: 3.3.10, a maintenance release of the 3.3.x branch - naming: "The Way of Bertie", CSS, HTML much adjustments changed (Board-Icons, Header, Border, Colors ... )
 ##
 #
@@ -134,7 +135,7 @@
 #
 # Note:
 # The small site_logo_slogan.jpg into the class .sloganimg has the dimensions of width: 138px; height: 80px;
-# This graphic is displayed from a width (viewport - min-width) of 1220px.
+# This graphic is displayed from a width (viewport - min-width) of 701px.
 #
 # The grafic abstractinheader.jpg has the dimensions of width: 1920px; height: 190px;
 # This graphic is responsive / adpative displayed and is directly included in the overall_header.html (img).

@@ -1043,6 +1043,11 @@ fieldset.quick-login input.inputbox {
 	background-color: #E1D4BA;
 }
 
+input#password.inputbox,
+input#username.inputbox {
+	background: #ECE5D1;
+}
+
 /* Posting page styles
 ----------------------------------------*/
 
@@ -1079,7 +1084,7 @@ fieldset.quick-login input.inputbox {
 }
 
 .inputbox:focus {
-	border-color: #513A25;
+	border-color: #9F5F08;
 	color: #191919;
 }
 
@@ -1223,7 +1228,7 @@ input.disabled {
 /* Notifications Common - ADDs
 ---------------------------------------- */
 .dropdown-extended .dropdown-contents {
-	width: 300px;
+	width: 320px;
 }
 
 /* Notifications
@@ -1238,7 +1243,7 @@ li.notification-reported strong, li.notification-disapproved strong {
 
 /* Another ADDs - e.q. Common, Content, Button, Icons, Responsive
 ------------------------------------------------------------------ */
-.wrap { max-width: 1366px; }
+.wrap {max-width: 1366px;}
 
 .ownwrap-pa {
 	background: #F3E2C7;
@@ -1460,7 +1465,8 @@ div.rules {
 	border: 1px solid #9F5F08;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset;
 	transition: border 0.2s linear, box-shadow 0.2s linear;
-	border-color: rgba(140,82,203,0.8) box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(20, 39, 200, 0.6);
+	border-color: rgba(159,95,8,0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(20, 39, 200, 0.6);
 	box-shadow: 4px 4px 19px 9px rgba(159, 137, 63, 0.44);
 	margin: 1% auto;
 	padding: 7px;
@@ -1495,19 +1501,6 @@ div.quickloginpanel form.headerspace {
 	text-align: center;
 }
 
-.pablock_left {
-	float: left;
-	margin-top: 8px;
-	margin-bottom: 6px;
-	width: 58%;
-}
-
-.pablock_right {
-	float: right;
-	margin-top: 8px;
-	margin-bottom: 6px;
-}
-
 .pasitename {
 	border-radius: 0px;
 	background-color: #DED0AF;
@@ -1518,7 +1511,8 @@ div.quickloginpanel form.headerspace {
 	border: 1px solid #9F5F08;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset;
 	transition: border 0.2s linear, box-shadow 0.2s linear;
-	border-color: rgba(140,82,203,0.8) box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(20, 39, 200, 0.6);
+	border-color: rgba(159,95,8,0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(20, 39, 200, 0.6);
 	box-shadow: 4px 4px 19px 9px rgba(159, 137, 63, 0.44);
 	margin: 1% auto;
 	padding: 7px;
@@ -1666,7 +1660,7 @@ dl.thumbnail dt a img {
 	margin-right: 2px;
 	margin-bottom: 1px;
 	margin-left: 2px;
-	padding: 4px 16px;
+	padding: 4px 10px;
 	}
 	fieldset.quick-login input.inputbox {
 	width: 80%;
@@ -1713,21 +1707,32 @@ dl.thumbnail dt a img {
 	background-repeat: repeat-y;
 	background-position: right;
 	}
+}
+
+@media (min-width: 701px) {
+	.pablock_left {
+	float: left;
+	margin-top: 8px;
+	margin-bottom: 6px;
+	width: 58%;
+	}
+	.pablock_right {
+	float: right;
+	margin-top: 8px;
+	margin-bottom: 6px;
+	}
 	.sloganimg {
 	background: url("./images/site_logo_slogan.jpg");
 	background-repeat: no-repeat;
 	width: 138px;
 	height: 80px;
 	float: left;
-	padding-right: 5px;
+	padding-right: 6px;
 	}
 	.slogan {
 	display: block;
 	text-decoration: none;
 	}
-}
-
-@media (min-width: 701px) {
 	.postbody {
 	width: calc(100% - 208px - 1px - 16px);
 	}
