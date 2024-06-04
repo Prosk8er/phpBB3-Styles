@@ -18,7 +18,7 @@ ul.topiclist dl {
 }
 
 ul.topiclist li.row dl {
-	padding: 2px 0;
+	margin: 2px 0;
 }
 
 ul.topiclist dt, ul.topiclist dd {
@@ -70,6 +70,11 @@ ul.topiclist dd {
 	box-sizing: border-box;
 }
 
+ul.topiclist li.row dd {
+	padding: 4px 0 999px 0;
+	margin-bottom: -995px;
+}
+
 ul.topiclist dfn {
 	/* Labels for post/view counts */
 	position: absolute;
@@ -97,7 +102,7 @@ li.row strong {
 }
 
 li.header dt, li.header dd {
-	line-height: 1.6em;
+	line-height: 1em;
 	border-left-width: 0;
 	margin: 7px 0 5px 0;
 	padding-top: 2px;
@@ -136,6 +141,8 @@ li.header dl.row-item dt .list-inner {
 }
 
 /* Forum list column styles */
+.row .list-inner { padding: 4px 0; }
+
 dl.row-item {
 	background-position: 10px 50%;		/* Position of folder icon */
 	background-repeat: no-repeat;
@@ -148,15 +155,11 @@ dl.row-item dt {
 }
 
 .topiclist.forums li.row dl.row-item dt .list-inner {
-	padding-left: 63px;			/* Space for folder icon */
-}
-
-.topiclist.topics li.row dl.row-item dt .list-inner {
-	padding-left: 40px;			/* Space for topic icon */
+    padding-left: 63px;
 }
 
 dl.row-item dt .list-inner {
-	padding-left: 40px;			/* Space for topic icon */
+	padding-left: 40px;			/* Space for folder icon */
 }
 
 dl.row-item dt, dl.row-item dd {
@@ -517,16 +520,17 @@ blockquote cite > span {
 
 /* Code block */
 .codebox {
-	padding: 3px;
 	border: 1px solid transparent;
 	font-size: 1em;
 	margin: 1em 0 1.2em 0;
+	word-wrap: normal;
 }
 
 .codebox p {
 	text-transform: uppercase;
 	border-bottom: 1px solid transparent;
-	margin-bottom: 3px;
+	margin-bottom: 0;
+	padding: 3px;
 	font-size: 0.8em !important;
 	font-weight: bold;
 	display: block;
@@ -541,15 +545,15 @@ blockquote .codebox {
 	display: block;
 	height: auto;
 	max-height: 200px;
-	padding-top: 5px;
+	padding: 5px 3px;
 	font: 0.9em Monaco, "Andale Mono","Courier New", Courier, monospace;
 	line-height: 1.3em;
-	margin: 2px 0;
 }
 
 /* Attachments
 ----------------------------------------*/
 .attachbox {
+	font-size: 13px;
 	float: left;
 	width: auto;
 	max-width: 100%;
@@ -716,7 +720,7 @@ fieldset.polls dd div {
 
 /* Poster profile block
 ----------------------------------------*/
-#subsilver-nav-topic {
+.subsilver-nav-topic {
 	display: block;
 	font-weight: bold;
 	line-height: 16px;
@@ -724,7 +728,7 @@ fieldset.polls dd div {
 	padding: 3px 10px;
 }
 
-#subsilver-nav-topic .post.has-profile {
+.subsilver-nav-topic .post.has-profile {
 	border: none;
 }
 
@@ -928,6 +932,6 @@ table.fixed-width-table {
 	font-size: 1.3em;
 }
 
-.group-description ul {
+.group-description ol, .group-description ul {
 	list-style-position: inside;
 }

@@ -28,10 +28,10 @@ dd label input { vertical-align: text-bottom\9; }
 	border-radius: 0;
 }
 
-.forabg {
-	background-image: url("./images/bg_list.gif");
-}
-
 .tabs .tab > a {
 	border-radius: 0;
+}
+
+.forabg {
+	background-image: url("./images/bg_list.gif");
 }

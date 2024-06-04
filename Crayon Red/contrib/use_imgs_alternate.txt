@@ -2,7 +2,7 @@ Crayon Red
 #
 If you want to use the alternative lighter images, proceed as follows (images created by Talk19Zehn) from the contrib imgs_alternate directory:
 
-Load the two graphics into the theme / images directory of this style.
+Load the graphics into the theme / images directory of this style.
 #
 
 ##
@@ -56,7 +56,7 @@ change to:
 ##
 
 ###
-overall_footer.html
+overall_footer.html (standard)
 
 find:
 
@@ -79,6 +79,36 @@ change to:
 </div>
 
 ###
+
+####
+overall_header.html (standard)
+
+find:
+
+<div style="display: none;">
+	<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="{U_INDEX}" title="{L_INDEX}"><img src="{T_THEME_PATH}/images/site_logored.jpg" alt="" /></a>
+		<p class="skiplink"><a href="#start_here">{L_SKIP}</a></p>
+	</div>
+</div>
+
+change to:
+
+<div style="display: none;">
+	<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="{U_INDEX}" title="{L_INDEX}"><img src="{T_THEME_PATH}/images/site_logoredfirst.jpg" alt="" /></a>
+		<p class="skiplink"><a href="#start_here">{L_SKIP}</a></p>
+	</div>
+</div>
+
+####
+
+Move the graphics that are no longer used:
+
+hgbodyred.jpg, bgheaderbarimagered.jpg and site_logored.jpg
+
+to the contrib imgs_alternate directory (!).
+
 
 After the replacement, clean up all caches and browser caches when you return to the page.
 

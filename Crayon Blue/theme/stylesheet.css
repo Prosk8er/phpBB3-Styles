@@ -1060,6 +1060,11 @@ fieldset.quick-login input.inputbox {
 	background-color: #161616;
 }
 
+input#password.inputbox,
+input#username.inputbox {
+	background: #010101;
+}
+
 /* Posting page styles
 ----------------------------------------*/
 
@@ -1100,7 +1105,7 @@ fieldset.quick-login input.inputbox {
 }
 
 .inputbox:focus {
-	border-color: #666;
+	border-color: #7E797A;
 	color: #FAFAFA;
 }
 
@@ -1534,6 +1539,18 @@ dl.thumbnail dt a img {
 }
 
 @media (min-width: 701px) {
+	.c-sloganimg {
+	background: url("./images/crayonlighterb-slogan.jpg");
+	background-repeat: no-repeat;
+	width: 69px;
+	height: 90px;
+	float: left;
+	padding-right: 6px;
+	}
+	.c-slogan {
+	display: block;
+	text-decoration: none;
+	}
 	.postbody {
 	width: calc(100% - 210px - 1px - 16px);
 	}
@@ -1546,9 +1563,9 @@ dl.thumbnail dt a img {
 ------------------------------------------------------------------------------------------------------------- */
 @media print {
 html, body {width: 100%; height: 100%; padding: 0; margin: 0; font-family: "times new roman", times, serif; font-size: 80%; background: none; background-image: none; filter: none; border-image: none; border: none; box-shadow: none; -webkit-box-shadow: none; color: #000000;}
-h1, h2, h3, h1 a, h2 a, h3 a, solo {font-family: "times new roman", times, serif; font-size: 90%; color: #000000; background: none; text-decoration: none; border: none; font-weight: normal;}
-.headerbar, .logo, #jumpbox, ul.post-buttons, a.top, .postprofile {display: none;}
-html, body, h1, h2, h3, h1 a, h2 a, h3 a, solo, .page-header, .wrap, #wrap, .forabg, .forumbg {font-size: 90%; text-decoration: none; background-image: none; filter: none; border-image: none; border: none; box-shadow: none; -webkit-box-shadow: none; color: #000000;}
+h1, h2, h3, h1 a, h2 a, h3 a, solo {font-family: "times new roman", times, serif; font-size: 88%; color: #000000; background: none; text-decoration: none; border: none; font-weight: normal;}
+.headerbar, .logo, #jumpbox, ul.post-buttons, a.top, .postprofile, .signature, .signature a {display: none;}
+h1, h2, h3, h1 a, h2 a, h3 a, solo, .page-header, .wrap, #wrap, .forabg, .forumbg {font-size: 84%; text-decoration: none; background-image: none; filter: none; border-image: none; border: none; box-shadow: none; -webkit-box-shadow: none; color: #000000;}
 img, .site-description img, div > .navbar, form.headerspace, fieldset.quick-login, .stat-block, .online-list, .birthday-list, .statistics, .action-bar, .bar-bottom, #footer_block_bodywrappercrayon {display: none;}
 .copyright {text-align: left; margin-top: 20px; padding: 14px 0px 10px 12px; color: #000000;}
 div.rules, a, a.mark, a.mark-read, a.arrow-right, a.arrow-left, .search-header, .search-box .inputbox, .panel, .post {border: none; box-shadow: none; -webkit-box-shadow: none; color: #000000;}

@@ -72,8 +72,6 @@
 ## phpBB-Version 3.1.12
 ## 09.05.2018
 ##
-# Created for phpBB-3.1 by
-# Talk19Zehn ( https://www.ongray-design.de )
 #
 ##############################################################
 ## End Style History and notes for phpBB-3.1 Ascraeus
@@ -97,7 +95,7 @@
 ## phpBB-Version 3.2.2 - 22.01.2018
 ## phpBB-Version 3.2.3 - 29.10.2018
 ##
-# Created as a Child-Style for phpBB-3.2.3 by Talk19Zehn ( https://www.ongray-design.de )
+# Created as a Child-Style for phpBB-3.2.3 by Talk19Zehn ( ongray-design.de )
 # some changes (header, footer and much more)
 ##
 ## phpBB 3.2.4 - 20.11.18
@@ -127,8 +125,10 @@
 ## phpBB 3.3.7 - 03/2022, style-version: 3.3.7, code-changes 3.3.5 to 3.3.7 for phpBB 3.3.7 "The Book of Bertie, Part Two"
 ## phpBB 3.3.8 - 06/2022, style-version: 3.3.8, code-changes 3.3.7 to 3.3.8 for phpBB 3.3.8 "Bertie: Beer and Summer" and minimal adjustments changed
 ## phpBB 3.3.9 - 11/2022, style-version: 3.3.9, code-changes 3.3.8 to 3.3.9 for phpBB 3.3.9 "Bertie's lunar flyby" and CSS, HTML much adjustments changed
-## phpBB 3.3.10 - 04/2023, style-version: 3.3.10, Style Updated by Prosk8er ( https://gotskillslounge.com )
+## phpBB 3.3.10 - 04/2023, style-version: since 3.3.10, Style Updated by Prosk8er ( https://gotskillslounge.com )
 ## phpBB 3.3.10 - 04/2023, style-version: 3.3.10, a maintenance release of the 3.3.x branch - naming: "The Way of Bertie", CSS, HTML much adjustments changed (Board-Icons, Header, Border, Colors ... )
+## phpBB 3.3.11 - 10/2023, style-version: 3.3.11, a maintenance release of the 3.3.x branch - naming: "Bertie’s trip to Zagreb"
+## phpBB 3.3.12 - 06/2024, style-version: 3.3.12, a maintenance release of the 3.3.x branch - naming: "Bertie: A phpBB Saga"
 ##
 #
 ###############################################################

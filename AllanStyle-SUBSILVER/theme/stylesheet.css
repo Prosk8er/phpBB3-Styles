@@ -3,19 +3,19 @@
 	Style name:			Allan Style - SUBSILVER
 	Based on style:		prosilver (the default phpBB 3.3.x style)
 	Original author:	Tom Beddard ( http://www.subblue.com/ )
-	Modified by:		Prosk8er ( https://gotskillslounge.com/ )
+	Modified by:		Merlin ( https://forum-gta.ru/ )
     --------------------------------------------------------------
 */
 
 @import url("normalize.css?hash=48eb3f89");
 @import url("base.css?hash=7c5543be");
 @import url("utilities.css?hash=d8f72c42");
-@import url("common.css?hash=c76df2dd");
+@import url("common.css?hash=c4e82632");
 @import url("links.css?hash=18286e16");
-@import url("content.css?hash=c87f6d85");
+@import url("content.css?hash=262503a5");
 @import url("buttons.css?hash=88b7a76d");
 @import url("cp.css?hash=2bc2866e");
-@import url("forms.css?hash=1b3e5db3");
+@import url("forms.css?hash=9016b55c");
 @import url("icons.css?hash=64da33ce");
-@import url("colours.css?hash=339861fd");
-@import url("responsive.css?hash=d492e8b1");
+@import url("colours.css?hash=214bec2d");
+@import url("responsive.css?hash=50d11fe1");

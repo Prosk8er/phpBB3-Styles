@@ -32,7 +32,7 @@ Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
 a { color: #105289; }
-a:hover	{ color: #004768; }
+a:hover { color: #004768; }
 a.exlinks { color: #105289 !important; }
 
 /* Links on gradient backgrounds */
@@ -81,7 +81,7 @@ a.exlinks { color: #105289 !important; }
 
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
-#header-subsilver {
+.header-subsilver {
 	background-color: #d9dfe4;
 	border-bottom: 1px solid #4787a7;
 }
@@ -310,11 +310,11 @@ dl.details dd {
 }
 
 .reported {
-	background-color: #F7ECEF;
+	background-color: #ECD5D8;
 }
 
 li.reported:hover {
-	background-color: #ECD5D8 !important;
+	background-color: #dcd1d1 !important;
 }
 .sticky, .announce {
 	/* you can add a background for stickies and announcements*/
@@ -449,13 +449,6 @@ blockquote blockquote blockquote {
 	color: #2E8B57;
 }
 
-.syntaxbg	{ color: #FFFFFF; }
-.syntaxcomment	{ color: #FF8000; }
-.syntaxdefault	{ color: #0000BB; }
-.syntaxhtml	{ color: #000000; }
-.syntaxkeyword	{ color: #007700; }
-.syntaxstring	{ color: #DD0000; }
-
 /* Attachments
 ----------------------------------------*/
 .attachbox {
@@ -578,7 +571,7 @@ fieldset.polls dd div {
 
 /* Poster profile block
 ----------------------------------------*/
-#subsilver-nav-topic {
+.subsilver-nav-topic {
 	background-color: #d3d9de;
 	background-image: url("./images/bg_list.gif");
 	color: black;
@@ -851,7 +844,7 @@ ul.cplist {
 /* Mini tabbed menu used in MCP
 ----------------------------------------*/
 .minitabs .tab > a {
-	background-color: #E1EBF2;
+	background-color: #d4d7d9;
 }
 
 .minitabs .activetab > a,
@@ -884,9 +877,9 @@ ul.cplist {
 
 .rtl .navigation a {
 	background: #cbd5db; /* Old browsers */ /* FF3.6+ */
-	background: -webkit-linear-gradient(left, #cbd5db 50%, #ececec 100%);
-	background: linear-gradient(to right, #cbd5db 50%,#ececec 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbd5db', endColorstr='#ececec',GradientType=1 ); /* IE6-9 */
+	background: -webkit-linear-gradient(left, #ececec 50%, #cbd5db 100%);
+	background: linear-gradient(to right, #ececec 50%,#cbd5db 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#cbd5db',GradientType=1 ); /* IE6-9 */
 }
 
 .navigation a:hover {
@@ -1135,9 +1128,10 @@ input.disabled {
 
 .dropdown-extended ul li {
 	border-top-color: #B9B9B9;
+	background-color: #f4f4f4;
 }
 
-.dropdown-extended ul li:hover {
+.dropdown-extended .footer, .dropdown-extended ul li:hover {
 	background-color: #e5e8ea;
 	color: #000000;
 }

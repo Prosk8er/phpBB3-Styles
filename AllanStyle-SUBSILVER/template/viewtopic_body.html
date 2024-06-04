@@ -131,7 +131,7 @@
 
 <!-- EVENT viewtopic_body_poll_after -->
 
-<div id="subsilver-nav-topic">
+<div id="subsilver-nav-topic" class="subsilver-nav-topic">
 	<div class="inner"><div class="post has-profile">
 		<div class="leftsided postbody subsilver-topic-title">{L_MESSAGE}</div>
 		<div class="leftsided postprofile subsilver-topic-author">{L_AUTHOR}</div>
@@ -473,5 +473,7 @@
 		<p>{LOGGED_IN_USER_LIST}</p>
 	</div>
 <!-- ENDIF -->
+
+{% EVENT viewtopic_body_online_list_after %}
 
 <!-- INCLUDE overall_footer.html -->

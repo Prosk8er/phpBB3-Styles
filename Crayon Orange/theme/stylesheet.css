@@ -1059,6 +1059,11 @@ fieldset.quick-login input.inputbox {
 	background-color: #161616;
 }
 
+input#password.inputbox,
+input#username.inputbox {
+	background: #010101;
+}
+
 /* Posting page styles
 ----------------------------------------*/
 
@@ -1099,7 +1104,7 @@ fieldset.quick-login input.inputbox {
 }
 
 .inputbox:focus {
-	border-color: #666;
+	border-color: #7E797A;
 	color: #FAFAFA;
 }
 
@@ -1526,6 +1531,18 @@ dl.thumbnail dt a img {
 }
 
 @media (min-width: 701px) {
+	.c-sloganimg {
+	background: url("./images/crayonorange-slogan.jpg");
+	background-repeat: no-repeat;
+	width: 69px;
+	height: 90px;
+	float: left;
+	padding-right: 6px;
+	}
+	.c-slogan {
+	display: block;
+	text-decoration: none;
+	}
 	.postbody {
 	width: calc(100% - 210px - 1px - 16px);
 	}

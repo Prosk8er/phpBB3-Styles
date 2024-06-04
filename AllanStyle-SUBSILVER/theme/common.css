@@ -138,7 +138,7 @@ a:hover	{ text-decoration: underline; }
 
 /* Main blocks
 ---------------------------------------- */
-#header-subsilver {
+.header-subsilver {
 	padding: 0 5px;
 }
 
@@ -197,7 +197,11 @@ a:hover	{ text-decoration: underline; }
 	padding: 5px 20px;
 }
 
-.navbar-top, .navbar {
+.navbar-top {
+	padding: 0 8px;
+}
+
+.navbar {
 	padding: 0 5px;
 }
 
@@ -896,16 +900,11 @@ fieldset.fields1 dl.pmlist dd.recipients {
 	padding: 2px 0;
 }
 
-/* The alignment ".row .pagination" and "author, date, title of the forum" */
-ul.topiclist li.row .responsive-hide {
-	float: left;
-}
-
 /* Pagination in viewforum for multipage topics */
 .row .pagination {
 	display: block;
-	margin-bottom: 0.2em;
-	margin-top: 0.2em;
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 
 .row .pagination > ul {
@@ -915,12 +914,6 @@ ul.topiclist li.row .responsive-hide {
 .row .pagination li a, .row .pagination li span {
 	padding: 1px 3px;
 	font-size: 9px;
-}
-
-.topic-poster {
-	float: left;
-	padding-right: 0.5em;
-	margin-top: 0.3em;
 }
 
 /* jQuery popups

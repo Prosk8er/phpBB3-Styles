@@ -112,7 +112,7 @@
 	.responsive-show-inline { display: inline !important; }
 	.responsive-show-inline-block { display: inline-block !important; }
 	.wrap { padding: 0; }
-	#subsilver-nav-topic { display: none; }
+	.subsilver-nav-topic { display: none; }
 
 	/* Content wrappers
 	----------------------------------------*/
@@ -270,11 +270,6 @@
 		margin: 5px 0 0;
 	}
 
-	.row .pagination {
-		margin-top: 2px;
-		margin-bottom: 2px;
-	}
-
 	.row .pagination .ellipsis + li {
 		display: none !important;
 	}
@@ -339,7 +334,7 @@
 	}
 
 	fieldset dd, fieldset.fields1 dd, fieldset.fields2 dd {
-		margin-left: 20px;
+		margin-left: 0;
 	}
 
 	textarea, dd textarea, .message-box textarea {
@@ -545,7 +540,7 @@
 	.attach-comment dfn {
 		width: 100%;
 	}
-	
+
 	.trigger {
 		margin-top: -24px;
 	}
@@ -571,11 +566,6 @@
 }
 
 @media (min-width: 701px) and (max-width: 950px) {
-	.row .pagination {
-		margin-top: 2px;
-		margin-bottom: 2px;
-	}
-
 	ul.topiclist dt {
 		margin-right: -410px;
 	}
@@ -586,14 +576,5 @@
 
 	dd.posts, dd.topics, dd.views {
 		width: 80px;
-	}
-}
-
-@media (max-width: 992px) {
-	.row .pagination {
-		text-align: left;
-		float: left;
-		margin-top: 4px;
-		margin-bottom: 4px;
 	}
 }

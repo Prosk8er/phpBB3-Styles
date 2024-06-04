@@ -21,8 +21,8 @@
 		<form method="post" action="{S_LOGIN_ACTION}">
 		<h5><a href="{U_LOGIN_LOGOUT}">{L_LOGIN_LOGOUT}</a><!-- IF S_REGISTER_ENABLED -->&nbsp; &raquo; &nbsp;<a href="{U_REGISTER}">{L_REGISTER}</a><!-- ENDIF --></h5>
 			<fieldset class="quick-login">
-				<input type="text" tabindex="1" name="username" id="username" size="10" class="inputbox" title="{L_USERNAME}" value="{L_USERNAME}" onclick="if(this.value=='{L_USERNAME}')this.value='';" onblur="if(this.value=='')this.value='{L_USERNAME}';" />
-				<input type="password" tabindex="2" name="password" id="password" size="10" class="inputbox" title="{L_PASSWORD}" autocomplete="off" value="{L_PASSWORD}" onclick="if(this.value=='{L_PASSWORD}')this.value='';" onblur="if(this.value=='')this.value='{L_PASSWORD}';" />
+				<input type="text" tabindex="1" name="username" id="username" size="10" class="inputbox" title="{L_USERNAME}" autocomplete="username" value="{L_USERNAME}" onclick="if(this.value=='{L_USERNAME}')this.value='';" onblur="if(this.value=='')this.value='{L_USERNAME}';" />
+				<input type="password" tabindex="2" name="password" id="password" size="10" class="inputbox" title="{L_PASSWORD}" autocomplete="current-password" value="{L_PASSWORD}" onclick="if(this.value=='{L_PASSWORD}')this.value='';" onblur="if(this.value=='')this.value='{L_PASSWORD}';" />
 				<input type="submit" name="login" value="{L_LOGIN}" class="button2" />
 				<!-- IF U_SEND_PASSWORD -->
 					<br /><a href="{U_SEND_PASSWORD}">{L_FORGOT_PASS}</a>
