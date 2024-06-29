@@ -1,0 +1,13 @@
+/* Online image */
+.online {
+	background-image: url("./icon_user_online.png");
+	background-repeat: no-repeat;
+	min-height: 110px;
+}
+
+/* Offline image */
+.offline {
+	background-image: url("./icon_user_offline.png");
+	background-repeat: no-repeat;
+	min-height: 110px;
+}

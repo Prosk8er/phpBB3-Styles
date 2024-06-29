@@ -1,0 +1,194 @@
+/* Additional css showandcloseyourbox
+created for phpBB 2015-2022ff by Talk19Zehn OnGray-Design.de ( https://www.ongray-design.de )
+and since June 2019 until May 2020 with credits to vfrblue (Assistant) ( https://www.phpbb.de/phpbbde/team/#group27563 )
+October 2022 css instructions adapted by Talk19Zehn OnGray-Design.de
+--------------------------------------------------------------------------------------------------------- */
+.showwindowbox {
+	position: fixed;
+	top: 31px;
+	left: 0;
+	display: none;
+	background: #010423;
+	font-size: 11px;
+	color: #ADCFE8;
+	border: 1px solid #6EBFFF;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	width: 250px;
+	height: auto;
+	padding: 36px 20px 10px 20px;
+	z-index: 500;
+}
+
+.showwindowbox h3 {
+	font-size: 12px;
+	color: #ADCFE8;
+	font-weight: bold;
+	text-transform: none;
+}
+
+.showwindowbox p {
+	color: #ADCFE8;
+	font-weight: bold;
+}
+
+.showwindowbox a {
+	color: #6EBFFF;
+}
+
+a.knobforbox {
+	position: fixed;
+	text-decoration: none;
+	top: 31px;
+	left: -10px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+	letter-spacing: -1px;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	padding: 8px 10px 8px 20px;
+	background: #3D6AC9;
+	background-color: #3D6AC9;
+	background-image: -webkit-linear-gradient(top, #8AC0E8 0%, #3D6AC9 48%, #010423 100%);
+	background-image: linear-gradient(to bottom, #8AC0E8, #3D6AC9, #010423);
+	color: #FAFAFA;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: block;
+	z-index: 300;
+	transition: all 0.2s ease;
+}
+
+a.knobforbox::before {
+	content: "SHOW";
+	padding: 0 5px 0 0;
+}
+
+a.knobforbox::after {
+	content: "\002B";
+	font-size: 14px;
+}
+
+a.active.knobforbox {
+	left: 0;
+}
+
+a.active.knobforbox::before {
+	content: "CLOSE";
+	left: 10px;
+}
+
+a.active.knobforbox::after {
+	content: "\2212";
+	font-size: 14px;
+}
+
+a.knobforbox {
+	z-index: 14000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a.knobforbox:hover {
+	z-index: 14001;
+}
+
+a.knobforbox span {
+	display: none;
+}
+
+a.knobforbox:hover span {
+	display: block;
+	position: absolute;
+	top: 2em;
+	left: 1.6em;
+	width: 12em;
+	background-color: #FAFAFA;
+	background-image: -webkit-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%);
+	background-image: linear-gradient(to bottom, #FAFAFA, #E9E9E9);
+	border-color: #C7C3BF;
+	box-shadow: 0 0 0 1px #FFFFFF inset;
+	color: #B82A29;
+	text-align: center;
+	padding: 4px;
+	font-weight: normal;
+	font-size: 1.0em;
+}
+
+p.vulcan-greeting::before {
+	content: "\f259";
+	font-family: FontAwesome;
+	padding-right: 4px;
+}
+
+#listlinkmoreinfo {
+	background: hsla(0, 0%, 0%, 0.5) none repeat scroll 0 0;
+	box-shadow: 0 1px 3px black;
+	color: #ADCFE8;
+	font-size: 98%;
+	font-weight: bold;
+	margin: 1.25em 0 0;
+	padding: 0.5em 2.5em 0.5em 1.5em;
+	text-align: left;
+	width: 10em;
+	z-index: 17500;
+}
+
+#listlinkmoreinfo li {
+	margin: 0px;
+}
+
+#listlinkmoreinfo a {
+	color: inherit;
+}
+
+#listlinkmoreinfo a:hover {
+	text-decoration: underline;
+}
+
+/* gotologinlefttop style
+---------------------------------------- */
+#goto_loginsite {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	z-index: 650;
+	background: url("./images/gotologinlefttopsecond.png") -5px -4px no-repeat;
+	width: 134px;
+	height: 134px;
+	text-indent: -3700px;
+	overflow:hidden;
+	-webkit-transition-duration:0.2s;
+	-moz-transition-duration:0.2s;
+	-ms-transition-duration:0.2s;
+	transition-duration:0.2s;
+}
+
+/* responsive adaptive style
+---------------------------------------- */
+@media (max-width: 1152px) {
+	.showwindowbox {
+		position: absolute;
+		top: 2px;
+		padding: 28px 5px 5px 6px;
+		width: 250px;
+		z-index: 12099;
+	}
+
+	.showwindowbox h3 {
+		margin-top: 0px;
+	}
+
+	a.knobforbox {
+		position: absolute;
+		top: 1px;
+		z-index: 12100;
+	}
+}

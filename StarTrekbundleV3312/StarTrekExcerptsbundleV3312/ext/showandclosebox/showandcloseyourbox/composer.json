@@ -1,0 +1,32 @@
+{
+	"name": "showandclosebox/showandcloseyourbox",
+	"type": "phpbb-extension",
+	"description": "Show and Close the Box",
+	"homepage": "https://www.ongray-design.de",
+	"version": "1.0.7",
+	"time": "2024-02-12",
+	"license": "GPL-2.0-only",
+	"authors": [
+		{
+			"name": "Talk19Zehn",
+			"homepage": "https://www.ongray-design.de",
+			"role": "Lead Developer"
+		}
+	],
+	"require": {
+		"php": ">=7.0.0",
+		"composer/installers": "~1.0.0"
+	},
+	"extra": {
+		"display-name": "Show and close your box",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.2.6,<3.4.0@dev"
+		},
+		"version-check": {
+			"host": "www.ongray-design.de",
+			"directory": "/extverscheck",
+			"filename": "showandclosebox.json",
+			"ssl": true
+		}
+	}
+}

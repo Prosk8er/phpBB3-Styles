@@ -1,0 +1,1755 @@
+/*
+phpBB-3.3.x Style Sheet based on prosilver
+---------------------------------------------------------------------
+	Style name:			XmasgoldChild
+	Based on style:		prosilver (the default phpBB 3.3.x style)
+	Original author:	Tom Beddard ( http://www.subblue.com/ )
+	Modified by:		Talk19Zehn ( ongray-design.de )
+---------------------------------------------------------------------
+*/
+
+html, body {
+	color: #000000;
+	background-color: #D2BF98;
+}
+
+h1 {
+	color: #000000;
+}
+
+h2 {
+	color: #000000;
+}
+
+h3 {
+	border-bottom-color: #966D1C;
+	color: #000000;
+}
+
+hr {
+	border-color: #FFFFFF;
+	border-top-color: #191919;
+}
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for links.css
+-------------------------------------------------------------- */
+
+a { color: #000000; }
+a:hover { text-decoration: underline; color: #000000; }
+
+a:hover,
+a:focus,
+a:active {
+	color: #000000;
+}
+
+/* Links on gradient backgrounds */
+.forumbg .header a, .forabg .header a, th a {
+	color: #000000;
+}
+
+.forumbg .header a:hover, .forabg .header a:hover, th a:hover {
+	color: #000000;
+}
+
+/* Notification mark read link */
+.dropdown-extended a.mark_read {
+	background-color: #9F8365;
+}
+
+/* Post body links */
+.postlink {
+	border-bottom-color: #000000;
+	color: #000000;
+}
+
+.postlink:visited {
+	border-bottom-color: #181818;
+	color: #000000;
+}
+
+.postlink:hover {
+	background-color: #CCB387;
+	color: #000000;
+}
+
+.signature a, .signature a:hover {
+	background-color: transparent;
+	color: #000000;
+}
+
+/* Back to top of page */
+.top i {
+	color: #999999;
+}
+
+/* Arrow links */
+.arrow-left:hover, .arrow-right:hover {
+	color: #000000;
+}
+
+/* Round cornered boxes and backgrounds
+---------------------------------------- */
+.wrap {
+	background-color: #D2BF98;
+	border-color: #111111;
+}
+
+.headerbar {
+	background-color: #C1A783;
+	background-image: url("./images/xmasgoldb692.png");
+	filter: none;
+	background-repeat: repeat-x;
+	color: #501717;
+	margin-bottom: 0px;
+}
+
+.navbar {
+	background-color: #B1A188;
+	background-image: -webkit-linear-gradient(top, #B1A188 0%, #F0E2C0 52%, #B1A188 100%);
+	background-image: linear-gradient(to bottom, #B1A188, #F0E2C0, #B1A188);
+	background-repeat: repeat;
+	box-shadow: 0px 0px 14px 4px rgba(134, 115, 69, 0.8);
+}
+
+.forabg {
+	background-color: #C1A783;
+	background-image: url("./images/xmasgoldb692.png");
+	filter: none;
+	background-repeat: repeat-x;
+}
+
+.forumbg {
+	background-color: #C1A783;
+	background-image: url("./images/xmasgoldb692.png");
+	filter: none;
+	background-repeat: repeat-x;
+}
+
+.forumlistimgcontainer {
+	width: 100%;
+	margin: 0px auto;
+	height: 38px;
+	background-color: transparent;
+	background-image: url("./images/decoxmasgold210x38.png");
+	filter: none;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.panel {
+	background-color: #EADBB8;
+	color: #000000;
+}
+
+.post:target .content {
+	color: #000000;
+}
+
+/* 
+.post h3 a.first-unread,
+.post:target h3 a {
+	color: #000000;
+}
+ */
+
+.bg1 {
+	background-color: #CBB48F;
+}
+
+table.zebra-list tr:nth-child(odd) td, ul.zebra-list li:nth-child(odd) {
+	background-color: #CBB48F;
+}
+
+.bg2 {
+	background-color: #CBB48F;
+}
+
+table.zebra-list tr:nth-child(even) td, ul.zebra-list li:nth-child(even) {
+	background-color: #CBB48F;
+}
+
+.bg3 {
+	background-color: #CBB48F;
+}
+
+.ucprowbg {
+	background-color: #B1A188;
+}
+
+.fieldsbg {
+	background-color: #F9F9F9;
+}
+
+/* Horizontal lists
+----------------------------------------*/
+
+ul.navlinks {
+	border-top-color: transparent;
+}
+
+/* Table styles
+----------------------------------------*/
+table.table1 thead th {
+	color: #000000;
+}
+
+table.table1 tbody tr {
+	border-color: #000000;
+}
+
+table.table1 tbody tr:hover, table.table1 tbody tr.hover {
+	background-color: #F2ECE1;
+	color: #000000;
+}
+
+table.table1 td {
+	color: #000000;
+}
+
+table.table1 tbody td {
+	border-top-color: #000000;
+}
+
+table.table1 tbody th {
+	border-bottom-color: #000000;
+	color: #000000;
+	background-color: #F2ECE1;
+}
+
+table.info tbody th {
+	color: #000000;
+}
+
+/* Misc layout styles
+---------------------------------------- */
+dl.details dt {
+	color: #000000;
+}
+
+dl.details dd {
+	color: #000000;
+}
+
+.sep {
+	color: #181818;
+}
+
+/* Icon styles
+---------------------------------------- */
+.icon.icon-blue, a:hover .icon.icon-blue {
+	color: #196DB5;
+}
+
+.icon.icon-green, a:hover .icon.icon-green {
+	color: #1B9A1B;
+}
+
+.icon.icon-red, a:hover .icon.icon-red {
+	color: #BC2A4D;
+}
+
+.icon.icon-orange, a:hover .icon.icon-orange {
+	color: #FF6600;
+}
+
+.icon.icon-bluegray, a:hover .icon.icon-bluegray {
+	color: #536482;
+}
+
+.icon.icon-gray, a:hover .icon.icon-gray {
+	color: #7C0000;
+}
+
+.icon.icon-lightgray, a:hover .icon.icon-lightgray {
+	color: #999999;
+}
+
+.icon.icon-black, a:hover .icon.icon-black {
+	color: #333333;
+}
+
+.alert_close .icon:before {
+	background-color: #996600;
+}
+
+/* Jumpbox */
+.jumpbox .dropdown li {
+	border-top-color: #181818;
+}
+
+.jumpbox-cat-link {
+	background-color: #71180F;
+	border-top-color: #000;
+	color: #FAFAFA;
+}
+
+.jumpbox-cat-link:hover {
+	background-color: #98352B;
+	border-top-color: #000;
+	color: #F1E2C0;
+}
+
+.jumpbox-forum-link {
+	background-color: #DACBAC;
+}
+
+.jumpbox-forum-link:hover {
+	background-color: #DECFAF;
+}
+
+.jumpbox .dropdown .pointer-inner {
+	border-color: #98352B transparent;
+}
+
+.jumpbox-sub-link {
+	background-color: #DACBAC;
+}
+
+.jumpbox-sub-link:hover {
+	background-color: #DECFAF;
+}
+
+/* Miscellaneous styles
+---------------------------------------- */
+
+.copyright {
+	color: #501717;
+}
+
+.error {
+	color: #AA0000;
+}
+
+.reported {
+	background-color: #D2C9B7;
+	background-image: none;
+	filter: none;
+}
+
+li.reported:hover {
+	background-color: #DCCFB6 !important;
+	background-image: none;
+	filter: none;
+}
+
+.sticky, .announce {
+	/* you can add a background for stickies and announcements */
+}
+
+div.rules {
+	background-color: #7C0000;
+	border-radius: 0px;
+	border: 2px solid #CC9900;
+	color: #E4D6AC;
+}
+
+.rules h3 {font-size: 1.2em; text-transform: none;}
+.rules > div a {border-bottom: 1px solid transparent; text-decoration: underline; color: inherit;}
+.rules > div a:visited {color: inherit; text-decoration: underline;}
+.rules > div a:hover {color: inherit; text-decoration: underline; background-color: #936F52;}
+.rules > div .active > a {font-size: 1.1em; color: inherit; text-decoration: underline;}
+.rules > p a {font-weight: bold; border-bottom: 1px solid #C0A879; text-decoration: none; color: inherit;}
+.rules > div a.button2 {font-size: 1.0em; color: #181818;}
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+	.rules > div a {border-bottom: 1px solid transparent; text-decoration: underline; color: inherit;}
+	.rules > p a {font-weight: bold; border-bottom: 1px solid #C0A879; text-decoration: none; color: inherit;}
+}
+
+p.post-notice {
+	background-color: #D4D0C8;
+	background-image: none;
+	filter: none;
+}
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for content.css
+-------------------------------------------------------------- */
+
+ul.forums {
+	background-color: #CBB48F;
+	background-image: none;
+	filter: none;
+}
+
+ul.topiclist li {
+	color: #000000;
+}
+
+ul.topiclist dd {
+	border-left-color: #EFE6D3;
+}
+
+.rtl ul.topiclist dd {
+	border-right-color: #EFE6D3;
+	border-left-color: transparent;
+}
+
+ul.topiclist li.row dt a.subforum.unread {
+	background-image: url("./images/subforumunreadxmasgold.png");
+	background-repeat: no-repeat;
+	font-style: italic;
+	padding-left: 16px;
+	color: #B3201B;
+}
+
+li.row {
+	border-top-color: transparent;
+	border-bottom-color: #181818;
+}
+
+li.row strong {
+	color: #000000;
+}
+
+li.row:hover {
+	background-color: #CBB48F;
+}
+
+li.row:hover dd {
+	border-left-color: #D7C59D;
+}
+
+.rtl li.row:hover dd {
+	border-right-color: #D7C59D;
+	border-left-color: transparent;
+}
+
+li.header dt, li.header dd {
+	color: #000000;
+}
+
+/* Post body styles
+----------------------------------------*/
+.postbody {
+	color: #000000;
+}
+
+/* Content container styles
+----------------------------------------*/
+.content {
+	color: #000000;
+}
+
+.content h2, .panel h2 {
+	color: #996600;
+	border-bottom-color: #000000;
+}
+
+dl.faq dt {
+	color: #000000;
+}
+
+.posthilit {
+	background-color: #7C0000;
+	color: #FAFAFA;
+}
+
+.announce, .unreadpost {
+	/* Highlight the announcements & unread posts box */
+}
+
+/* Post signature */
+.signature {
+	border-top-color: #191919;
+}
+
+/* Post noticies */
+.notice {
+	border-top-color: #181818;
+}
+
+/* BB Code styles
+----------------------------------------*/
+/* Quote block */
+blockquote {
+	background-color: #DAC194;
+	border-color: #181818;
+}
+
+blockquote blockquote {
+	/* Nested quotes */
+	background-color: #DACDB5;
+}
+
+blockquote blockquote blockquote {
+	/* Nested quotes */
+	background-color: #D6C4A3;
+}
+
+/* Code block */
+.codebox {
+	background-color: #D6C4A3;
+	border-color: #000000;
+}
+
+.codebox p {
+	border-bottom-color: #191919;
+}
+
+.codebox code {
+	color: #000000;
+}
+
+/* Attachments
+----------------------------------------*/
+.attachbox {
+	background-color: #E9D6AA;
+	border-color: transparent;
+}
+
+.pm-message .attachbox {
+	background-color: #EDDEBA;
+}
+
+.attachbox dd {
+	border-top-color: #C9D2D8;
+}
+
+.attachbox p {
+	color: #666666;
+}
+
+.attachbox p.stats {
+	color: #666666;
+}
+
+.attach-image img {
+	border-color: #999999;
+}
+
+/* Inline image thumbnails */
+
+dl.file dd {
+	color: #666666;
+}
+
+dl.thumbnail img {
+	border-color: #666666;
+	background-color: #F5EFE1;
+}
+
+dl.thumbnail dd {
+	color: #171717;
+}
+
+dl.thumbnail dt a:hover {
+	background-color: #DACBAC;
+}
+
+dl.thumbnail dt a:hover img {
+	border-color: #368AD2;
+}
+
+/* Post poll styles
+----------------------------------------*/
+
+fieldset.polls dl {
+	border-top-color: #996600;
+	color: #181818;
+}
+
+fieldset.polls dl.voted {
+	color: #171717;
+}
+
+fieldset.polls dd div {
+	color: #FAFAFA;
+}
+
+.rtl .pollbar1, .rtl .pollbar2, .rtl .pollbar3, .rtl .pollbar4, .rtl .pollbar5 {
+	border-right-color: transparent;
+}
+
+.pollbar1 {
+	background-color: #CC9900;
+	border-bottom-color: #B1A188;
+	border-right-color: #B1A188;
+}
+
+.rtl .pollbar1 {
+	border-left-color: #B1A188;
+}
+
+.pollbar2 {
+	background-color: #CC9900;
+	border-bottom-color: #B1A188;
+	border-right-color: #B1A188;
+}
+
+.rtl .pollbar2 {
+	border-left-color: #B1A188;
+}
+
+.pollbar3 {
+	background-color: #CC9900;
+	border-bottom-color: #B1A188;
+	border-right-color: #B1A188;
+}
+
+.rtl .pollbar3 {
+	border-left-color: #B1A188;
+}
+
+.pollbar4 {
+	background-color: #CC9900;
+	border-bottom-color: #B1A188;
+	border-right-color: #B1A188;
+}
+
+.rtl .pollbar4 {
+	border-left-color: #B1A188;
+}
+
+.pollbar5 {
+	background-color: #CC9900;
+	border-bottom-color: #B1A188;
+	border-right-color: #B1A188;
+}
+
+.rtl .pollbar5 {
+	border-left-color: #B1A188;
+}
+
+/* Poster profile block
+----------------------------------------*/
+.postprofile {
+	color: #000000;
+	border-color: #000000;
+}
+
+.pm .postprofile {
+	border-color: #DDDDDD;
+}
+
+.postprofile strong {
+	color: #000000;
+}
+
+/*
+.online {
+	background-image: url("./en/icon_user_online.gif");
+}
+ */
+
+.online {
+	background-image: url("./images/icon_user_online.gif");
+}
+
+dd.profile-warnings {
+	color: #AA0000;
+}
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for buttons.css
+-------------------------------------------------------------- */
+.button {
+	border-color: #000000;
+	background-color: #ECE1B6;
+	background-image: -webkit-linear-gradient(top, #906649 0%, #ECE1B6 52%, #906649 100%);
+	background-image: linear-gradient(to bottom, #906649 0%, #ECE1B6 52%, #906649 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E3D5BD', endColorstr='#906649', GradientType=0 );
+	box-shadow: 0 0 0 1px transparent inset;
+	-webkit-box-shadow: 0 0 0 1px transparent inset;
+	text-shadow: none;
+	color: #000000;
+}
+
+.button:hover,
+.button:focus {
+	border-color: #CC9900;
+	background-color: #ECE1B6;
+	background-image: -webkit-linear-gradient(top, #906649 0%, #ECE1B6 52%, #906649 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E3D5BD', endColorstr='#906649', GradientType=0 );
+	background-image: linear-gradient(to bottom, #906649 0%, #ECE1B6 52%, #906649 100%);
+	box-shadow: 0 0 0 1px transparent inset;
+	-webkit-box-shadow: 0 0 0 1px transparent inset;
+	text-shadow: none;
+	color: #000000;
+}
+
+.button .icon,
+.button-secondary {
+	color: #000000;
+}
+
+.button-secondary:focus,
+.button-secondary:hover,
+.button:focus .icon,
+.button:hover .icon {
+	color: #000000;
+}
+
+.button-search:hover,
+.button-search-end:hover {
+	border-color: #CC9900;
+}
+
+.caret	{ border-color: #501717; }
+.caret:hover	{ border-color: #CC9900; }
+
+.contact-icons a		{ border-color: #CC9900; }
+.contact-icons a:hover	{ background-color: #EBDDBB; }
+
+/* Pagination
+---------------------------------------- */
+
+.pagination li a {
+	background: #B1A188;
+	filter: none;
+	border-color: #000001;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	color: #000001;
+}
+
+.pagination li.ellipsis span {
+	background: transparent;
+	color: #000000;
+}
+
+.pagination li.active span {
+	background: #B1A188;
+	border-color: #B1A188;
+	color: #000001;
+}
+
+.pagination li a:hover, .pagination li a:hover .icon, .pagination .dropdown-visible a.dropdown-trigger, .nojs .pagination .dropdown-container:hover a.dropdown-trigger {
+	background: #F1E3C0;
+	border-color: #000001;
+	filter: none;
+	color: #993333;
+	text-shadow: none;
+}
+
+/* Search box
+--------------------------------------------- */
+.search-box .inputbox,
+.search-box .inputbox:hover,
+.search-box .inputbox:focus {
+	border-color: #171717;
+}
+
+.search-header {
+	box-shadow: 0 0 14px #966D1C;
+}
+
+.search-results li:hover,
+.search-results li.active {
+	background-color: #F1E3C0;
+}
+
+.search-box .inputbox {
+	background-image: none;
+	filter: none;
+	border-right-width: 0;
+	border-radius: 4px 0 0 4px;
+	float: left;
+	height: 24px;
+	padding: 3px;
+	box-shadow: 0 0 10px #501717;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 162px;
+}
+
+/* Forum icons & Topic icons */
+.global_read						{ background-image: url("./images/announce_read.png"); }
+.global_read_mine					{ background-image: url("./images/announce_read_mine.png"); }
+.global_read_locked					{ background-image: url("./images/announce_read_locked.png"); }
+.global_read_locked_mine			{ background-image: url("./images/announce_read_locked_mine.png"); }
+.global_unread						{ background-image: url("./images/announce_unread.png"); }
+.global_unread_mine					{ background-image: url("./images/announce_unread_mine.png"); }
+.global_unread_locked				{ background-image: url("./images/announce_unread_locked.png"); }
+.global_unread_locked_mine			{ background-image: url("./images/announce_unread_locked_mine.png"); }
+
+.announce_read						{ background-image: url("./images/announce_read.png"); }
+.announce_read_mine					{ background-image: url("./images/announce_read_mine.png"); }
+.announce_read_locked				{ background-image: url("./images/announce_read_locked.png"); }
+.announce_read_locked_mine			{ background-image: url("./images/announce_read_locked_mine.png"); }
+.announce_unread					{ background-image: url("./images/announce_unread.png"); }
+.announce_unread_mine				{ background-image: url("./images/announce_unread_mine.png"); }
+.announce_unread_locked				{ background-image: url("./images/announce_unread_locked.png"); }
+.announce_unread_locked_mine		{ background-image: url("./images/announce_unread_locked_mine.png"); }
+
+.forum_link							{ background-image: url("./images/forum_link.png"); }
+.forum_read							{ background-image: url("./images/forum_read.png"); }
+.forum_read_locked					{ background-image: url("./images/forum_read_locked.png"); }
+.forum_read_subforum				{ background-image: url("./images/forum_read_subforum.png"); }
+.forum_unread						{ background-image: url("./images/forum_unread.png"); }
+.forum_unread_locked				{ background-image: url("./images/forum_unread_locked.png"); }
+.forum_unread_subforum				{ background-image: url("./images/forum_unread_subforum.png"); }
+
+.sticky_read						{ background-image: url("./images/sticky_read.png"); }
+.sticky_read_mine					{ background-image: url("./images/sticky_read_mine.png"); }
+.sticky_read_locked					{ background-image: url("./images/sticky_read_locked.png"); }
+.sticky_read_locked_mine			{ background-image: url("./images/sticky_read_locked_mine.png"); }
+.sticky_unread						{ background-image: url("./images/sticky_unread.png"); }
+.sticky_unread_mine					{ background-image: url("./images/sticky_unread_mine.png"); }
+.sticky_unread_locked				{ background-image: url("./images/sticky_unread_locked.png"); }
+.sticky_unread_locked_mine			{ background-image: url("./images/sticky_unread_locked_mine.png"); }
+
+.topic_moved						{ background-image: url("./images/topic_moved.png"); }
+.pm_read,
+.topic_read							{ background-image: url("./images/topic_read.png"); }
+.topic_read_mine					{ background-image: url("./images/topic_read_mine.png"); }
+.topic_read_hot						{ background-image: url("./images/topic_read_hot.png"); }
+.topic_read_hot_mine				{ background-image: url("./images/topic_read_hot_mine.png"); }
+.topic_read_locked					{ background-image: url("./images/topic_read_locked.png"); }
+.topic_read_locked_mine				{ background-image: url("./images/topic_read_locked_mine.png"); }
+.pm_unread,
+.topic_unread						{ background-image: url("./images/topic_unread.png"); }
+.topic_unread_mine					{ background-image: url("./images/topic_unread_mine.png"); }
+.topic_unread_hot					{ background-image: url("./images/topic_unread_hot.png"); }
+.topic_unread_hot_mine				{ background-image: url("./images/topic_unread_hot_mine.png"); }
+.topic_unread_locked				{ background-image: url("./images/topic_unread_locked.png"); }
+.topic_unread_locked_mine			{ background-image: url("./images/topic_unread_locked_mine.png"); }
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for cp.css
+-------------------------------------------------------------- */
+
+/* Main CP box
+----------------------------------------*/
+
+.panel-container h3, .panel-container hr, .cp-menu hr {
+	border-color: #181818;
+}
+
+.panel-container .panel li.row {
+	border-bottom-color: #191919;
+	border-top-color: #181818;
+}
+
+ul.cplist {
+	border-top-color: #181818;
+}
+
+.panel-container .panel li.header dd, .panel-container .panel li.header dt {
+	color: #191919;
+}
+
+.panel-container table.table1 thead th {
+	color: #000000;
+	border-bottom-color: #181818;
+}
+
+.cp-main .pm-message {
+	border-color: #181818;
+	background-color: #FFFFFF;
+}
+
+/* CP tabbed menu
+----------------------------------------*/
+.tabs .tab > a {
+	background: #F0E2C0;
+	border: 1px solid #501717;
+	color: #000000;
+}
+
+.tabs .tab > a:hover {
+	background: #BCAE93;
+	color: #501717;
+}
+
+.tabs .activetab > a,
+.tabs .activetab > a:hover {
+	background: #BBAD92;
+	background: -webkit-linear-gradient(top, #BBAD92 0%, #F1E3C0 100%);
+	background: linear-gradient(to bottom, #BBAD92 0%, #F1E3C0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BBAD92', endColorstr='#F1E3C0', GradientType=0 );
+	border-color: #000001 #191919 #CC9900;
+	box-shadow: none;
+	border-bottom-color: #CC9900;
+	color: #000000;
+}
+
+.tabs .activetab > a:hover {
+	color: #000000;
+	border-bottom-color: #A57A22;
+}
+
+/* Mini tabbed menu used in MCP
+----------------------------------------*/
+.minitabs .tab > a {
+	background-color: #CBC0B5;
+}
+
+.minitabs .activetab > a,
+.minitabs .activetab > a:hover {
+	background-color: #CBC0B5;
+	color: #000000;
+}
+
+/* Responsive tabs
+----------------------------------------*/
+.responsive-tab .responsive-tab-link:before {
+	border-color: #000001;
+}
+
+.responsive-tab .responsive-tab-link:hover:before {
+	border-color: #000001;
+}
+
+/* UCP navigation menu
+----------------------------------------*/
+
+/* Link styles for the sub-section links */
+.navigation a {
+	color: #000000;
+	background: #EEE0BD;
+	background: -webkit-linear-gradient(top, #EEE0BD 0%, #B1A188 100%);
+	background: linear-gradient(to bottom, #EEE0BD 0%, #B1A188 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEE0BD', endColorstr='#B1A188', GradientType=1 );
+}
+
+.rtl .navigation a {
+	color: #000000;
+	background: #EEE0BD;
+	background: -webkit-linear-gradient(top, #EEE0BD 0%, #B1A188 100%);
+	background: linear-gradient(to bottom, #EEE0BD 0%, #B1A188 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEE0BD', endColorstr='#B1A188', GradientType=1 );
+}
+
+.navigation a:hover {
+	background: #DACBAC;
+	color: #000000;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.navigation .active-subsection a {
+	background: #7C0000;
+	color: #DACBAC;
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.navigation .active-subsection a:hover {
+	color: #F0E2C0;
+}
+
+@media only screen and (max-width: 900px), only screen and (max-device-width: 900px)
+{
+	#navigation a, .rtl #navigation a {
+		background: #DACBAC;
+	}
+}
+
+/* Preferences pane layout
+----------------------------------------*/
+.panel-container h2 {
+	color: #5A3500;
+}
+
+.panel-container .panel {
+	background-color: #DACBAC;
+}
+
+.cp-main .pm {
+	background-color: #DACBAC;
+}
+
+/* Friends list */
+.cp-mini {
+	background-color: #DACBAC;
+}
+
+dl.mini dt {
+	color: #000000;
+}
+
+/* PM Styles
+----------------------------------------*/
+/* PM Message history */
+.current {
+	color: #000000 !important;
+}
+
+/* PM marking colours */
+.pmlist li.pm_message_reported_colour, .pm_message_reported_colour {
+	border-left-color: #181818;
+	border-right-color: #181818;
+}
+
+.pmlist li.pm_marked_colour, .pm_marked_colour {
+	border-color: #FF6600;
+}
+
+.pmlist li.pm_replied_colour, .pm_replied_colour {
+	border-color: #CC9900;
+}
+
+.pmlist li.pm_friend_colour, .pm_friend_colour {
+	border-color: #5D8FBD;
+}
+
+.pmlist li.pm_foe_colour, .pm_foe_colour {
+	border-color: #000000;
+}
+
+/* Avatar gallery */
+.gallery label {
+	background: #F1E3C0;
+	border-color: #CC9900;
+}
+
+.gallery label:hover {
+	background-color: #B1A188;
+}
+
+/*
+--------------------------------------------------------------
+Colours and backgrounds for forms.css
+-------------------------------------------------------------- */
+
+/* General form styles
+----------------------------------------*/
+select {
+	border-color: #666666;
+	background-color: #DACBAC;
+	color: #000000;
+}
+
+label {
+	color: #000000;
+}
+
+option.disabled-option {
+	color: graytext;
+}
+
+/* Definition list layout for forms
+---------------------------------------- */
+dd label {
+	color: #000000;
+}
+
+fieldset.fields1 {
+	background-color: transparent;
+}
+
+/* Hover effects */
+fieldset dl:hover dt label {
+	color: #000000;
+}
+
+fieldset.fields2 dl:hover dt label {
+	color: inherit;
+}
+
+/* Quick-login on index page */
+fieldset.quick-login input.inputbox {
+	background-color: #FAF6EC;
+}
+
+input#password.inputbox,
+input#username.inputbox {
+	background: #ECE5D1;
+}
+
+/* Posting page styles
+----------------------------------------*/
+
+.message-box textarea {
+	color: #000002;
+}
+
+.message-box textarea.drag-n-drop {
+	outline-color: rgba(102, 102, 102, 0.5);
+}
+
+.message-box textarea.drag-n-drop-highlight {
+	outline-color: rgba(160, 119, 12, 0.5);
+}
+
+/* Input field styles
+---------------------------------------- */
+.inputbox {
+	background-color: #EFE6D3;
+	border-color: #CBB690;
+	color: #191919;
+}
+
+.inputbox:-moz-placeholder {
+	color: #191919;
+}
+
+.inputbox::-webkit-input-placeholder {
+	color: #191919;
+}
+
+.inputbox:hover {
+	border-color: #CC9900;
+}
+
+.inputbox:focus {
+	border-color: #181818;
+	color: #000002;
+}
+
+.inputbox:focus:-moz-placeholder {
+	color: transparent;
+}
+
+.inputbox:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+/* Form button styles
+---------------------------------------- */
+
+a.button1, input.button1, input.button3, a.button2, input.button2 {
+	color: #000002;
+	background-color: #EEE0BE; /* Old browsers */ /* FF3.6+ */
+	background-image: -webkit-linear-gradient(top, #DED0AF, #FAF6EC, #EEE0BE);
+	background-image: linear-gradient(to bottom, #DED0AF, #FAF6EC, #EEE0BE);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DED0AF', endColorstr='#EEE0BE', GradientType=1 );
+}
+
+a.button1, input.button1 {
+	border-color: #000001;
+}
+
+input.button3 {
+	background-image: none;
+	filter: none;
+}
+
+/* Alternative button */
+a.button2, input.button2, input.button3 {
+	border-color: #000002;
+}
+
+/* <a> button in the style of the form buttons */
+a.button1, a.button2 {
+	color: #000000;
+}
+
+/* Hover states */
+a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
+	border-color: #996600;
+	color: #000002;
+	background-color: #EEE0BE; /* Old browsers */ /* FF3.6+ */
+	background-image: -webkit-linear-gradient(top, #DED0AF, #FAF6EC, #EEE0BE);
+	background-image: linear-gradient(to bottom, #DED0AF, #FAF6EC, #EEE0BE);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DED0AF', endColorstr='#EEE0BE', GradientType=1 );
+}
+
+/* Focus states */
+input.button1:focus, input.button2:focus, input.button3:focus {
+	border-color: #996600;
+	color: #000000;
+}
+
+input.disabled {
+	color: #181818;
+}
+
+/* jQuery popups
+---------------------------------------- */
+.phpbb_alert {
+	background-color: #B5A98D;
+	border-color: #996600;
+}
+
+.darken {
+	background-color: #000000;
+}
+
+.loading_indicator {
+	background-color: #000000;
+	background-image: url("./images/loading.gif");
+}
+
+.dropdown-extended ul li {
+	border-top-color: #EEE0BE;
+}
+
+.dropdown-extended ul li:hover {
+	background-color: #DED0AF;
+	color: #000000;
+}
+
+.dropdown-extended .header, .dropdown-extended .footer {
+	border-color: #996600;
+	border-radius: 0px;
+	color: #000000;
+}
+
+.dropdown-extended .footer {
+	border-top-style: solid;
+	border-top-width: 1px;
+}
+
+.dropdown-extended .header {
+	background-color: #DED0AF;
+	background-image: -webkit-linear-gradient(top, #EEE0BE 0%, #DED0AF 100%);
+	background-image: linear-gradient(to bottom, #EEE0BE 0%, #DED0AF 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EEE0BE', endColorstr='#DED0AF',GradientType=0 ); /* IE6-9 */
+	text-shadow: 1px 1px 1px transparent;
+}
+
+.dropdown .pointer {
+	border-color: #191919 transparent;
+}
+
+.dropdown .pointer-inner {
+	border-color: #D5BEA3 transparent;
+}
+
+.dropdown-extended .pointer-inner {
+	border-color: #D5BEA3 transparent;
+}
+
+.dropdown .dropdown-contents {
+	background: #C9BA9A;
+	border-color: #FAF6EC;
+	box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-up .dropdown-contents {
+	box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown li, .dropdown li li {
+	border-color: #CC9900;
+}
+
+.dropdown li.separator {
+	border-color: #CC9900;
+}
+
+/* Notifications Common - ADDs
+---------------------------------------- */
+.dropdown-extended .dropdown-contents {
+	max-width: 320px;
+}
+
+/* Notifications
+---------------------------------------- */
+
+.notification_list p.notification-time {
+	color: #4C5D77;
+}
+
+li.notification-reported strong, li.notification-disapproved strong {
+	color: #AA0000;
+}
+
+/* Common, Content, Responsive, Button, Icons, another ADDs
+--------------------------------------------------------------- */
+.row .pagination {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.action-bar {
+	margin: 14px 0;
+}
+
+.fa-home::before {
+	content: "\f1bb";
+}
+
+.fa-inbox::before {
+	content: "\f0e0";
+	color: #7C0000;
+}
+
+.fa-external-link-square::before {
+	content: "\f005";
+	color: #7C0000;
+}
+
+.fa-external-link::before {
+	content: "\f08e";
+	color: #81531B;
+}
+
+.fa-commenting-o::before {
+	content: "\f005";
+	color: #7C0000;
+}
+
+.fa-file-o::before {
+	content: "\f016";
+	color: #81531B;
+}
+
+.fa-file::before {
+	content: "\f15b";
+	color: #906649;
+}
+
+.fa-question::before {
+	color: orange;
+}
+
+.postprofile dd, .postprofile dt {
+	line-height: 1.4em;
+}
+
+.dropdown li {
+	background-color: #F0E2C0;
+	color: #000000;
+}
+
+dl.row-item dt {
+	background-position: 4px 96%;
+	background-repeat: no-repeat;
+	background-size: 17px auto;
+}
+
+dl.row-item {
+	background-position: 10px 50%;
+	background-repeat: no-repeat;
+	background-size: 42px auto;
+}
+
+dl.row-item dt .list-inner {
+	padding-left: 60px;
+}
+
+dl.row-item dt, dl.row-item dd {
+	min-height: 45px;
+}
+
+li.header dt, li.header dd {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-size: 1.2em;
+	text-transform: none;
+}
+
+.postbody h3 img {
+	vertical-align: sub;
+}
+
+.badge {
+	background-color: #FAF6EC;
+	border-radius: 10px;
+	opacity: 0.8;
+	text-align: center;
+	white-space: nowrap;
+	font-size: 10px;
+	line-height: 1;
+	float: right;
+	display: inline-block;
+	margin-left: 3px;
+	vertical-align: baseline;
+	position: relative;
+	top: 3px;
+	padding: 4px 6px;
+	color: #000000;
+}
+
+.badge.hidden {
+	display: none;
+}
+
+.wrap {
+	max-width: 1280px;
+	border-width: 4px;
+	border-color: rgb(241, 227, 192);
+	border-style: inset;
+	padding: 13px;
+	border-radius: 0px;
+	padding: 6px;
+	margin: 1px auto;
+}
+
+.wrap, .panel {
+	border-radius: 8px;
+}
+
+.post, .headerbar, .navbar, .forabg, .forumbg {
+	border-radius: 0px;
+}
+
+.forabg, .forumbg {
+	padding: 5px 13px 6px 13px;
+}
+
+.post {
+	border: 1px solid #000000;
+}
+
+.dropdown .dropdown-contents {
+	border-radius: 0px;
+}
+
+.dropdown-contents a {
+	display: block;
+	padding: 7px;
+	margin: 1px;
+}
+
+.button {
+	color: #501717;
+	border: 1px solid #171717;
+	border-radius: 0px;
+}
+
+.icon, .button .icon {
+	color: #000000;
+}
+
+a.button1, input.button1 {
+	font-weight: normal;
+}
+
+.submit-buttons input#agreed {
+	font-weight: normal;
+}
+
+.search-header {
+	margin-top: 14px;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+.xmasogdsitedescription {
+	float: left;
+	font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 16px 10px 11px 5px;
+	min-height: 27px;
+	text-align: left;
+}
+
+.xmasogdblock_left {
+	float: left;
+	margin-top: 8px;
+	margin-bottom: 6px;
+	width: 58%;
+}
+
+.xmasogdblock_right {
+	float: right;
+	margin-top: 8px;
+	margin-bottom: 6px;
+}
+
+.xmasogdsitename {
+	background: transparent;
+	color: #000000;
+	font-size: 1.78em;
+	font-weight: bold;
+	margin: 1px;
+	text-align: center;
+}
+
+div > hr.xmasogdsitename {
+	border-color: transparent;
+	border-right: medium none;
+	border-style: double none none;
+	border-width: medium;
+	background-image: url("./images/decoxmasgold210x38.png");
+	height: 38px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	padding: 0px;
+	text-align: center;
+	color: #501717;
+}
+
+.xmasogdsitename a {
+	text-decoration: overline;
+	color: #501717;
+	margin-top: 14px;
+	word-spacing: .3em;
+}
+
+.xmasogdsitename a:hover {
+	text-decoration: none;
+	color: #191919;
+	margin-top: 14px;
+	word-spacing: .3em;
+}
+
+#sitelogoxmasogdheaderbar {
+	background-image: url("./images/xmasgoldheader2012600x110.png");
+	background-position: 50% 54%;
+	background-repeat: no-repeat;
+	text-align: center;
+	min-height: 110px;
+}
+
+div.boxshadow-specialxmasogd {
+	box-shadow: 0 0 10px 5px goldenrod, 15px -5px cornsilk, 15px 5px 25px sienna, -15px 5px black, -15px -5px 25px maroon;
+	margin: 28px auto;
+	padding: 4px;
+}
+
+dd input[type="number"] { background: #DACDB5; font-size: 1.2em; padding: 6px; color: #010101; }
+
+#ch {
+	background: #DACDB5;
+	font-size: 1.1em;
+	padding: 4px;
+	border-color: #171717;
+	color: #010101;
+}
+
+/* Prevent horizontal scrollbars on thumbnails-responsive e.q. IE11 not working anymore smaller 701px so we need a workaround content-css
+-------------------------------------------------------------------------------------------------------------------------------------------- */
+dl.thumbnail dt a img {
+	width: 100%;
+	height: auto;
+}
+
+/* ADD-CSS */
+/* Quick-links links */
+#quick-links:hover {
+	text-decoration: underline;
+	color: #191919;
+}
+
+#quick-links {
+	text-decoration: underline;
+	color: #000000;
+}
+
+.header-avatar {
+	text-decoration: none;
+}
+
+.header-avatar:hover {
+	text-decoration: none;
+}
+
+/* background-image: sternlinie author unknown */
+.ucp-title {
+	background-color: #7C0000;
+	background-image: url("./images/sternlinie.gif");
+	background-repeat: no-repeat;
+	background-position: 50% 20%;
+	color: #E2C58E;
+	font-size: 1.5em;
+	font-style: italic;
+	margin: 1%;
+	padding: 4px;
+	text-align: center;
+}
+
+/* 
+.message-box textarea {
+	background-color: #B7A072;
+	background-image: url("./images/fwhny200x30.gif");
+	background-repeat: no-repeat;
+	background-position: 90% 70%;
+}
+ */
+
+#message {
+	background-color: #D5C29B;
+	background-image: -webkit-linear-gradient(left, #E3D5BD 0%, #ECE1B6 52%, #AC886F 100%);
+	background-image: linear-gradient(to right, #E3D5BD 0%, #ECE1B6 52%, #AC886F 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E3D5BD', endColorstr='#AC886F',GradientType=0 ); /* IE6-9 */
+}
+
+/* ADDs responsive design
+----------------------------------------------------------------- */
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+	body {
+	background-image: none;
+	filter: none;
+	}
+	fieldset.display-actions {
+	text-align: left;
+	}
+	fieldset.display-actions label {
+	padding-right: 2px;
+	margin-top: 6px;
+	white-space: normal;
+	}
+	fieldset.display-actions label {
+	padding: 12px 10px 8px 2px;
+	white-space: normal;
+	}
+	#sitelogoxmasogdheaderbar {
+	background-size: auto 48%;
+	}
+	.sitelogo-igsadaptresponsive {
+	display: block;
+	max-width: 68%;
+	margin: 8px auto;
+	}
+	div > hr.xmasogdsitename {
+	background-image: none;
+	border: none;
+	height: 0px;
+	padding: 1px;
+	}
+	.xmasogdsitedescription {
+	display: none;
+	}
+	h1.xmasogdsitename {
+	display: block;
+	font-size: 1.55em;
+	}
+	.xmasogdblock_left {
+	width: 99%;
+	margin: 0.1;
+	}
+}
+
+/* Design for Xmas
+================================== */
+@media screen and (min-width: 1220px) and (min-device-width: 1220px){
+	.forumlist_container {
+	margin: 0px;
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	clear: both;
+	}
+	.forumlistcontainer-left {
+	background-image: url("./images/xmasdecoration225x24.png");
+	background-repeat: no-repeat;
+	height: 24px;
+	float: left;
+	width: 225px;
+	padding: 0px;
+	}
+	.forumlistcontainer-middle {
+	background-image: none;
+	background-repeat: repeat;
+	height: 24px;
+	width: auto;
+	margin: 0px 225px 0px 225px;
+	padding: 0px;
+	text-align: center;
+	}
+	.forumlistcontainer-right {
+	background-image: none;
+	background-repeat: no-repeat;
+	height: 24px;
+	float: right;
+	margin-top: -24px;
+	width: 225px;
+	padding: 0px;
+	}
+}
+
+@media screen and (min-width: 700px) and (min-device-width: 700px){
+	/* Row for Xmas */
+	li.row:hover {
+	background-image: url("./images/adventtoxmaslirowhover.png");
+	background-repeat: no-repeat;
+	background-position: 99% 66%;
+	}
+}
+
+@media screen and (min-width: 875px) and (min-device-width: 875px){
+	/* divider image for Xmas, change to display: none; if you don´t show the divider image between the posts */
+	.linexmas-divider {
+	margin: auto;
+	margin-top: 8px;
+	width: 82%;
+	position: relative;
+	}
+	.linexmas-divider .linexmasshadow {
+	overflow: hidden;
+	height: 20px;
+	}
+	.linexmas-divider .linexmasshadow::after {
+	content: '';
+	display: block;
+	margin: -25px auto 0;
+	width: 100%;
+	height: 25px;
+	border-radius: 125px/12px;
+	box-shadow: 0 0 8px #6F5D28;
+	}
+	.dividerxmasgold {
+	background-image: url("./images/xmasdecoration225x24.png");
+	background-repeat: no-repeat;
+	border: none;
+	width: 225px;
+	height: 25px;
+	padding: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
+	/* Xmas image footer */
+	.xmashoverfooter {
+	width: 600px;
+	height: 110px;
+	display: block;
+	margin: 0 auto;
+	}
+	.xmasfooter {
+	background-image:url("./images/goldxmashover600x220xt.png");
+	background-repeat: no-repeat;
+	}
+	.xmashoverfooter:hover {
+	background-position: 0 -110px;
+	}
+	/* Xmas image decotopleft */
+	#decotopleft-adventtoxmas {
+	background: url("./images/xmaskugeln2012decorationtopleft123208.png");
+	width: 123px;
+	height: 208px;
+	position: absolute;
+	z-index: 350;
+	left: 4px;
+	top: 0.1px;
+	}
+}
+
+/* responsive design additional - few edits
+----------------------------------------------------------------- */
+@media only screen and (max-width: 825px), only screen and (max-device-width: 825px) {
+	.wrap {
+	max-width: 1152px;
+	}
+}
+
+@media only screen and (max-width: 875px), only screen and (max-device-width: 875px) {
+	select, .inputbox {
+	max-width: 240px;
+	}
+}
+
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+	dl.row-item dt a {
+	display: inline;
+	line-height: 1.55em;
+	}
+}
+
+@media (min-width: 701px) {
+	.postbody {
+	width: calc(100% - 208px - 1px - 16px);
+	}
+	.postprofile {
+	width: 208px;
+	}
+}
+
+/* ToDo - Supplement, edit your own works here - ADDs print help output the page (Browser-Print-Page)
+--------------------------------------------------------------------------------------------------------------- */
+@media print {
+html, body {width: 100% !important; height: 100% !important; padding: 0 !important; margin: 0 !important; font-family: "times new roman", times, serif; font-size: 80%; background: none; background-image: none; filter: none; border-image: none; border: none; box-shadow: none; -webkit-box-shadow: none; color: #000000;}
+h1, h2, h3, h1 a, h2 a, h3 a, solo {font-family: "times new roman", times, serif; font-size: 88%; color: #000000; background: none; text-decoration: none; border: none; font-weight: normal;}
+.headerbar, .logo, .xmasogdblock_right, #jumpbox, ul.post-buttons, a.top, #top, .postprofile, .signature, .signature a {display: none;}
+html, body, h1, h2, h3, h1 a, h2 a, h3 a, solo, .page-header, div.headerbar > div > h1.xmasogdsitename > a > span, .wrap, #wrap, .forabg, .forumbg, div.boxshadow-specialxmasogd, #message {font-size: 84%; text-decoration: none; background-image: none; filter: none; border-image: none; border: none; box-shadow: none; -webkit-box-shadow: none; color: #000000;}
+img, .site-description img, div > .navbar, form.headerspace, fieldset.quick-login, .stat-block, .online-list, .birthday-list, .statistics, .xmashoverfooter, .xmasfooter, .action-bar, .bar-bottom, #qr_postform {display: none;}
+.copyright {text-align: left;  margin-top: 22px; padding: 14px 0px 10px 12px; color: #000000;}
+div.rules, a, a.mark, a.mark-read, a.arrow-right, a.arrow-left, .search-header, .search-box .inputbox, .panel, .post {border: none; box-shadow: none; -webkit-box-shadow: none; color: #000000;}
+.button {background-color: transparent; background: none; background-image: none; filter: none; border-image: none; border: none; box-shadow: none; -webkit-box-shadow: none;}
+.button, a.button1, input.button1, input.button3, a.button2, input.button2 {background-color: transparent; background-image: none; filter: none; border: none; color: #000000;}
+ul.topiclist li.row dd {padding: 4px 0 9px 0; margin-bottom: 8px; border: none;}
+}

@@ -1,0 +1,27 @@
+/*** Online image ***/
+/* 
+.online { background-image: url("./icon_user_online.gif"); }
+ */
+
+/* Online bg */
+.online { background: radial-gradient(circle closest-corner at 82% 0.2%, #A82C24, #333, #000); }
+
+.online_textline {
+	display: inline-block;
+	font-size: 114%;
+	font-weight: bold;
+	color: #E77669;
+	line-height: 30px;
+	width: 100%;
+	margin-bottom: 1.25rem;
+}
+
+.offline_textline {
+	display: inline-block;
+	font-size: 114%;
+	font-weight: bold;
+	color: #DADADA;
+	line-height: 30px;
+	width: 100%;
+	margin-bottom: 1.25rem;
+}
