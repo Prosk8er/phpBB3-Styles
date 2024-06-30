@@ -1,8 +1,0 @@
-services:
-    showandclosebox.showandcloseyourbox.listener:
-        class: showandclosebox\showandcloseyourbox\event\main_listener
-        arguments:
-            - '@template'
-            - '@user'
-        tags:
-            - { name: event.listener }
