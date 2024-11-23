@@ -130,6 +130,7 @@
 ## phpBB 3.3.11 - 10/2023, style-version: 3.3.11, a maintenance release of the 3.3.x branch - naming: "Bertie’s trip to Zagreb"
 ## phpBB 3.3.12 - 06/2024, style-version: 3.3.12, a maintenance release of the 3.3.x branch - naming: "Bertie: A phpBB Saga"
 ## phpBB 3.3.13 - 08/2024, style-version: 3.3.13, a maintenance release of the 3.3.x branch - naming: "Bertie & Ted"
+## phpBB 3.3.14 - 11/2024, style-version: 3.3.14, a maintenance release of the 3.3.x branch - naming: "Bertie All Along"
 ##
 #
 ###############################################################

@@ -415,11 +415,11 @@ blockquote blockquote blockquote {
 }
 
 .codebox p {
-	border-bottom-color: #000000;
+	border-bottom-color: #6C6B6B;
 }
 
 .codebox code {
-	color: #AA0000;
+	color: #C0C0C0;
 }
 
 /* Attachments

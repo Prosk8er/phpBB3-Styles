@@ -960,6 +960,8 @@ option.disabled-option {
 	color: gray;
 }
 
+dd input[type="number"] { background: #191919; color: #FFFFFF; }
+
 /* Definition list layout for forms
 ---------------------------------------- */
 dd label {

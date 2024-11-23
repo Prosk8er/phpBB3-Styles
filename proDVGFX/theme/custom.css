@@ -151,6 +151,7 @@ div.tabstats > div h3 {
 	padding-bottom: 5px;
 }
 
+/*#first, #second, #third, #fourth, #fifth {}*/
 #insidetabBG ul, #insidetabBG2 ul, #insidetabBG3 ul, #insidetabBG4 ul, #insidetabBG5 ul {}
 
 #insidetabBG ul li, #insidetabBG2 ul li, #insidetabBG3 ul li, #insidetabBG4 ul li, #insidetabBG5 ul li, #tab_button {
@@ -165,4 +166,4 @@ div.tabstats > div h3 {
 	border-bottom-left-radius: 7px;
 }
 
-/*#first, #second, #third, #fourth, #fifth {}*/
+dd input[type="number"] { color: #000000; }
