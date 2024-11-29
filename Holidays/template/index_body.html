@@ -24,19 +24,21 @@
 				<li class="header">
 					<dl>
 						<dt><!-- IF U_VIEWONLINE --><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a><!-- ELSE -->{L_WHO_IS_ONLINE}<!-- ENDIF --></dt>
+						<dd></dd>
 					</dl>
 				</li>
 			</ul>
 			<ul class="topiclist forums">
 				<li>
 					<dl>
+						<dt></dt>
 						<dd style="display: initial;">
 							<p>
 								<!-- EVENT index_body_block_online_prepend -->
 								<br />&nbsp;&nbsp;{TOTAL_USERS_ONLINE}<br />
 								&nbsp;&nbsp;{RECORD_USERS}<br />
 								<!-- IF U_VIEWONLINE -->
-									&nbsp;&nbsp;{LOGGED_IN_USER_LIST}<br /><!-- IF LEGEND --><br /><em>&nbsp;&nbsp;</em><span class="style2">{L_LEGEND}{L_COLON} {LEGEND}</span><span class="style1"><!-- ENDIF --></p></span>
+									&nbsp;&nbsp;{LOGGED_IN_USER_LIST}<br /><!-- IF LEGEND --><br /><em>&nbsp;&nbsp;</em><span class="style2">{L_LEGEND}{L_COLON} {LEGEND}</span><span class="style1"><!-- ENDIF --></span>
 								<!-- ENDIF -->
 								<!-- EVENT index_body_block_online_append -->
 								<!-- IF NEWEST_USER -->
@@ -63,16 +65,18 @@
 				<li class="header">
 					<dl>
 						<dt>{L_BIRTHDAYS}</dt>
+						<dd></dd>
 					</dl>
 				</li>
 			</ul>
 			<ul class="topiclist forums">
 				<li>
 					<dl>
+						<dt></dt>
 						<dd style="display: initial;">
 							<p>
 								<!-- EVENT index_body_block_birthday_prepend -->
-								<br /><!-- IF .birthdays -->{L_CONGRATULATIONS}{L_COLON} <strong><!-- BEGIN birthdays -->{birthdays.USERNAME}<!-- IF birthdays.AGE !== '' --> ({birthdays.AGE})<!-- ENDIF --><!-- IF not birthdays.S_LAST_ROW -->, <!-- ENDIF --><!-- END birthdays --></strong><!-- ELSE -->{L_NO_BIRTHDAYS}<!-- ENDIF -->
+								<br /><!-- IF .birthdays -->&nbsp;&nbsp;{L_CONGRATULATIONS}{L_COLON} <strong><!-- BEGIN birthdays -->{birthdays.USERNAME}<!-- IF birthdays.AGE !== '' --> ({birthdays.AGE})<!-- ENDIF --><!-- IF not birthdays.S_LAST_ROW -->, <!-- ENDIF --><!-- END birthdays --></strong><!-- ELSE -->&nbsp;&nbsp;{L_NO_BIRTHDAYS}<!-- ENDIF -->
 								<!-- EVENT index_body_block_birthday_append -->
 							</p>
 						</dd>
@@ -90,12 +94,14 @@
 				<li class="header">
 					<dl>
 						<dt>{L_LOGIN}</dt>
+						<dd></dd>
 					</dl>
 				</li>
 			</ul>
 			<ul class="topiclist forums">
 				<li>
 					<dl>
+						<dt></dt>
 						<dd style="display: initial;">
 							<p>
 								<form method="post" action="{S_LOGIN_ACTION}" class="headerspace">
