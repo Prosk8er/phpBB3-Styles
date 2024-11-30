@@ -1,0 +1,132 @@
+/* Red Stylesheet
+	A21C1C
+*/
+
+/* ----- Images ----- */
+/* Top Gradient */
+#logodesc {
+	background-color: #A21C1C; /* Old browsers */ /* FF3.6+ */
+	background-image: -webkit-linear-gradient(top, #A21C1C 0%, #560f0f 100%);
+	background-image: linear-gradient(to bottom, #A21C1C 0%,#560f0f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A21C1C', endColorstr='#560f0f',GradientType=0 ); /* IE6-9 */
+}
+.top-title-background { }
+
+/* Header for Forum/Topic List */
+li.header {
+	background-color: #A21C1C; /* Old browsers */ /* FF3.6+ */
+	background-image: -webkit-linear-gradient(top, #A21C1C 0%, #580f0f 100%);
+	background-image: linear-gradient(to bottom, #A21C1C 0%,#580f0f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A21C1C', endColorstr='#580f0f',GradientType=0 ); /* IE6-9 */
+}
+
+/* Breadcrumbs */
+@media only screen and (min-width: 768px) {
+	.dvg-bc span {
+		background-color: #861717;
+		background-image: -webkit-linear-gradient(top, #A21C1C 0%,#861717 50%,#591010 100%);
+		background-image: linear-gradient(to bottom, #A21C1C 0%,#861717 50%,#591010 100%);
+		background: linear-gradient(to bottom, #A21C1C 0%,#861717 50%,#591010 100%);
+		display: inline-block;
+		height: 20px;
+		line-height: 20px;
+		padding-right: 7px;
+		border-radius: 7px;
+	}
+}
+
+/* ----- Main ----- */
+/* Headers */
+h1.sidemenu {
+	background-color: #861717;
+	background-image: -webkit-linear-gradient(top, #A21C1C 0%,#861717 50%,#591010 100%);
+	background-image: linear-gradient(to bottom, #A21C1C 0%,#861717 50%,#591010 100%);
+	background: linear-gradient(to bottom, #A21C1C 0%,#861717 50%,#591010 100%);
+}
+h2, .content h2, .panel h2{ color: #A21C1C; }
+h3 { border-bottom-color: #CCC; color: #A21C1C; }
+li.header a:link { color: #FFF; }
+li.header a:hover { text-decoration: underline; }
+/* Default Links */
+a.forumlink, a.topictitle, .quotetitle, .attachtitle, .codetitle, p.moderators { color: #A21C1C; }
+a:hover, .arrow-left:hover, .arrow-right:hover { color: #FFF; text-decoration: none; }
+#dvg-bot-menu a:hover { color: #A21C1C; text-decoration: underline; }
+#dvg-loginlinks a:hover { color: #C2C2C2; }
+
+/* ADDs Links */
+a:hover, a:focus, a:active { color: #FFFFFF; }
+a { color: #FFFFFF; }
+a:hover	{ color: #FAFAFA; }
+.copyright a { color: #CCC; }
+.copyright a:hover { color: #FFFFFF; text-decoration: underline; }
+h5.module a { color: #A21C1C; }
+.module a:hover { color: #FFFFFF; text-decoration: underline; }
+
+/* ----- Main Menu ----- */
+ul#navmenu li a:active, ul#navmenu li a:focus, ul#navmenu li a:link, ul#navmenu li a:visited { color: #A21C1C; }
+ul#navmenu li a:hover { color: #FFF; }
+
+/* ----- Notifications ----- */
+.dropdown-extended .header {
+	background-color: #A21C1C; /* Old browsers */ /* FF3.6+ */
+	background-image: -webkit-linear-gradient(top, #A21C1C 0%, #580f0f 100%);
+	background-image: linear-gradient(to bottom, #A21C1C 0%,#580f0f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A21C1C', endColorstr='#580f0f',GradientType=0 ); /* IE6-9 */
+}
+.dropdown .pointer-inner2 {
+	border-color: #A21C1C transparent;
+}
+.dropdown-extended ul li:hover {
+	color: #C2C2C2;
+}
+
+/* ----- Links on gradient backgrounds ----- */
+.search-box a:link, .navbg a:link, .forumbg .header a:link, .forabg .header a:link, th a:link,
+.search-box a:active, .navbg a:active, .forumbg .header a:active, .forabg .header a:active, th a:active,
+.search-box a:visited, .navbg a:visited, .forumbg .header a:visited, .forabg .header a:visited, th a:visited { color: #FFF; }
+.search-box a:hover, .navbg a:hover, .forumbg .header a:hover, .forabg .header a:hover, th a:hover { text-decoration: underline; }
+
+/* ----- Buttons ----- */
+a.button1, input.button1, input.button3, a.button2, input.button2 {
+	background-color: #580f0f; /* Old browsers */ /* FF3.6+ */
+	background-image: -webkit-linear-gradient(top, #A21C1C 0%, #580f0f 100%);
+	background-image: linear-gradient(to bottom, #A21C1C 0%,#580f0f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A21C1C', endColorstr='#580f0f',GradientType=0 ); /* IE6-9 */
+}
+a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover {
+	background-color: #570f0f; /* Old browsers */ /* FF3.6+ */
+	background-image: -webkit-linear-gradient(top, #7c1616 0%, #570f0f 100%);
+	background-image: linear-gradient(to bottom, #7c1616 0%,#570f0f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c1616', endColorstr='#570f0f',GradientType=0 ); /* IE6-9 */
+}
+a.button1:visited, input.button1:visited, a.button2:visited, input.button2:visited, input.button3:visited { color: #FFF; }
+
+/* ----- Forum, Topic titles ----- */
+a.forumtitle, a.forumtitle:visited, a.forumtitle:active, a.forumtitle:link, a.topictitle, a.topictitle:visited, a.topictitle:active, a.topictitle:link { color: #A21C1C; }
+a.forumtitle:hover, a.topictitle:hover { color: #FFF; }
+
+/* ----- Post links ----- */
+.postlink, .postlink:active, .postlink:visited .postlink:link { color:#A21C1C; }
+.postlink:hover { background-color: transparent; color: #FFF; }
+.postprofile a:link, .postprofile a:active, .postprofile a:visited, .postprofile dt.author a, .post:target h3 a { color:#A21C1C; }
+
+/* ----- UCP Top Menu ----- */
+.tabs .activetab > a, .tabs .activetab > a:hover, .tabs .tab > a { color: #A21C1C; }
+.navigation a, .navigation .active-subsection a { color: #A21C1C; }
+
+/* ----- Pagination ----- */
+.pagination li a, .pagination li a:link, .pagination li a:visited, .pagination li a:active { color:#A21C1C; }
+.pagination li a:hover { color: #FFF; }
+
+/* ----- Side Menu ----- */
+ul.sidemenu a { background: url("./images/sidelist.gif") no-repeat; }
+ul.sidemenu a:link, ul.sidemenu a:active, ul.sidemenu a:focus, ul.sidemenu a:visited { color: #FFF; }
+ul.sidemenu a:hover { color: #A21C1C; }
+
+/* ----- Polls ----- */
+.pollbar1, .pollbar2, .pollbar3, .pollbar4, .pollbar5 {
+	background: url("./images/pollbar.png") repeat-x;
+	border-bottom: 1px solid #222;
+	border-right: 1px solid #222;
+}
+fieldset.polls dl.voted { color: #A21C1C; }

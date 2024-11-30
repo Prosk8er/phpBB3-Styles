@@ -1,0 +1,52 @@
+	<div class="navbar" role="navigation">
+		<div class="inner dvg-bc">
+			<ul class="linklist" role="menubar">
+				<li>
+						<!-- IF U_SITE_HOME -->
+						<span><span>
+							{% apply spaceless %}
+								<a class="dvg-bc" href="{U_SITE_HOME}">{L_SITE_HOME}</a>
+							{% endapply %}
+						</span></span>
+						<!-- ENDIF -->
+						<!-- EVENT overall_footer_breadcrumb_prepend -->
+						<span><span>
+						{% apply spaceless %}
+							<a class="dvg-bc" href="{U_INDEX}">{L_INDEX}</a>
+						{% endapply %}
+						</span></span>
+						<!-- EVENT overall_footer_breadcrumb_append -->
+				</li>
+				<!-- IF S_WATCH_FORUM_LINK and not S_IS_BOT -->
+					<li>
+						&#8250;&nbsp;<span><span>
+							<a class="dvg-bc" href="{S_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}">{S_WATCH_FORUM_TITLE}</a>
+						</span></span>
+					</li>
+				<!-- ENDIF -->
+				<!-- IF not S_IS_BOT -->
+					<li class="rightside">
+						<span><span>
+							<a class="dvg-bc" href="{U_DELETE_COOKIES}">{L_DELETE_COOKIES}</a>
+						</span></span>
+					</li>
+				<!-- ENDIF -->
+				<!-- EVENT overall_footer_teamlink_before -->
+				<!-- IF U_TEAM -->
+					<li class="rightside">
+						<span><span>
+							<a class="dvg-bc" href="{U_TEAM}">&nbsp;{L_THE_TEAM}&nbsp;</a>
+						</span></span>
+					</li>
+				<!-- ENDIF -->
+				<!-- EVENT overall_footer_teamlink_after -->
+				<!-- IF U_CONTACT_US -->
+					<li class="rightside">
+						<span><span>
+							<a class="dvg-bc" href="{U_CONTACT_US}">{L_CONTACT_US}</a>
+						</span></span>
+					</li>
+				<!-- ENDIF -->
+			</ul>
+		</div>
+	</div>

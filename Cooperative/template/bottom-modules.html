@@ -1,0 +1,65 @@
+<div id="dvg-bot-content">
+<!-- EVENT index_body_stat_blocks_before -->
+	<!-- IF S_DISPLAY_ONLINE_LIST -->
+		<div class="col-6">
+			<div class="module">
+				<div><div>
+					<div class="innerpadding">
+						<!-- IF U_VIEWONLINE --><h5 class="module"><a href="{U_VIEWONLINE}">{L_WHO_IS_ONLINE}</a></h5><!-- ELSE --><h5 class="module">{L_WHO_IS_ONLINE}</h5><!-- ENDIF -->
+						<p>
+							<!-- EVENT index_body_block_online_prepend -->
+							{TOTAL_USERS_ONLINE} ({L_ONLINE_EXPLAIN})<br />{RECORD_USERS}<br />
+							<!-- IF S_USER_LOGGED_IN -->{CURRENT_TIME}<br />{LAST_VISIT_DATE}<br /><!-- ENDIF -->
+							<!-- EVENT overall_footer_timezone_before -->{S_TIMEZONE}<br /><!-- EVENT overall_footer_timezone_after -->
+							<!-- IF U_VIEWONLINE -->
+								<br />{LOGGED_IN_USER_LIST}
+								<!-- IF LEGEND --><br /><em>{L_LEGEND}{L_COLON} {LEGEND}</em><!-- ENDIF -->
+							<!-- ENDIF -->
+							<!-- EVENT index_body_block_online_append -->
+						</p>
+					</div>
+				</div></div>
+			</div>
+		</div>
+	<!-- ENDIF -->
+
+	<!-- EVENT index_body_birthday_block_before -->
+
+	<!-- IF S_DISPLAY_BIRTHDAY_LIST -->
+		<div class="col-3">
+			<div class="module">
+				<div><div>
+					<div class="innerpadding">
+						<h5 class="module">{L_BIRTHDAYS}</h5>
+						<p>
+							<!-- EVENT index_body_block_birthday_prepend -->
+							<!-- IF birthdays -->{L_CONGRATULATIONS}{L_COLON} <strong><!-- BEGIN birthdays -->{birthdays.USERNAME}<!-- IF birthdays.AGE !== '' --> ({birthdays.AGE})<!-- ENDIF --><!-- IF not birthdays.S_LAST_ROW -->, <!-- ENDIF --><!-- END birthdays --></strong><!-- ELSE -->{L_NO_BIRTHDAYS}<!-- ENDIF -->
+							<!-- EVENT index_body_block_birthday_append -->
+						</p>
+					</div>
+				</div></div>
+			</div>
+		</div>
+	<!-- ENDIF -->
+
+	<!-- IF NEWEST_USER -->
+		<div class="col-3">
+			<div class="module">
+				<div><div>
+					<div class="innerpadding">
+						<h5 class="module">{L_STATISTICS}</h5>
+						<p>
+							<!-- EVENT index_body_block_stats_prepend -->
+							{TOTAL_POSTS}<br />
+							{TOTAL_TOPICS}<br />
+							{TOTAL_USERS}<br />
+							{NEWEST_USER}
+							<!-- EVENT index_body_block_stats_append -->
+						</p>
+					</div>
+				</div></div>
+			</div>
+		</div>
+	<!-- ENDIF -->
+<!-- EVENT index_body_stat_blocks_after -->
+</div>
