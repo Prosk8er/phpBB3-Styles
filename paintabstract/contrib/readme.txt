@@ -132,6 +132,7 @@
 ## phpBB 3.3.13 - 08/2024, style-version: 3.3.13, a maintenance release of the 3.3.x branch - naming: "Bertie & Ted"
 ## phpBB 3.3.14 - 11/2024, style-version: 3.3.14, a maintenance release of the 3.3.x branch - naming: "Bertie All Along"
 ## phpBB 3.3.15 - 04/2025, style-version: 3.3.15, a maintenance and security release of the 3.3.x branch - naming: "In Memory of Mark D. Hamill" ( www.phpbbservices.com )
+## phpBB 3.3.16 - 05/2026, style-version: 3.3.16, a maintenance release of the 3.3.x branch - naming: "Bertie in scrubs"
 ##
 #
 ###############################################################
