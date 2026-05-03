@@ -1,0 +1,26 @@
+
+#inner-grunge {
+	padding: 13px 23px;
+	background: url("./images/grunge.png") repeat 0 0;
+}
+
+.nav-black {
+	border-radius: 0 0 7px 7px;
+	background: #000000 url("./images/nav.gif") repeat left top;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#page-footer .nav-black {
+	border-radius: 7px;
+}
+
+.forum-image img {
+	max-width: 100%;
+}
+
+body.simple .page-body {
+	margin: 20px 20px 0;
+	padding: 20px;
+	background: #171B24;
+}

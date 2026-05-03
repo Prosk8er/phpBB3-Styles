@@ -1,0 +1,338 @@
+/* Borders */
+.wrap {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0;
+	border: 2px solid#242a36;
+	border-radius: 15px;
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+	background: repeating-linear-gradient(
+		135deg,
+		#242a36,
+		#242a36 30px,
+		#171B24 30px,
+		#171B24 60px
+	);	
+}
+
+#inner-wrap {
+	box-shadow: 0 0 10px 10px #171B24;
+}
+
+/* high-contrast text */
+h2, .panel-container h2, .forumbg .header a, li.row strong, .forabg .header a, th a, .tabs .activetab > a, .tabs .activetab > a:hover, .tabs .tab a:hover, .navigation .active-subsection a, .navigation .active-subsection a:hover, .navigation a:hover, .panel-container .panel li.header dd, .panel-container .panel li.header dt, label:hover, fieldset dl:hover dt label, dl.faq dt, h3, .content h2, .panel h2, fieldset.polls dl.voted, .button .icon, .inputbox, textarea, .message-box textarea, .panel-container table.table1 thead th, li.header dt, li.header dd, a.button1, input.button1, input.button3, a.button2, input.button2, a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover, .postbody .content, .pagination li a, select, .button .icon, .button-secondary, .global_read_mine:after, .global_read_locked_mine:after, .global_unread_mine:after, .global_unread_locked_mine:after, .announce_read_mine:after, .announce_read_locked_mine:after, .announce_unread_mine:after, .announce_unread_locked_mine:after, .sticky_read_mine:after, .sticky_read_locked_mine:after, .sticky_unread_mine:after, .sticky_unread_locked_mine:after, .topic_read_mine:after, .topic_read_hot_mine:after, .topic_unread_mine:after, .topic_unread_hot_mine:after, .topic_read_locked_mine:after, .topic_unread_locked_mine:after, .dropdown-extended .header, .dropdown-extended .footer, .pagination li.ellipsis span, .icon.icon-black, a:hover .icon.icon-black, .minitabs a:hover, .minitabs .activetab > a, .minitabs .activetab > a:hover {
+	color: #CCCCCC !important;
+}
+
+
+/* subtle text */
+html, body, .headerbar p, .copyright, ul.topiclist li, .panel, label, dd label, .signature, .postprofile, .postprofile strong, dl.details dd, dl.details dt, .content, .postbody, fieldset.polls dl, dl.file dd, table.table1 td, .dropdown-extended ul li:hover, .button {
+	color: #838b98;
+}
+
+
+/* Light bg colours */
+.forabg, .forumbg, ul.forums, li.row, .bg1, .bg2, .bg3, .tabs .activetab > a, .tabs a:hover, ul.cplist, .panel, blockquote blockquote, .dropdown .dropdown-contents, .jumpbox-cat-link, .jumpbox-sub-link, .jumpbox-forum-link, .cp-main .message-box textarea, fieldset.quick-login input.inputbox {
+	background: #242a36 !important;
+}
+
+/* Dark bg colours */
+html, body, #inner-wrap, .wrap, .panel-container .panel, .navigation .active-subsection a, .navigation a:hover, .cp-mini, .codebox, blockquote, blockquote blockquote blockquote, .attachbox, .message-box textarea, .phpbb_alert, select, .minitabs a:hover, .minitabs .activetab > a, .minitabs .activetab > a:hover, .cp-main .pm, .bg3 .topicreview .bg2, .bg3 .topicreview .bg1 {
+	background-color: #171b24 !important;
+}
+
+/* Striped headers */
+li.header {
+	background-image: linear-gradient(135deg, #252c39 25%, #242a36 25%, #242a36 50%, #252c39 50%, #252c39 75%, #242a36 75%, #242a36 100%);
+	background-size: 56.57px 56.57px;
+}
+
+/* Middle grey (dark bg) */
+.tabs .tab > a {
+	background: rgba(255,255,255,0.04);
+}
+
+/* Middle grey (light bg) */
+.navigation a, .minitabs .tab > a {
+	background: rgba(0,0,0,0.15);
+}
+
+
+/* Really light elements (buttons / forms etc) */
+.inputbox, .button, a.button1, input.button1, input.button3, a.button2, input.button2, .pagination li a {
+	background: rgba(255,255,255,0.1);
+}
+
+/* button hover */
+.button:hover, a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover,  .search-results li:hover, .search-results li.active {
+	background: rgba(255,255,255,0.2);
+}
+
+
+/* Super subtle borders */
+.forumbg, .forabg, .navbar, .post, .bg3  {
+	border: 1px solid rgba(255,255,255,0.04);
+}
+
+li.row, ul.linklist li, h3, ul.linklist, ul.topiclist dd, .postprofile, .signature, .tabs .activetab > a, .tabs .activetab > a:hover, .panel-container h3, .panel-container .panel li.row, .panel-container hr, .cp-menu hr, table.table1 tbody tr, table.table1 tbody td, hr, .panel h2, .content h2, .codebox, .codebox p, fieldset.polls dl, .attach-image img, .attachbox, .attachbox dd, .inputbox, .phpbb_alert, a.button1, input.button1, input.button3, a.button2, input.button2, a.button1:hover, input.button1:hover, a.button2:hover, input.button2:hover, input.button3:hover, .dropdown li.separator, select, .dropdown li, .dropdown li li, .jumpbox .dropdown li, .dropdown-extended .header, .dropdown-extended .footer, input.button1:focus, input.button2:focus, input.button3:focus, .caret, .pm .postprofile {
+	border-color: rgba(255,255,255,0.04) !important;
+}
+
+/*A less subtle border for overlapping elements (dropdowns) */
+.dropdown .dropdown-contents {
+	border-color: rgba(255,255,255,0.15);
+}
+
+
+/* Super subtle hover effects */
+li.row:hover, .dropdown-extended ul li:hover, table.table1 tbody tr:hover, table.table1 tbody tr.hover {
+	background: rgba(0,0,0,0.05) !important;
+}
+
+
+/* Hacky overrides here, because..reasons */
+li.row.reported, p.post-notice, .rules {
+	background-color: rgba(211,17,65,0.2) !important;
+	color: #BC2A4D;
+}
+
+.dropdown .pointer-inner, .jumpbox .dropdown .pointer-inner {
+	border-color: #242a36 transparent;
+}
+
+.online {
+	background-image: url("./en/icon_user_online.gif") !important;
+	background-position: 100% 0 !important;
+	background-repeat: no-repeat !important;
+}
+
+input#keywords::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #CCCCCC;
+}
+input#keywords::-moz-placeholder { /* Firefox 19+ */
+  color: #CCCCCC;
+}
+input#keywords:-ms-input-placeholder { /* IE 10+ */
+  color: #CCCCCC;
+}
+input#keywords:-moz-placeholder { /* Firefox 18- */
+  color: #CCCCCC;
+}
+
+input#search_keywords::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #CCCCCC;
+}
+input#search_keywords::-moz-placeholder { /* Firefox 19+ */
+  color: #CCCCCC;
+}
+input#search_keywords:-ms-input-placeholder { /* IE 10+ */
+  color: #CCCCCC;
+}
+input#search_keywords:-moz-placeholder { /* Firefox 18- */
+  color: #CCCCCC;
+}
+
+
+/* Structural changes */
+.button {
+	padding: 6px 8px !important;
+	border: 0px;
+}
+
+.button-search,
+.button-search-end {
+	padding: 6;
+}
+
+.search-header .button-search,
+.search-header .button-search-end {
+	border-top-width: 0;
+	border-bottom-width: 0;
+	padding: 6px;
+	margin-left: 1px;
+
+}
+
+.forumbg .header a:hover, .forabg .header a:hover, th a:hover {
+	color: #FFFFFF;
+}
+
+select {
+	padding: 6px;
+}
+
+fieldset.fields1 div {
+	margin-bottom: 10px;
+}
+
+.format-buttons {
+	margin: 15px 0;
+}
+
+.inputbox {
+	border: 0px solid transparent;
+	padding: 6px;
+}
+
+.inputbox:hover, .inputbox:focus {
+	border: 0px solid transparent;
+	outline-style: none;
+}
+
+a.button1, input.button1, input.button3, a.button2, input.button2 {
+	width: auto !important;
+	padding: 6px;
+	font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+	background: transparent none repeat-x top left;
+	line-height: 1.5;
+}
+
+.search-box .inputbox {
+	background-image: none;
+	border-right-width: 0;
+	border-radius: 4px 0 0 4px;
+	float: left;
+	height: 30px;
+	padding: 3px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.panel-container .panel li.row {
+	border-top: none;
+}
+
+ul.cplist {
+	margin-bottom: 15px;
+}
+
+.tabs .tab > a, .minitabs .tab > a {
+	display: block;
+	padding: 8px 10px;
+}
+
+.tabs .tab > a {
+	border-bottom: none;
+}
+
+.tabs .activetab > a {
+	margin-top: 0;
+	padding-bottom: 9px;
+}
+
+/* Link styles for the sub-section links */
+.navigation a {
+	padding: 8px;
+}
+
+.row .list-inner img {max-width: 100%;}
+
+p.author {
+	margin-bottom: 1em;
+}
+
+blockquote {
+		padding: 10px;
+		border: 0;
+}
+
+.codebox {
+	border: none;
+}
+
+.codebox p {
+	padding: 8px;
+}
+
+.codebox code {
+	padding: 10px 8px;
+}
+
+.panel {
+	margin-bottom: 15px;
+}
+
+.cp-main .panel {
+	padding: 15px;
+}
+dl.details dt {
+	font-weight: bold;
+}
+
+.action-bar {
+	margin: 15px 0;
+}
+
+.action-bar .button-search {
+	margin-right: 0;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.pagination li a, .pagination li span {
+	border-radius: 2px;
+	padding: 2px 7px;
+}
+
+.pagination .arrow a {
+	padding: 2px 2px;
+}
+
+.row .pagination li a, .row .pagination li span {
+	border-radius: 2px;
+	padding: 2px 6px;
+	font-size: 1em;
+}
+
+
+div.rules {
+	margin: 10px 0;
+	font-size: 1.1em;
+	padding: 15px;
+	border-radius: 7px;
+}
+
+.dropdown-extended .header {
+	background: none;
+}
+
+.forumbg .header a:hover, .forabg .header a:hover, th a:hover {
+	color: #FFFFFF;
+}
+
+.post:target .content,
+.post:target h3 a {
+	color: inherit;
+}
+
+.button {
+	box-shadow: none;
+}
+
+.button:hover {
+	text-shadow: none;
+}
+
+.search-header {
+	box-shadow: none;
+}
+
+.tabs .tab > a {
+	color: inherit;
+}
+
+.tabs .activetab > a,
+.tabs .activetab > a:hover {
+	color: inherit;
+	box-shadow: none;
+}
+
+.minitabs .activetab > a,
+.minitabs .activetab > a:hover {
+	color: inherit;
+}
+
+.dropdown-extended .header {
+	text-shadow: none;
+}

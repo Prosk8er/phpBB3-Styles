@@ -17,13 +17,13 @@
 						</span></span>
 						<!-- EVENT overall_footer_breadcrumb_append -->
 				</li>
-				<!-- IF S_WATCH_FORUM_LINK and not S_IS_BOT -->
+				{% if U_WATCH_FORUM_LINK && !S_IS_BOT %}
 					<li>
 						&#8250;&nbsp;<span><span>
-							<a class="dvg-bc" href="{S_WATCH_FORUM_LINK}" title="{S_WATCH_FORUM_TITLE}">{S_WATCH_FORUM_TITLE}</a>
+							<a class="dvg-bc" href="{{ U_WATCH_FORUM_LINK }}" title="{{ S_WATCH_FORUM_TITLE }}">{{ S_WATCH_FORUM_TITLE }}</a>
 						</span></span>
 					</li>
-				<!-- ENDIF -->
+				{% endif %}
 				<!-- IF not S_IS_BOT -->
 					<li class="rightside">
 						<span><span>
