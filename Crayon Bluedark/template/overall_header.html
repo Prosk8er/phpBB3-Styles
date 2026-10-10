@@ -97,13 +97,13 @@
 			<div class="inner">
 				<div style="display: block;">
 					<div id="logositetext-smalltext-onheaderbar">
-						<a href="{% if U_SITE_HOME %}{{ U_SITE_HOME }}{% else %}{{ U_INDEX }}{% endif %}" title="{% if U_SITE_HOME %}{{ L_SITE_HOME }}{% else %}{{ L_INDEX }}{% endif %}"><img src="{T_THEME_PATH}/images/site_logo.png" class="sitelogo-adaptresponsive" alt="" /></a>
+						<a href="{% if U_SITE_HOME %}{{ U_SITE_HOME }}{% else %}{{ U_INDEX }}{% endif %}" title="{% if U_SITE_HOME %}{{ L_SITE_HOME }}{% else %}{{ L_INDEX }}{% endif %}"><img src="{T_THEME_PATH}/images/site_logo.webp" class="sitelogo-adaptresponsive" alt="" /></a>
 						<p class="skiplink"><a href="#start_here">{L_SKIP}</a></p>
 					</div>
 				</div>
 					<div style="display: none;">
 						<div id="site-description" class="site-description">
-							<a id="logo" class="logo" href="{U_INDEX}" title="{L_INDEX}"><img src="{T_THEME_PATH}/images/site_logo_darkblue.jpg" alt="" /></a>
+							<a id="logo" class="logo" href="{U_INDEX}" title="{L_INDEX}"><img src="{T_THEME_PATH}/images/site_logo_darkblue.webp" alt="" /></a>
 							<p class="skiplink"><a href="#start_here">{L_SKIP}</a></p>
 						</div>
 					</div>
@@ -117,22 +117,13 @@
 				<p class="c-description">{SITE_DESCRIPTION}</p>
 			</div>
 			<!-- EVENT overall_header_searchbox_before -->
-			<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
-				<div id="search-box" class="search-box search-header" role="search">
-					<form action="{U_SEARCH}" method="get" id="search">
-					<fieldset>
-						<input name="keywords" id="keywords" type="search" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="inputbox search tiny" size="20" value="{SEARCH_WORDS}" placeholder="{L_SEARCH_MINI}" />
-						<button class="button button-search" type="submit" title="{L_SEARCH}">
-							<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH}</span>
-						</button>
-						<a href="{U_SEARCH}" class="button button-search-end" title="{L_SEARCH_ADV}">
-							<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">{L_SEARCH_ADV}</span>
-						</a>
-						{S_SEARCH_HIDDEN_FIELDS}
-					</fieldset>
-					</form>
-				</div>
-			<!-- ENDIF -->
+					<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
+						<div id="search-box" class="search-box search-header" role="menu">
+							<a href="{U_SEARCH}" class="button button-search" title="{L_SEARCH_MINI}" role="menuitem">
+								<span><i class="icon fa-search fa-fw" aria-hidden="true"></i><span>{L_SEARCH}</span></span>
+							</a>
+						</div>
+					<!-- ENDIF -->
 			<!-- EVENT overall_header_searchbox_after -->
 		</div>
 		<!-- EVENT overall_header_navbar_before -->

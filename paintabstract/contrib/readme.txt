@@ -1,14 +1,10 @@
 ############################################################## 
 ## Style Name: abstract
 ## based on my own color scheme, own graphics since 2011
-## Hint: Style-Idea is based on Prosilver for phpBB-3.0 Olympus
-## Styleauthor at ( ongray-design.de ) Talk19Zehn
-## ( https://www.phpbb.de/phpbbde/team/#group27563 )
-## Olympus - Last phpBB Version: 3.0.14
-##
+## Hint: Style-Idea is based on Prosilver for the phpBB 3.0 Branch (Olympus)
+## Styleauthor Talk19Zehn ( earlier ongray-design-de ) websites exist anymore since 2024 in this context
 ##############################################################
 ## Style History: Olympus
-
 ##		phpBB-Version (3.0.9)
 ##		29.08.2011
 ##		phpBB-Version (3.0.11)
@@ -34,16 +30,10 @@
 ##############################################################
 ## Begin Style History for phpBB-3.1 Ascraeus
 ##
-
-# Version developments phpBB = 20. Jun 2014, Build #1558
-# Version developments phpBB = 24. Jun 2014, Build #1574
-# Version developments phpBB = 13. Jul 2014, Build #1610
-# Version developments phpBB = 24. Jul 2014, Build unknown
-# Version developments phpBB = 16. Aug 2014, phpBB 3.1.0-RC2
-# Version developments phpBB = 25. Aug 2014, phpBB 3.1.0-RC3
-# Version developments phpBB = 29. Sep 2014, phpBB 3.1.0-RC4
-# Version developments phpBB = 22. Okt 2014, phpBB 3.1.0-RC5
-# Version developments phpBB = 31. Okt 2014, phpBB 3.1.0-RC6
+#
+# Created for phpBB-3.1 by Talk19Zehn ( ongray-design-de )  websites exist anymore since 2024 in this context
+# phpBB 3.1.0 Ascraeus released on October 28, 2014.
+#
 ##
 # Updates
 ##
@@ -95,7 +85,7 @@
 ## phpBB-Version 3.2.2 - 22.01.2018
 ## phpBB-Version 3.2.3 - 29.10.2018
 ##
-# Created as a Child-Style for phpBB-3.2.3 by Talk19Zehn ( ongray-design.de )
+# Created as a Child-Style for phpBB-3.2.3 by Talk19Zehn ( ongray-design-de )
 # some changes (header, footer and much more)
 ##
 ## phpBB 3.2.4 - 20.11.18
@@ -116,6 +106,9 @@
 ###############################################################
 ## Begin Style History for phpBB 3.3 Proteus
 ##
+###############################################################
+## Original Styleauthor Talk19Zehn ( earlier ongray-design-de ) websites exist anymore since 2024 in this context
+###############################################################
 ## phpBB 3.3.0 - 19.01.2020
 ## phpBB 3.3.1 - 14.09.2020
 ## phpBB 3.3.2 - 11/2020, style-version: 3.3.2
@@ -132,8 +125,12 @@
 ## phpBB 3.3.13 - 08/2024, style-version: 3.3.13, a maintenance release of the 3.3.x branch - naming: "Bertie & Ted"
 ## phpBB 3.3.14 - 11/2024, style-version: 3.3.14, a maintenance release of the 3.3.x branch - naming: "Bertie All Along"
 ## phpBB 3.3.15 - 04/2025, style-version: 3.3.15, a maintenance and security release of the 3.3.x branch - naming: "In Memory of Mark D. Hamill" ( www.phpbbservices.com )
-## phpBB 3.3.16 - 05/2026, style-version: 3.3.16, a maintenance release of the 3.3.x branch - naming: "Bertie in scrubs"
-## phpBB 3.3.17 - 06/2026, style-version: 3.3.17, a maintenance release of the 3.3.x branch - naming: "Young Bertie"
+## phpBB 3.3.15 - 08/2025, 09/2025 style-version: 3.3.15, one html line overall_footer corrected
+## phpBB 3.3.16 - 05/2026, style-version: 3.3.16, a maintenance and security release of the 3.3.x branch - naming: "Bertie in scrubs"
+## phpBB 3.3.17 - 06/2026, style-version: 3.3.17, a maintenance and security release of the 3.3.x branch - naming: "Young Bertie"
+## phpBB 3.3.17 - 08/2026, 09/2026 style-version: 3.3.17, the header concept, graphics, and various details have changed in the CSS/HTML - header concept now used Webp (img pabsheaderbar.webp)-format
+## phpBB 3.3.18 - 09/2026, style-version: 3.3.18, a maintenance and security release of the 3.3.x branch - naming: "Bertie vs. Acme"
+## phpBB 3.3.19 - 09/2026, style-version: 3.3.19, a maintenance and security release of the 3.3.x branch - naming: "Bertie forgot something"
 ##
 #
 ###############################################################
@@ -142,12 +139,14 @@
 # The small site_logo_slogan.jpg into the class .sloganimg has the dimensions of width: 138px; height: 80px;
 # This graphic is displayed from a width (viewport - min-width) of 701px.
 #
-# The grafic abstractinheader.jpg has the dimensions of width: 1920px; height: 190px;
+# The grafic img abstractinheader.jpg (img pabsheaderbar.webp) has the dimensions of width: 1920px; height: 190px;
 # This graphic is responsive / adpative displayed and is directly included in the overall_header.html (img).
 #
 # In the contrib directory you will find the readme.txt and graphics as well as alternative no_avatar-images.
 #
 ###############################################################
+##
+-- Tips --
 ##
 ## Languages: Please look here
 ## https://www.phpbb.com/languages/
@@ -155,5 +154,8 @@
 ## Smilies, Topic Icons for Light-, and Dark-Styles
 ## https://www.phpbb.com/customise/db/style/dark_style_phpbb3_smilies/
 ## https://www.phpbb.com/customise/db/style/topic_icons_dark_hd/
+##
+## phpbb smileys SVG - Author Mazeltof for phpBB 3.3.x
+## https://www.phpbb.com/customise/db/style/phpbb_smileys_svg/
 ##
 ###############################################################

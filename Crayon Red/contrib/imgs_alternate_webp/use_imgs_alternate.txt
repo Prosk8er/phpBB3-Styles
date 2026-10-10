@@ -1,0 +1,114 @@
+Crayon Red
+#
+If you want to use the alternative lighter images, proceed as follows (images created by Talk19Zehn) from the contrib imgs_alternate_webp directory:
+
+Load the graphics into the theme / images directory of this style.
+#
+
+##
+stylesheet.css
+
+find: background-image: url("./images/hgbodyred.webp");
+
+body {
+	background-image: url("./images/hgbodyred.webp");
+	background-position: left top;
+	background-repeat: repeat-x;
+	padding: 40px 0;
+}
+
+change to: background-image: url("./images/hgbodyredfirst.webp");
+
+body {
+	background-image: url("./images/hgbodyredfirst.webp");
+	background-position: left top;
+	background-repeat: repeat-x;
+	padding: 40px 0;
+}
+
+find: background-image: url("./images/bgheaderbarimagered.webp");
+
+.headerbar {
+	background: #240401;
+	background-image: url("./images/bgheaderbarimagered.webp");
+	filter: none;
+	background-repeat: repeat-x;
+	background-position: top center;
+	color: #FAFAFA;
+	border: 2px solid #7E797A;
+	margin-bottom: 11px;
+	min-height: 170px;
+}
+
+change to: background-image: url("./images/bgheaderbarimageredfirst.webp");
+
+.headerbar {
+	background: #240401;
+	background-image: url("./images/bgheaderbarimageredfirst.webp");
+	filter: none;
+	background-repeat: repeat-x;
+	background-position: top center;
+	color: #FAFAFA;
+	border: 2px solid #7E797A;
+	margin-bottom: 11px;
+	min-height: 170px;
+}
+##
+
+###
+overall_footer.html (standard)
+
+find: footerwrapperimagered.webp
+
+<div>
+	<div class="inner">
+		<div id="footer_block_bodywrappercrayon">
+			<a href="#top"><img src="{T_THEME_PATH}/images/footerwrapperimagered.webp" width="886" height="180" title="{L_BACK_TO_TOP}" alt="{L_BACK_TO_TOP}" /></a>
+		</div>
+	</div>
+</div>
+
+change to: footerwrapperimageredfirst.webp
+
+<div>
+	<div class="inner">
+		<div id="footer_block_bodywrappercrayon">
+			<a href="#top"><img src="{T_THEME_PATH}/images/footerwrapperimageredfirst.webp" width="886" height="180" title="{L_BACK_TO_TOP}" alt="{L_BACK_TO_TOP}" /></a>
+		</div>
+	</div>
+</div>
+
+###
+
+####
+overall_header.html (standard)
+
+find: site_logored.webp
+
+<div style="display: none;">
+	<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="{U_INDEX}" title="{L_INDEX}"><img src="{T_THEME_PATH}/images/site_logored.webp" alt="" /></a>
+		<p class="skiplink"><a href="#start_here">{L_SKIP}</a></p>
+	</div>
+</div>
+
+change to: site_logoredfirst.webp
+
+<div style="display: none;">
+	<div id="site-description" class="site-description">
+		<a id="logo" class="logo" href="{U_INDEX}" title="{L_INDEX}"><img src="{T_THEME_PATH}/images/site_logoredfirst.webp" alt="" /></a>
+		<p class="skiplink"><a href="#start_here">{L_SKIP}</a></p>
+	</div>
+</div>
+
+####
+
+Move the graphics that are no longer used:
+
+hgbodyred.webp, bgheaderbarimagered.webp, footerwrapperimagered.webp and site_logored.webp ==> to the contrib imgs_alternate_webp directory (!).
+
+#####
+
+After the replacement, clean up all caches and browser caches when you return to the page.
+
+That's all, have fun.

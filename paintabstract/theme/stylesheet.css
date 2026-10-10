@@ -35,8 +35,8 @@ h3 {
 }
 
 hr {
-	border-color: #F3E2C7;
-	border-top-color: #F3E2C7;
+	border-color: #B68D4C;
+	border-top-color: #B68D4C;
 }
 
 /*
@@ -1402,19 +1402,18 @@ div.rules {
 #message { background: #DBD5C9; }
 
 #headerbar_block_wrapperpa {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding: 0px;
+	background-image: none;
+	background-repeat: no-repeat;
 	width: 100%;
 	text-align: center;
 }
 
 #headerbar_block_wrapperpa img {
-	width: 100%;
 	max-width: 100%;
 	height: auto;
+	-webkit-box-shadow: 0 0 15px #482D1A;
+	box-shadow: 0 0 15px #482D1A;
+	padding: 0px;
 }
 
 .forabg, .forumbg {
@@ -1573,9 +1572,10 @@ dd input[type="number"] { background: #DDCFB7; font-size: 1.2em; padding: 6px; c
 
 div.boxshadow-specialpa {
 	width: 94%;
-	box-shadow: 0 0 5px 2.5px #6B5E46, 10px -5px #452916, 10px 5px 15px #010101, -10px 5px #6B5E46, -10px -5px 15px #9F5F08;
+	-webkit-box-shadow: 0 0 15px #482D1A;
+	box-shadow: 0 0 15px #482D1A;
 	margin: 30px auto;
-	padding: 4px;
+	padding: 0px;
 }
 
 ul.topiclist li.row dt a.subforum.unread {

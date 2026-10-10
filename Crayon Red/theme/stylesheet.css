@@ -8,7 +8,7 @@
 */
 
 body {
-	background-image: url("./images/hgbodyred.jpg");
+	background-image: url("./images/hgbodyred.webp");
 	background-position: left top;
 	background-repeat: repeat-x;
 	padding: 40px 0;
@@ -119,7 +119,7 @@ a:hover	{ text-decoration: underline; color: #E2E2E2; }
 
 .headerbar {
 	background: #240401;
-	background-image: url("./images/bgheaderbarimagered.jpg");
+	background-image: url("./images/bgheaderbarimagered.webp");
 	filter: none;
 	background-repeat: repeat-x;
 	background-position: top center;
@@ -1532,12 +1532,12 @@ dl.thumbnail dt a img {
 
 @media (min-width: 701px) {
 	.c-sloganimg {
-	background: url("./images/crayonred-slogan.jpg");
+	background: url("./images/crayonred-slogan.webp");
 	background-repeat: no-repeat;
 	width: 69px;
 	height: 90px;
 	float: left;
-	padding-right: 6px;
+	padding-right: 16px;
 	}
 	.c-slogan {
 	display: block;
